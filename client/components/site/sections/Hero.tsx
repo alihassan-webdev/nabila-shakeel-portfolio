@@ -40,24 +40,48 @@ export default function Hero() {
           </div>
 
           <div className="md:col-span-5">
-            <div className="mx-auto max-w-md rounded-3xl border bg-card p-8 card-shadow hover:translate-y-[-4px] transition-transform">
-              <h3 className="font-semibold text-lg">Snapshot</h3>
-              <ul className="mt-6 space-y-4">
-                <li className="flex items-start gap-3">
-                  <Zap className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-foreground/80">Manual & Automation Testing (Selenium, Cypress, Playwright)</span>
+            <div className="mx-auto max-w-md rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-8 card-shadow hover:translate-y-[-4px] transition-transform">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-2 h-2 rounded-full bg-primary"></div>
+                <span className="text-xs font-semibold text-primary uppercase tracking-widest">Quick Overview</span>
+              </div>
+              <h3 className="font-display font-semibold text-2xl mb-7">Snapshot</h3>
+              <ul className="space-y-5">
+                <li className="flex items-start gap-4 group">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <Zap className="w-5 h-5 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-foreground leading-relaxed">Manual & Automation Testing</p>
+                    <p className="text-xs text-foreground/60 mt-1">Selenium, Cypress, Playwright</p>
+                  </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <Workflow className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-foreground/80">API Testing: Postman, REST Assured, GraphQL</span>
+                <li className="flex items-start gap-4 group">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <Workflow className="w-5 h-5 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-foreground leading-relaxed">API Testing</p>
+                    <p className="text-xs text-foreground/60 mt-1">Postman, REST Assured, GraphQL</p>
+                  </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <Cloud className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-foreground/80">CI/CD: Jenkins, GitHub Actions, GitLab CI</span>
+                <li className="flex items-start gap-4 group">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <Cloud className="w-5 h-5 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-foreground leading-relaxed">CI/CD Pipeline</p>
+                    <p className="text-xs text-foreground/60 mt-1">Jenkins, GitHub Actions, GitLab CI</p>
+                  </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <Boxes className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-sm text-foreground/80">Containerization: Docker, Kubernetes</span>
+                <li className="flex items-start gap-4 group">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <Boxes className="w-5 h-5 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-foreground leading-relaxed">Containerization</p>
+                    <p className="text-xs text-foreground/60 mt-1">Docker, Kubernetes</p>
+                  </div>
                 </li>
               </ul>
             </div>
