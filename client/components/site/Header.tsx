@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const links = [
   { href: "#home", label: "Home" },
@@ -47,7 +48,8 @@ export default function Header() {
 
   return (
     <header className="sticky top-4 z-50 w-full flex justify-center px-4">
-      <div className="w-max py-3 rounded-2xl bg-card border border-border px-6 flex items-center justify-center">
+      {/* Desktop Navigation */}
+      <div className="hidden md:flex w-max py-3 rounded-2xl bg-card border border-border px-6 items-center justify-center">
         <nav className="flex items-center gap-2">
           {links.map((l) => (
             <a
@@ -66,27 +68,39 @@ export default function Header() {
         </nav>
       </div>
 
+      {/* Mobile Navigation */}
+      <div className="md:hidden flex items-center py-3 px-4 rounded-2xl bg-card border border-border">
+        <button
+          onClick={() => setOpen(!open)}
+          className="p-2 rounded-lg text-foreground/70 hover:text-primary hover:bg-primary/5 transition-all"
+          aria-label="Toggle menu"
+        >
+          {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+        </button>
+      </div>
+
       {/* Mobile menu panel */}
       {open && (
-        <div className="md:hidden border-t border-transparent bg-transparent">
-          <div className="container py-4 flex flex-col">
+        <div className="md:hidden absolute top-full mt-2 left-4 right-4 rounded-2xl bg-card border border-border">
+          <nav className="flex flex-col p-4">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
-                onClick={() => setOpen(false)}
-                className="py-3 text-sm text-foreground/80 hover:bg-foreground/5 rounded-md px-3"
+                onClick={() => {
+                  if (l.href === "#home") handleHomeClick;
+                  setOpen(false);
+                }}
+                className={`py-3 px-3 text-sm rounded-lg transition-all ${
+                  active === l.href
+                    ? "text-primary bg-primary/10 font-medium"
+                    : "text-foreground/70 hover:text-primary hover:bg-primary/5"
+                }`}
               >
                 {l.label}
               </a>
             ))}
-            <a
-              href="#contact"
-              className="mt-3 inline-flex w-max items-center rounded-2xl bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
-            >
-              Contact
-            </a>
-          </div>
+          </nav>
         </div>
       )}
     </header>
