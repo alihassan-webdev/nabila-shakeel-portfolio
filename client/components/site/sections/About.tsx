@@ -20,36 +20,65 @@ export default function About() {
             <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-8 card-shadow">
               <div className="flex items-center gap-2 mb-3">
                 <div className="w-2 h-2 rounded-full bg-primary"></div>
-                <span className="text-xs font-semibold text-primary uppercase tracking-widest">Core Competencies</span>
+                <span className="text-xs font-semibold text-primary uppercase tracking-widest">
+                  Core Competencies
+                </span>
               </div>
-              <h3 className="text-2xl font-semibold font-display mb-8">Skills & Expertise</h3>
+              <h3 className="text-2xl font-semibold font-display mb-8">
+                Skills & Expertise
+              </h3>
               <div className="grid gap-6 sm:grid-cols-2">
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2 text-sm">Test Design & Planning</h4>
-                    <p className="text-sm text-foreground/70 leading-relaxed">Requirements analysis, test strategy, UAT coordination</p>
+                    <h4 className="font-semibold text-foreground mb-2 text-sm">
+                      Test Design & Planning
+                    </h4>
+                    <p className="text-sm text-foreground/70 leading-relaxed">
+                      Requirements analysis, test strategy, UAT coordination
+                    </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2 text-sm">Test Automation</h4>
-                    <p className="text-sm text-foreground/70 leading-relaxed">Selenium (Java/Python/C#), Cypress, Playwright, TestNG, JUnit, Cucumber</p>
+                    <h4 className="font-semibold text-foreground mb-2 text-sm">
+                      Test Automation
+                    </h4>
+                    <p className="text-sm text-foreground/70 leading-relaxed">
+                      Selenium (Java/Python/C#), Cypress, Playwright, TestNG,
+                      JUnit, Cucumber
+                    </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2 text-sm">API & Performance Testing</h4>
-                    <p className="text-sm text-foreground/70 leading-relaxed">Postman, REST Assured, JMeter, LoadRunner</p>
+                    <h4 className="font-semibold text-foreground mb-2 text-sm">
+                      API & Performance Testing
+                    </h4>
+                    <p className="text-sm text-foreground/70 leading-relaxed">
+                      Postman, REST Assured, JMeter, LoadRunner
+                    </p>
                   </div>
                 </div>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2 text-sm">CI/CD & DevOps</h4>
-                    <p className="text-sm text-foreground/70 leading-relaxed">Jenkins, GitHub Actions, GitLab CI, Docker, Kubernetes</p>
+                    <h4 className="font-semibold text-foreground mb-2 text-sm">
+                      CI/CD & DevOps
+                    </h4>
+                    <p className="text-sm text-foreground/70 leading-relaxed">
+                      Jenkins, GitHub Actions, GitLab CI, Docker, Kubernetes
+                    </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2 text-sm">Databases & Validation</h4>
-                    <p className="text-sm text-foreground/70 leading-relaxed">SQL, JSON/XML validation</p>
+                    <h4 className="font-semibold text-foreground mb-2 text-sm">
+                      Databases & Validation
+                    </h4>
+                    <p className="text-sm text-foreground/70 leading-relaxed">
+                      SQL, JSON/XML validation
+                    </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground mb-2 text-sm">Tools & Management</h4>
-                    <p className="text-sm text-foreground/70 leading-relaxed">Jira, Qase, HP ALM, Azure DevOps</p>
+                    <h4 className="font-semibold text-foreground mb-2 text-sm">
+                      Tools & Management
+                    </h4>
+                    <p className="text-sm text-foreground/70 leading-relaxed">
+                      Jira, Qase, HP ALM, Azure DevOps
+                    </p>
                   </div>
                 </div>
               </div>

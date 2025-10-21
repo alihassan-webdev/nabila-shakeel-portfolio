@@ -86,16 +86,17 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          <motion.div
-            className="md:col-span-5"
-            variants={itemVariants}
-          >
+          <motion.div className="md:col-span-5" variants={itemVariants}>
             <div className="mx-auto max-w-md rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-8 card-shadow">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-2 h-2 rounded-full bg-primary"></div>
-                <span className="text-xs font-semibold text-primary uppercase tracking-widest">Quick Overview</span>
+                <span className="text-xs font-semibold text-primary uppercase tracking-widest">
+                  Quick Overview
+                </span>
               </div>
-              <h3 className="font-display font-semibold text-2xl mb-7">Snapshot</h3>
+              <h3 className="font-display font-semibold text-2xl mb-7">
+                Snapshot
+              </h3>
               <ul className="space-y-5">
                 <motion.li
                   className="flex items-start gap-4 group"
@@ -109,8 +110,12 @@ export default function Hero() {
                     <Zap className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-medium text-foreground leading-relaxed">Manual & Automation Testing</p>
-                    <p className="text-xs text-foreground/60 mt-1">Selenium, Cypress, Playwright</p>
+                    <p className="text-sm font-medium text-foreground leading-relaxed">
+                      Manual & Automation Testing
+                    </p>
+                    <p className="text-xs text-foreground/60 mt-1">
+                      Selenium, Cypress, Playwright
+                    </p>
                   </div>
                 </motion.li>
                 <motion.li
@@ -125,8 +130,12 @@ export default function Hero() {
                     <Workflow className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-medium text-foreground leading-relaxed">API Testing</p>
-                    <p className="text-xs text-foreground/60 mt-1">Postman, REST Assured, GraphQL</p>
+                    <p className="text-sm font-medium text-foreground leading-relaxed">
+                      API Testing
+                    </p>
+                    <p className="text-xs text-foreground/60 mt-1">
+                      Postman, REST Assured, GraphQL
+                    </p>
                   </div>
                 </motion.li>
                 <motion.li
@@ -141,8 +150,12 @@ export default function Hero() {
                     <Cloud className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-medium text-foreground leading-relaxed">CI/CD Pipeline</p>
-                    <p className="text-xs text-foreground/60 mt-1">Jenkins, GitHub Actions, GitLab CI</p>
+                    <p className="text-sm font-medium text-foreground leading-relaxed">
+                      CI/CD Pipeline
+                    </p>
+                    <p className="text-xs text-foreground/60 mt-1">
+                      Jenkins, GitHub Actions, GitLab CI
+                    </p>
                   </div>
                 </motion.li>
                 <motion.li
@@ -157,8 +170,12 @@ export default function Hero() {
                     <Boxes className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-sm font-medium text-foreground leading-relaxed">Containerization</p>
-                    <p className="text-xs text-foreground/60 mt-1">Docker, Kubernetes</p>
+                    <p className="text-sm font-medium text-foreground leading-relaxed">
+                      Containerization
+                    </p>
+                    <p className="text-xs text-foreground/60 mt-1">
+                      Docker, Kubernetes
+                    </p>
                   </div>
                 </motion.li>
               </ul>

@@ -37,7 +37,9 @@ export default function Projects() {
               <h3 className="mt-4 text-base sm:text-lg font-semibold font-display">
                 {p.title}
               </h3>
-              <p className="mt-2 text-xs sm:text-sm text-foreground/70">{p.desc}</p>
+              <p className="mt-2 text-xs sm:text-sm text-foreground/70">
+                {p.desc}
+              </p>
               <div className="mt-4">
                 <a
                   href="#contact"
