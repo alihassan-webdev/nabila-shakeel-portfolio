@@ -9,16 +9,8 @@ const links = [
 ];
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("#home");
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
-    onScroll();
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   useEffect(() => {
     const update = () => setActive(window.location.hash || "#home");
@@ -28,10 +20,8 @@ export default function Header() {
   }, []);
 
   return (
-    <header
-      className={`sticky top-4 z-50 w-full flex justify-center px-4 ${scrolled ? "shadow-sm" : ""}`}
-    >
-      <div className={`w-full py-3 rounded-2xl bg-card border border-border px-6 flex items-center justify-center ${scrolled ? "shadow-md card-shadow" : ""}`}>
+    <header className="sticky top-4 z-50 w-full flex justify-center px-4">
+      <div className="w-max py-3 rounded-2xl bg-card border border-border px-6 flex items-center justify-center shadow-md card-shadow">
         <nav className="flex items-center gap-2">
           {links.map((l) => (
             <a
