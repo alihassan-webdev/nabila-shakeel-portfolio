@@ -8,6 +8,9 @@ export default function Hero() {
 
             <div className="mt-4">
               <h1 className="font-display text-[2.4rem] md:text-[3.6rem] leading-tight font-extrabold">Nabila Shakeel</h1>
+              <div className="mt-3">
+                <span className="inline-flex items-center rounded-full bg-primary/10 text-primary px-3 py-1 text-xs font-medium border border-primary/20">Senior SQA Engineer</span>
+              </div>
             </div>
 
             <h2 className="mt-4 text-xl font-medium text-foreground/80">Senior QA Engineer</h2>
