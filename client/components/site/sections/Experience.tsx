@@ -1,3 +1,5 @@
+import { FileText, Zap, Cloud, Boxes, Database } from "lucide-react";
+
 export default function Experience() {
   const experiences = [
     {
