@@ -51,7 +51,7 @@ export default function Header() {
       {/* Desktop Navigation */}
       <div className="hidden md:flex w-max py-3 rounded-2xl bg-card border border-border px-6 items-center justify-center gap-6">
         <span className="font-display font-semibold text-lg text-primary">
-          Nabila Shakeel
+          Portfolio
         </span>
         <div className="h-6 w-px bg-border/30"></div>
         <nav className="flex items-center gap-2">
@@ -75,7 +75,7 @@ export default function Header() {
       {/* Mobile Navigation */}
       <div className="md:hidden flex items-center justify-between w-full py-3 px-4 rounded-2xl bg-card border border-border">
         <span className="font-display font-semibold text-base text-primary">
-          Nabila Shakeel
+          Portfolio
         </span>
         <button
           onClick={() => setOpen(!open)}
