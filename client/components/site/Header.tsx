@@ -11,6 +11,7 @@ const links = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [active, setActive] = useState("#home");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -20,9 +21,10 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
-    const onRoute = () => setOpen(false);
-    window.addEventListener("hashchange", onRoute);
-    return () => window.removeEventListener("hashchange", onRoute);
+    const update = () => setActive(window.location.hash || "#home");
+    update();
+    window.addEventListener("hashchange", update);
+    return () => window.removeEventListener("hashchange", update);
   }, []);
 
   return (
@@ -41,7 +43,11 @@ export default function Header() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-foreground/80 hover:text-foreground transition-colors px-2 py-1 rounded-md hover:bg-foreground/5"
+              className={`text-sm px-2 py-1 rounded-md transition-colors ${
+                active === l.href
+                  ? "text-primary bg-primary/10"
+                  : "text-foreground/80 hover:text-foreground hover:bg-foreground/5"
+              }`}
             >
               {l.label}
             </a>
