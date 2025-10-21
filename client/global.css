@@ -23,7 +23,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 12% 12%;
 
-    --primary: 230 55% 40%; /* deep navy */
+    --primary: 13 100% 53%; /* #FF4410 vivid orange */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 215 25% 96%; /* soft cool gray */
@@ -32,15 +32,15 @@
     --muted: 220 20% 95%;
     --muted-foreground: 220 12% 45%;
 
-    --accent: 45 90% 60%; /* soft gold */
-    --accent-foreground: 45 20% 14%;
+    --accent: 13 100% 90%; /* light orange tint */
+    --accent-foreground: 13 35% 12%;
 
     --destructive: 358 70% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 14% 92%;
-    --input: 220 14% 92%;
-    --ring: 230 55% 40%;
+    --border: 20 10% 90%;
+    --input: 20 10% 90%;
+    --ring: 13 100% 53%;
 
     --radius: 1rem; /* more premium radius */
 
