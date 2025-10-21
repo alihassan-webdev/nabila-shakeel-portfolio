@@ -51,9 +51,9 @@ export default function Header() {
     <header className="sticky top-4 z-50 w-full flex justify-center px-4">
       {/* Desktop Navigation */}
       <div className="hidden md:flex w-max py-3 rounded-2xl bg-card border border-border px-6 items-center justify-center gap-6">
-        <a href="#home" className="font-display font-semibold text-lg text-primary hover:text-primary/80 transition-colors">
+        <span className="font-display font-semibold text-lg text-primary">
           Portfolio
-        </a>
+        </span>
         <div className="h-6 w-px bg-border/30"></div>
         <nav className="flex items-center gap-2">
           {links.map((l) => (
@@ -74,10 +74,10 @@ export default function Header() {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="md:hidden flex items-center justify-between py-3 px-4 rounded-2xl bg-card border border-border w-full">
-        <a href="#home" className="font-display font-semibold text-base text-primary hover:text-primary/80 transition-colors">
+      <div className="md:hidden flex items-center justify-between w-full py-3 px-4 rounded-2xl bg-card border border-border">
+        <span className="font-display font-semibold text-base text-primary">
           Portfolio
-        </a>
+        </span>
         <button
           onClick={() => setOpen(!open)}
           className="p-2 rounded-lg text-foreground/70 hover:text-primary hover:bg-primary/5 transition-all"
