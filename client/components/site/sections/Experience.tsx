@@ -80,6 +80,13 @@ export default function Experience() {
                           ))}
                         </ul>
                       )}
+
+                      {/* Small-screen link: visible only on small devices */}
+                      <div className="mt-4 md:hidden">
+                        <a href="#" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline">
+                          View details
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
