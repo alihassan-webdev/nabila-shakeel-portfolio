@@ -13,36 +13,38 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    /* Soft light theme inspired by requested site */
-    --background: 215 28% 97%; /* softer near-white */
-    --foreground: 222 28% 12%; /* deep blue-gray text */
+    /* Modern soft light theme */
+    --background: 214 30% 98%; /* near white */
+    --foreground: 222 22% 12%; /* deep blue-gray text */
 
     --card: 0 0% 100%;
-    --card-foreground: 222 28% 12%;
+    --card-foreground: 222 22% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 28% 12%;
+    --popover-foreground: 222 22% 12%;
 
-    --primary: 225 65% 56%; /* softened indigo */
+    --primary: 224 70% 52%; /* richer indigo */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 30% 95%; /* soft gray-blue */
-    --secondary-foreground: 222 28% 20%;
+    --secondary: 211 28% 95%; /* soft warm-gray blue */
+    --secondary-foreground: 222 22% 20%;
 
     --muted: 210 18% 95%;
     --muted-foreground: 220 12% 44%;
 
-    --accent: 210 50% 94%; /* subtle blue tint */
-    --accent-foreground: 224 65% 24%;
+    --accent: 220 60% 94%; /* subtle sky tint */
+    --accent-foreground: 222 58% 18%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 215 22% 90%;
-    --input: 215 22% 90%;
-    --ring: 229 74% 58%;
+    --border: 215 22% 92%;
+    --input: 215 22% 92%;
+    --ring: 224 70% 52%;
 
-    --radius: 1rem; /* softer rounding */
+    --radius: 0.75rem; /* slightly tighter radius */
+
+    --card-shadow: 0 6px 24px rgba(33, 51, 87, 0.06);
 
     /* Sidebar tokens kept for shadcn components if used */
     --sidebar-background: 0 0% 98%;
@@ -111,4 +113,7 @@
 
   pre,
   code { overflow-x: auto; white-space: pre; }
+
+  /* small helpers */
+  .card-shadow { box-shadow: var(--card-shadow); }
 }
