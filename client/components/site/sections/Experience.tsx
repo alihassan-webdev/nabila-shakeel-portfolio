@@ -45,45 +45,71 @@ export default function Experience() {
       <div className="container py-20 px-4 md:px-12 lg:px-20">
         <h2 className="font-display text-4xl md:text-5xl">Experience</h2>
 
-        <div className="mt-12 space-y-8 relative">
-          {/* Timeline vertical line - hidden on mobile */}
-          <div className="absolute left-0 md:left-[5.5rem] top-0 bottom-0 w-px bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block"></div>
+        {/* Outer wrapper with centered timeline */}
+        <div className="mt-12 relative">
+          {/* Vertical timeline center line for desktop */}
+          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block transform -translate-x-1/2" />
 
-          {experiences.map((exp, index) => (
-            <div key={index} className="relative md:pl-28">
-              {/* Timeline dot - hidden on mobile */}
-              <div className="absolute left-0 md:left-[5rem] top-2 md:top-0 w-3 h-3 md:w-4 md:h-4 rounded-full bg-primary border-4 border-background hidden md:block"></div>
+          <div className="space-y-8">
+            {experiences.map((exp, index) => {
+              const isLeft = index % 2 === 0;
 
-              <div className="pt-0 md:pt-0">
-                <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-2">
-                  {exp.date}
-                </p>
-                <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow hover:shadow-lg transition-shadow">
-                  <h3 className="text-lg font-semibold font-display text-foreground">
-                    {exp.title}
-                  </h3>
-                  <p className="mt-3 text-foreground/70 leading-relaxed">
-                    {exp.description}
-                  </p>
-                  {exp.highlights && (
-                    <ul className="mt-4 space-y-2">
-                      {exp.highlights.map((highlight, i) => (
-                        <li
-                          key={i}
-                          className="flex items-start gap-3 text-sm text-foreground/70"
+              return (
+                <div
+                  key={index}
+                  className="relative md:grid md:grid-cols-12 md:items-start"
+                >
+                  {/* Dot for this item (desktop) */}
+                  <div className="absolute left-1/2 top-6 w-3 h-3 md:w-4 md:h-4 rounded-full bg-primary border-4 border-background hidden md:block transform -translate-x-1/2" />
+
+                  {/* Card column - placed left or right on md+ screens */}
+                  <div
+                    className={` ${isLeft ? "md:col-span-5 md:col-start-1 md:mr-4" : "md:col-span-5 md:col-start-8 md:ml-4"}`}
+                  >
+                    <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-2">
+                      {exp.date}
+                    </p>
+
+                    <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow">
+                      <h3 className="text-lg font-semibold font-display text-foreground">
+                        {exp.title}
+                      </h3>
+
+                      <p className="mt-3 text-foreground/70 leading-relaxed">
+                        {exp.description}
+                      </p>
+
+                      {exp.highlights && (
+                        <ul className="mt-4 space-y-2">
+                          {exp.highlights.map((highlight, i) => (
+                            <li
+                              key={i}
+                              className="flex items-start gap-3 text-sm text-foreground/70"
+                            >
+                              <span className="text-primary font-bold mt-0.5">
+                                ✓
+                              </span>
+                              <span>{highlight}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+
+                      {/* Small-screen link: visible only on small devices */}
+                      <div className="mt-4 md:hidden">
+                        <a
+                          href="#"
+                          className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
                         >
-                          <span className="text-primary font-bold mt-0.5">
-                            ✓
-                          </span>
-                          <span>{highlight}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                          View details
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          ))}
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
