@@ -33,7 +33,7 @@ export default function Header() {
         scrolled ? "shadow-sm" : ""
       }`}
     >
-      <div className="mx-auto w-full max-w-4xl flex items-center justify-between py-3 rounded-full bg-background/60 backdrop-blur-md px-4">
+      <div className="mx-auto w-full max-w-3xl flex items-center justify-between py-3 rounded-full bg-background/60 backdrop-blur-md px-4">
         <a href="#home" className="text-lg font-display font-semibold tracking-tight">
           Nabila Shakeel
         </a>
