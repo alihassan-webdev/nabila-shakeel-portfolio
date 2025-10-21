@@ -10,19 +10,19 @@ export default function Hero() {
               Nabila Shakeel
             </h1>
             <h2 className="mt-2 text-xl font-medium text-foreground/80">Senior QA Engineer</h2>
-            <p className="mt-5 max-w-xl text-foreground/70">
+            <p className="mt-5 max-w-xl text-foreground/70 leading-relaxed">
               Senior QA Engineer with 7+ years of experience in manual and automation testing across web, mobile, and API platforms. Proven expertise in designing and executing functional, regression, and integration tests for transaction-based and data-intensive systems.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="#experience"
-                className="inline-flex items-center rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm hover:opacity-90 transition"
+                className="inline-flex items-center rounded-full bg-gradient-to-r from-primary to-primary/80 px-6 py-3 text-sm font-medium text-primary-foreground shadow-lg transform-gpu hover:-translate-y-0.5 transition"
               >
                 View Experience
               </a>
               <a
                 href="mailto:nabilashakeel62@gmail.com"
-                className="inline-flex items-center rounded-full border border-primary/40 px-6 py-3 text-sm font-medium text-primary hover:bg-primary hover:text-primary-foreground transition"
+                className="inline-flex items-center rounded-full border border-primary/30 px-6 py-3 text-sm font-medium text-primary hover:bg-primary hover:text-primary-foreground transition"
               >
                 Email Me
               </a>
@@ -37,7 +37,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="relative">
-            <div className="mx-auto max-w-sm rounded-2xl border bg-card p-6 shadow-sm">
+            <div className="mx-auto max-w-sm rounded-[14px] border bg-card p-6 card-shadow">
               <h3 className="font-semibold">Snapshot</h3>
               <ul className="mt-4 space-y-2 text-sm text-foreground/80">
                 <li>• Manual & Automation Testing (Selenium, Cypress, Playwright)</li>
