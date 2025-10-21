@@ -23,7 +23,7 @@ export default function Skills() {
 
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map((s) => (
-            <div key={s} className="rounded-full border px-4 py-3 text-sm text-foreground/80 bg-card/80 hover:bg-card transition">
+            <div key={s} className="rounded-2xl border px-4 py-3 text-sm text-foreground/80 bg-card/80 hover:bg-card transition">
               {s}
             </div>
           ))}
