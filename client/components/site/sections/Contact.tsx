@@ -1,3 +1,5 @@
+import { Mail, Linkedin, DownloadCloud } from "lucide-react";
+
 type Props = { email: string };
 
 export default function Contact({ email }: Props) {
@@ -15,30 +17,40 @@ export default function Contact({ email }: Props) {
             <div className="mt-6 flex items-center gap-3">
               <a
                 href={`mailto:${email}`}
-                className="inline-flex items-center rounded-2xl bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-lg hover:opacity-95 transition"
+                className="inline-flex items-center rounded-full bg-primary p-3 text-primary-foreground shadow-lg hover:opacity-95 transition"
+                aria-label={`Email ${email}`}
+                title="Email"
               >
-                Email: {email}
+                <Mail className="w-5 h-5" />
+                <span className="sr-only">Email</span>
               </a>
 
               <a
                 href="https://www.linkedin.com/in/nabila-shakeel-727476a6/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center rounded-2xl border px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition"
+                className="inline-flex items-center rounded-full border p-3 text-foreground/80 hover:bg-foreground/5 transition"
+                aria-label="LinkedIn profile"
+                title="LinkedIn"
               >
-                LinkedIn Profile
+                <Linkedin className="w-5 h-5" />
+                <span className="sr-only">LinkedIn</span>
               </a>
 
               <a
-                href="#"
-                className="inline-flex items-center rounded-2xl border px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition"
+                href="/resume.pdf"
+                download
+                className="inline-flex items-center rounded-full border p-3 text-foreground/80 hover:bg-foreground/5 transition"
+                aria-label="Download CV"
+                title="Download CV"
               >
-                Download CV
+                <DownloadCloud className="w-5 h-5" />
+                <span className="sr-only">Download CV</span>
               </a>
             </div>
           </div>
 
-          <aside className="rounded-2xl border bg-card p-6 card-shadow">
+          <aside className="rounded-[var(--radius)] border bg-card p-6 card-shadow">
             <h3 className="font-semibold">Quick Contact</h3>
             <p className="mt-2 text-sm text-foreground/80">Email</p>
             <a
@@ -58,10 +70,14 @@ export default function Contact({ email }: Props) {
 
             <div className="mt-6 flex items-center gap-3">
               <a
-                href="#"
-                className="text-sm inline-flex items-center rounded-2xl border px-3 py-1 text-foreground/80 hover:bg-foreground/5"
+                href="/resume.pdf"
+                download
+                className="inline-flex items-center rounded-full border p-2 text-foreground/80 hover:bg-foreground/5 transition"
+                aria-label="Download CV"
+                title="Download CV"
               >
-                Download CV
+                <DownloadCloud className="w-5 h-5" />
+                <span className="sr-only">Download CV</span>
               </a>
             </div>
           </aside>
