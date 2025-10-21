@@ -28,7 +28,9 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`sticky top-4 z-50 w-full flex justify-center ${scrolled ? "shadow-sm" : ""}`}>
+    <header
+      className={`sticky top-4 z-50 w-full flex justify-center ${scrolled ? "shadow-sm" : ""}`}
+    >
       <div className="mx-auto w-full max-w-3xl py-3 rounded-full bg-transparent border border-transparent px-3 flex items-center justify-center">
         <nav className="flex items-center gap-2">
           {links.map((l) => (
@@ -61,7 +63,10 @@ export default function Header() {
                 {l.label}
               </a>
             ))}
-            <a href="#contact" className="mt-3 inline-flex w-max items-center rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground">
+            <a
+              href="#contact"
+              className="mt-3 inline-flex w-max items-center rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
+            >
               Contact
             </a>
           </div>
