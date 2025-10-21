@@ -9,7 +9,7 @@ export default function Hero() {
             <p className="text-lg md:text-2xl uppercase tracking-widest text-primary/70 font-semibold">HELLO, I'M</p>
 
             <div className="mt-1">
-              <h1 style={{ fontFamily: "Caveat" }} className="text-[3.5rem] md:text-[5rem] leading-tight font-extrabold">Nabila Shakeel</h1>
+              <h1 style={{ fontFamily: "Caveat" }} className="text-[3.5rem] md:text-[5rem] lg:text-[90px] leading-tight font-extrabold">Nabila Shakeel</h1>
               <div className="mt-3">
                 <span className="inline-flex items-center rounded-2xl bg-primary/10 text-primary px-3 py-1 text-xs font-medium border border-primary/20">Senior SQA Engineer</span>
               </div>
