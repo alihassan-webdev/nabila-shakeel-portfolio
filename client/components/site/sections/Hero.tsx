@@ -69,11 +69,9 @@ export default function Hero() {
               className="mt-6 max-w-2xl text-foreground/70 leading-relaxed text-lg"
               variants={itemVariants}
             >
-              Senior QA Engineer with 7+ years of experience in manual and
-              automation testing across web, mobile, and API platforms. Proven
-              expertise in designing and executing functional, regression, and
-              integration tests for transaction-based and data-intensive
-              systems.
+              Dedicated Senior QA Engineer passionate about delivering flawless
+              digital experiences through precise manual and automation testing
+              across web, mobile, and API platforms.
             </motion.p>
 
             <motion.div className="mt-8" variants={itemVariants}>
