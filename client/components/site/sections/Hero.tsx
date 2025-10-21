@@ -88,14 +88,21 @@ export default function Hero() {
 
           <motion.div className="md:col-span-5" variants={itemVariants}>
             <div className="relative mx-auto max-w-md rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-8 card-shadow transform transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-xl">
-              {/* Years experience badge */}
-              <div className="absolute top-4 right-4 hidden md:flex items-center gap-3 bg-background/90 border border-border px-3 py-2 rounded-lg">
-                <div className="text-3xl md:text-4xl font-extrabold text-primary leading-none">7</div>
-                <div className="text-xs text-foreground/70 uppercase tracking-wider leading-tight">
-                  <div>Years</div>
-                  <div>Experience</div>
-                </div>
-              </div>
+              {/* Years experience badge (computed from start year) */}
+              {(() => {
+                const startYear = 2014; // career start year
+                const now = new Date();
+                const years = Math.max(0, now.getFullYear() - startYear);
+                return (
+                  <div className="absolute top-4 right-4 hidden md:flex items-center gap-3 bg-background/90 border border-border px-3 py-2 rounded-lg" aria-hidden>
+                    <div className="text-3xl md:text-4xl font-extrabold text-primary leading-none">{years}</div>
+                    <div className="text-xs text-foreground/70 uppercase tracking-wider leading-tight">
+                      <div>Years</div>
+                      <div>Experience</div>
+                    </div>
+                  </div>
+                );
+              })()}
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-2 h-2 rounded-full bg-primary"></div>
                 <span className="text-xs font-semibold text-primary uppercase tracking-widest">
