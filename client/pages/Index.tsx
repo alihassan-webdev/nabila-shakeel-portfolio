@@ -1,5 +1,3 @@
-import Header from "@/components/site/Header";
-import Footer from "@/components/site/Footer";
 import Hero from "@/components/site/sections/Hero";
 import About from "@/components/site/sections/About";
 import Experience from "@/components/site/sections/Experience";
@@ -10,16 +8,12 @@ const EMAIL = "qlqfmj9zje@jkotypc.com";
 
 export default function Index() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Skills />
-        <Contact email={EMAIL} />
-      </main>
-      <Footer email={EMAIL} />
-    </div>
+    <main>
+      <Hero />
+      <About />
+      <Experience />
+      <Skills />
+      <Contact email={EMAIL} />
+    </main>
   );
 }
