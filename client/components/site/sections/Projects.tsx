@@ -25,19 +25,19 @@ export default function Projects() {
           </p>
         </div>
 
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((p) => (
             <article
               key={p.title}
               className="rounded-3xl border bg-card p-6 card-shadow hover:translate-y-[-4px] transition-transform"
             >
-              <div className="h-36 w-full rounded-xl bg-gradient-to-tr from-primary/10 to-accent/10 flex items-center justify-center text-primary/60 text-sm font-medium">
+              <div className="h-32 sm:h-36 w-full rounded-xl bg-gradient-to-tr from-primary/10 to-accent/10 flex items-center justify-center text-primary/60 text-xs sm:text-sm font-medium">
                 Project preview
               </div>
-              <h3 className="mt-4 text-lg font-semibold font-display">
+              <h3 className="mt-4 text-base sm:text-lg font-semibold font-display">
                 {p.title}
               </h3>
-              <p className="mt-2 text-sm text-foreground/70">{p.desc}</p>
+              <p className="mt-2 text-xs sm:text-sm text-foreground/70">{p.desc}</p>
               <div className="mt-4">
                 <a
                   href="#contact"
