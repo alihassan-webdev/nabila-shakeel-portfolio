@@ -50,7 +50,7 @@ export default function Header() {
     <header className="sticky top-4 z-50 w-full flex justify-center px-4">
       {/* Desktop Navigation */}
       <div className="hidden md:flex w-max py-3 rounded-2xl bg-card border border-border px-6 items-center justify-center gap-6">
-        <span className="font-display font-semibold text-lg text-primary">
+        <span className="font-display font-semibold text-xl text-primary">
           Portfolio
         </span>
         <div className="h-6 w-px bg-border/30"></div>
@@ -74,7 +74,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       <div className="md:hidden flex items-center justify-between w-full py-3 px-4 rounded-2xl bg-card border border-border">
-        <span className="font-display font-semibold text-base text-primary">
+        <span className="font-display font-semibold text-lg text-primary">
           Portfolio
         </span>
         <button
