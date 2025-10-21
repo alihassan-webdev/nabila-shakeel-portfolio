@@ -10,20 +10,27 @@ export default function Contact({ email }: Props) {
             <p className="mt-4 text-foreground/70">
               I’m open to freelance, contract, or full-time opportunities. Reach out via email or LinkedIn and I’ll respond promptly.
             </p>
-            <a
-              href={`mailto:${email}`}
-              className="mt-8 inline-flex items-center rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm hover:opacity-90 transition"
-            >
-              Email: {email}
-            </a>
-            <a
-              href="https://www.linkedin.com/in/nabila-shakeel-727476a6/"
-              target="_blank"
-              rel="noreferrer"
-              className="ml-4 inline-flex items-center rounded-full border border-foreground/10 px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition"
-            >
-              LinkedIn Profile
-            </a>
+            <div className="mt-6 flex items-center gap-3">
+              <a
+                href={`mailto:${email}`}
+                className="inline-flex items-center rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-sm hover:opacity-90 transition"
+              >
+                Email: {email}
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/nabila-shakeel-727476a6/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center rounded-full border border-foreground/10 px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition"
+              >
+                LinkedIn Profile
+              </a>
+
+              <a href="#" className="inline-flex items-center rounded-full border border-foreground/10 px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition">
+                Download CV
+              </a>
+            </div>
           </div>
 
           <div className="rounded-2xl border bg-card p-6 shadow-sm">
