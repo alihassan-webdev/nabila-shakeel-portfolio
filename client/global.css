@@ -13,38 +13,38 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    /* Modern soft light theme */
-    --background: 214 30% 98%; /* near white */
-    --foreground: 222 22% 12%; /* deep blue-gray text */
+    /* Premium soft light theme */
+    --background: 38 60% 98%; /* soft ivory */
+    --foreground: 220 12% 12%; /* charcoal text */
 
     --card: 0 0% 100%;
-    --card-foreground: 222 22% 12%;
+    --card-foreground: 220 12% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 22% 12%;
+    --popover-foreground: 220 12% 12%;
 
-    --primary: 224 70% 52%; /* richer indigo */
+    --primary: 230 55% 40%; /* deep navy */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 211 28% 95%; /* soft warm-gray blue */
-    --secondary-foreground: 222 22% 20%;
+    --secondary: 215 25% 96%; /* soft cool gray */
+    --secondary-foreground: 220 12% 28%;
 
-    --muted: 210 18% 95%;
-    --muted-foreground: 220 12% 44%;
+    --muted: 220 20% 95%;
+    --muted-foreground: 220 12% 45%;
 
-    --accent: 220 60% 94%; /* subtle sky tint */
-    --accent-foreground: 222 58% 18%;
+    --accent: 45 90% 60%; /* soft gold */
+    --accent-foreground: 45 20% 14%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 358 70% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 215 22% 92%;
-    --input: 215 22% 92%;
-    --ring: 224 70% 52%;
+    --border: 220 14% 92%;
+    --input: 220 14% 92%;
+    --ring: 230 55% 40%;
 
-    --radius: 0.75rem; /* slightly tighter radius */
+    --radius: 1rem; /* more premium radius */
 
-    --card-shadow: 0 6px 24px rgba(33, 51, 87, 0.06);
+    --card-shadow: 0 10px 30px rgba(34, 50, 80, 0.06);
 
     /* Sidebar tokens kept for shadcn components if used */
     --sidebar-background: 0 0% 98%;
