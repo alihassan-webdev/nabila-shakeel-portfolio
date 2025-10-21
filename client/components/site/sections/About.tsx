@@ -33,25 +33,27 @@ export default function About() {
                     <h4 className="font-semibold text-foreground mb-2 text-sm">
                       Test Design & Planning
                     </h4>
-                    <p className="text-sm text-foreground/70 leading-relaxed">
-                      Requirements analysis, test strategy, UAT coordination
+                    <p className="flex items-start gap-3 text-sm text-foreground/70 leading-relaxed">
+                      <span className="text-primary font-bold mt-0.5">✓</span>
+                      <span>Requirements analysis, test strategy, UAT coordination</span>
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-2 text-sm">
                       Test Automation
                     </h4>
-                    <p className="text-sm text-foreground/70 leading-relaxed">
-                      Selenium (Java/Python/C#), Cypress, Playwright, TestNG,
-                      JUnit, Cucumber
+                    <p className="flex items-start gap-3 text-sm text-foreground/70 leading-relaxed">
+                      <span className="text-primary font-bold mt-0.5">✓</span>
+                      <span>Selenium (Java/Python/C#), Cypress, Playwright, TestNG, JUnit, Cucumber</span>
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-2 text-sm">
                       API & Performance Testing
                     </h4>
-                    <p className="text-sm text-foreground/70 leading-relaxed">
-                      Postman, REST Assured, JMeter, LoadRunner
+                    <p className="flex items-start gap-3 text-sm text-foreground/70 leading-relaxed">
+                      <span className="text-primary font-bold mt-0.5">✓</span>
+                      <span>Postman, REST Assured, JMeter, LoadRunner</span>
                     </p>
                   </div>
                 </div>
@@ -60,24 +62,27 @@ export default function About() {
                     <h4 className="font-semibold text-foreground mb-2 text-sm">
                       CI/CD & DevOps
                     </h4>
-                    <p className="text-sm text-foreground/70 leading-relaxed">
-                      Jenkins, GitHub Actions, GitLab CI, Docker, Kubernetes
+                    <p className="flex items-start gap-3 text-sm text-foreground/70 leading-relaxed">
+                      <span className="text-primary font-bold mt-0.5">✓</span>
+                      <span>Jenkins, GitHub Actions, GitLab CI, Docker, Kubernetes</span>
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-2 text-sm">
                       Databases & Validation
                     </h4>
-                    <p className="text-sm text-foreground/70 leading-relaxed">
-                      SQL, JSON/XML validation
+                    <p className="flex items-start gap-3 text-sm text-foreground/70 leading-relaxed">
+                      <span className="text-primary font-bold mt-0.5">✓</span>
+                      <span>SQL, JSON/XML validation</span>
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-2 text-sm">
                       Tools & Management
                     </h4>
-                    <p className="text-sm text-foreground/70 leading-relaxed">
-                      Jira, Qase, HP ALM, Azure DevOps
+                    <p className="flex items-start gap-3 text-sm text-foreground/70 leading-relaxed">
+                      <span className="text-primary font-bold mt-0.5">✓</span>
+                      <span>Jira, Qase, HP ALM, Azure DevOps</span>
                     </p>
                   </div>
                 </div>
