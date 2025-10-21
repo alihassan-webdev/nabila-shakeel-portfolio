@@ -29,23 +29,23 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full backdrop-blur supports-[backdrop-filter]:bg-background/60 transition-shadow ${
+      className={`sticky top-4 z-50 w-full flex justify-center transition-shadow ${
         scrolled ? "shadow-sm" : ""
       }`}
     >
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container flex items-center justify-between py-3 rounded-full bg-background/60 backdrop-blur-md px-4">
         <a href="#home" className="text-lg font-display font-semibold tracking-tight">
           Nabila Shakeel
         </a>
 
-        <nav className="hidden gap-6 md:flex items-center">
+        <nav className="hidden md:flex items-center gap-3 bg-background/30 rounded-full px-2 py-1">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className={`text-sm px-2 py-1 rounded-md transition-colors ${
+              className={`text-sm px-4 py-2 rounded-full transition-colors ${
                 active === l.href
-                  ? "text-primary bg-primary/10"
+                  ? "text-primary bg-primary/10 shadow-sm"
                   : "text-foreground/80 hover:text-foreground hover:bg-foreground/5"
               }`}
             >
@@ -57,7 +57,7 @@ export default function Header() {
         <div className="hidden md:flex items-center gap-3">
           <a
             href="#contact"
-            className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium text-primary border-primary/40 hover:bg-primary hover:text-primary-foreground transition-colors"
+            className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium text-primary border-primary/40 bg-transparent backdrop-blur-sm hover:bg-primary hover:text-primary-foreground transition-colors"
           >
             Let’s talk
           </a>
