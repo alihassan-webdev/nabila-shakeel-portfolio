@@ -13,7 +13,6 @@ export default function Hero() {
               </div>
             </div>
 
-            <h2 className="mt-4 text-xl font-medium text-foreground/80">Senior QA Engineer</h2>
 
             <p className="mt-6 max-w-2xl text-foreground/70 leading-relaxed text-lg">
               Senior QA Engineer with 7+ years of experience in manual and automation testing across web, mobile, and API platforms. Proven expertise in designing and executing functional, regression, and integration tests for transaction-based and data-intensive systems.
