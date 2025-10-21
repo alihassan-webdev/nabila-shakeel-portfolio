@@ -6,7 +6,7 @@ export default function Contact({ email }: Props) {
       <div className="container py-20 px-4 md:px-12 lg:px-20">
         <div className="grid gap-8 md:grid-cols-2 items-start">
           <div>
-            <h2 className="font-display text-3xl md:text-4xl">Contact</h2>
+            <h2 className="font-display text-4xl md:text-5xl">Contact</h2>
             <p className="mt-4 text-foreground/70 text-lg max-w-xl">
               I’m open to freelance, contract, or full-time opportunities. Reach
               out via email or LinkedIn and I’ll respond promptly.

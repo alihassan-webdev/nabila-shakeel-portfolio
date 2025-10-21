@@ -4,7 +4,7 @@ export default function About() {
       <div className="container py-20 px-4 md:px-12 lg:px-20">
         <div className="grid gap-10 md:grid-cols-12 items-start">
           <div className="md:col-span-5">
-            <h2 className="font-display text-3xl md:text-4xl">About</h2>
+            <h2 className="font-display text-4xl md:text-5xl">About</h2>
             <p className="mt-4 text-foreground/70 leading-relaxed text-lg">
               Senior QA Engineer with over 7 years of experience in manual and
               automation testing across web, mobile, and API platforms. Proven
