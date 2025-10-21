@@ -29,7 +29,7 @@ export default function Header() {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     sectionIds.forEach((id) => {

@@ -105,20 +105,32 @@
     display: none;
   }
 
-  * { @apply border-border; }
+  * {
+    @apply border-border;
+  }
 
-  body { @apply bg-background text-foreground font-sans antialiased; }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
 
   :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
     overflow-wrap: anywhere;
     word-break: break-word;
   }
 
-  ::selection { background: hsl(var(--accent)); color: hsl(var(--accent-foreground)); }
+  ::selection {
+    background: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+  }
 
   pre,
-  code { overflow-x: auto; white-space: pre; }
+  code {
+    overflow-x: auto;
+    white-space: pre;
+  }
 
   /* small helpers */
-  .card-shadow { box-shadow: var(--card-shadow); }
+  .card-shadow {
+    box-shadow: var(--card-shadow);
+  }
 }
