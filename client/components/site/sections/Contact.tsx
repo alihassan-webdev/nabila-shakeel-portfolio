@@ -3,7 +3,7 @@ type Props = { email: string };
 export default function Contact({ email }: Props) {
   return (
     <section id="contact" className="scroll-mt-24">
-      <div className="container py-20">
+      <div className="container py-20 px-4 md:px-12 lg:px-20">
         <div className="grid gap-8 md:grid-cols-2 items-start">
           <div>
             <h2 className="font-display text-3xl md:text-4xl">Contact</h2>

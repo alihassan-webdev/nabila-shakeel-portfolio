@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden bg-background">
-      <div className="container py-12 md:py-20">
+      <div className="container py-12 md:py-20 px-4 md:px-12 lg:px-20">
         <div className="grid gap-12 md:grid-cols-12 items-center">
           <div className="md:col-span-7">
             <p className="text-base md:text-lg uppercase tracking-widest text-primary/70">HELLO, I’M</p>

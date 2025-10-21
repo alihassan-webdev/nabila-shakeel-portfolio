@@ -7,7 +7,7 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="scroll-mt-24 bg-secondary/30">
-      <div className="container py-20">
+      <div className="container py-20 px-4 md:px-12 lg:px-20">
         <div className="flex items-baseline justify-between">
           <h2 className="font-display text-3xl md:text-4xl">Recent Projects</h2>
           <p className="text-foreground/70 max-w-lg">Selected highlights showcasing testing frameworks, automation, and CI/CD integrations across finance, healthcare and Web3.</p>

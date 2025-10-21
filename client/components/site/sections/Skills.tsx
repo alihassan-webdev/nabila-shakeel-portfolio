@@ -17,7 +17,7 @@ const skills = [
 export default function Skills() {
   return (
     <section id="skills" className="scroll-mt-24">
-      <div className="container py-20">
+      <div className="container py-20 px-4 md:px-12 lg:px-20">
         <h2 className="font-display text-3xl md:text-4xl">Experience & Skills</h2>
         <p className="mt-3 text-foreground/70 max-w-2xl">What I bring to the table: test automation, API validation, CI/CD integration, performance testing, and compliance-focused QA for regulated domains.</p>
 
