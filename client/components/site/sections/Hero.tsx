@@ -1,38 +1,80 @@
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, Zap, Cloud, Boxes, Workflow } from "lucide-react";
+import { motion } from "framer-motion";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.2,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut",
+    },
+  },
+};
+
+const snapshotItemVariants = {
+  hidden: { opacity: 0, x: -20 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
 
 export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden bg-background">
       <div className="container py-12 md:py-20 px-4 md:px-12 lg:px-20">
-        <div className="grid gap-12 md:grid-cols-12 items-center">
+        <motion.div
+          className="grid gap-12 md:grid-cols-12 items-center"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+        >
           <div className="md:col-span-7">
-            <p className="text-lg md:text-2xl uppercase tracking-widest text-primary/70 font-semibold leading-none">
+            <motion.p
+              className="text-lg md:text-2xl uppercase tracking-widest text-primary/70 font-semibold leading-none"
+              variants={itemVariants}
+            >
               HELLO, I'M
-            </p>
+            </motion.p>
 
             <div className="mt-0 -mb-1">
-              <h1
+              <motion.h1
                 style={{ fontFamily: "Caveat" }}
                 className="text-[3.5rem] md:text-[5rem] lg:text-[90px] leading-tight font-extrabold"
+                variants={itemVariants}
               >
                 Nabila Shakeel
-              </h1>
-              <div className="mt-3">
-                <span className="inline-flex items-center rounded-2xl bg-primary/10 text-primary px-3 py-1 text-xs font-medium border border-primary/20">
-                  Senior SQA Engineer
-                </span>
-              </div>
+              </motion.h1>
             </div>
 
-            <p className="mt-6 max-w-2xl text-foreground/70 leading-relaxed text-lg">
-              Senior QA Engineer with 7+ years of experience in manual and
-              automation testing across web, mobile, and API platforms. Proven
-              expertise in designing and executing functional, regression, and
-              integration tests for transaction-based and data-intensive
-              systems.
-            </p>
+            <motion.p
+              className="mt-6 max-w-2xl text-foreground/70 leading-relaxed text-lg"
+              variants={itemVariants}
+            >
+              Dedicated Senior QA Engineer passionate about delivering flawless
+              digital experiences through precise manual and automation testing
+              across web, mobile, and API platforms.
+            </motion.p>
 
-            <div className="mt-8">
+            <motion.div className="mt-8" variants={itemVariants}>
               <a
                 href="/resume.pdf"
                 download
@@ -41,23 +83,105 @@ export default function Hero() {
                 Download Resume
                 <ArrowUp className="w-4 h-4 rotate-45 text-primary-foreground" />
               </a>
-            </div>
+            </motion.div>
           </div>
 
-          <div className="md:col-span-5">
-            <div className="mx-auto max-w-md rounded-2xl border bg-card p-6 card-shadow">
-              <h3 className="font-semibold">Snapshot</h3>
-              <ul className="mt-4 space-y-2 text-sm text-foreground/80">
-                <li>
-                  • Manual & Automation Testing (Selenium, Cypress, Playwright)
-                </li>
-                <li>• API Testing: Postman, REST Assured, GraphQL</li>
-                <li>• CI/CD: Jenkins, GitHub Actions, GitLab CI</li>
-                <li>• Containerization: Docker, Kubernetes</li>
+          <motion.div className="md:col-span-5" variants={itemVariants}>
+            <div className="mx-auto max-w-md rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-8 card-shadow">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="w-2 h-2 rounded-full bg-primary"></div>
+                <span className="text-xs font-semibold text-primary uppercase tracking-widest">
+                  Quick Overview
+                </span>
+              </div>
+              <h3 className="font-display font-semibold text-2xl mb-7">
+                Snapshot
+              </h3>
+              <ul className="space-y-5">
+                <motion.li
+                  className="flex items-start gap-4 group"
+                  variants={snapshotItemVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 }}
+                >
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <Zap className="w-5 h-5 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-foreground leading-relaxed">
+                      Manual & Automation Testing
+                    </p>
+                    <p className="text-xs text-foreground/60 mt-1">
+                      Selenium, Cypress, Playwright
+                    </p>
+                  </div>
+                </motion.li>
+                <motion.li
+                  className="flex items-start gap-4 group"
+                  variants={snapshotItemVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.4 }}
+                >
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <Workflow className="w-5 h-5 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-foreground leading-relaxed">
+                      API Testing
+                    </p>
+                    <p className="text-xs text-foreground/60 mt-1">
+                      Postman, REST Assured, GraphQL
+                    </p>
+                  </div>
+                </motion.li>
+                <motion.li
+                  className="flex items-start gap-4 group"
+                  variants={snapshotItemVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.5 }}
+                >
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <Cloud className="w-5 h-5 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-foreground leading-relaxed">
+                      CI/CD Pipeline
+                    </p>
+                    <p className="text-xs text-foreground/60 mt-1">
+                      Jenkins, GitHub Actions, GitLab CI
+                    </p>
+                  </div>
+                </motion.li>
+                <motion.li
+                  className="flex items-start gap-4 group"
+                  variants={snapshotItemVariants}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.6 }}
+                >
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                    <Boxes className="w-5 h-5 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-sm font-medium text-foreground leading-relaxed">
+                      Containerization
+                    </p>
+                    <p className="text-xs text-foreground/60 mt-1">
+                      Docker, Kubernetes
+                    </p>
+                  </div>
+                </motion.li>
               </ul>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   );
