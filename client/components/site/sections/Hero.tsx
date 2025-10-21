@@ -27,7 +27,7 @@ export default function Hero() {
               </a>
               <a
                 href="mailto:nabilashakeel62@gmail.com"
-                className="inline-flex items-center rounded-full border border-foreground/12 px-6 py-3 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition"
+                className="inline-flex items-center rounded-full border px-6 py-3 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition"
               >
                 Email Me
               </a>
@@ -35,7 +35,7 @@ export default function Hero() {
                 href="https://www.linkedin.com/in/nabila-shakeel-727476a6/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center rounded-full border border-foreground/10 px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition"
+                className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition"
               >
                 LinkedIn
               </a>
