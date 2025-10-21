@@ -78,16 +78,16 @@ export default function Hero() {
               <a
                 href="/resume.pdf"
                 download
-                className="inline-flex items-center gap-2 rounded-2xl bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-lg hover:shadow-xl transition-transform hover:-translate-y-1"
+                className="inline-flex items-center gap-2 rounded-2xl bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-lg group"
               >
                 Download Resume
-                <ArrowUp className="w-4 h-4 rotate-45 text-primary-foreground" />
+                <ArrowUp className="w-4 h-4 rotate-45 text-primary-foreground transform transition-transform duration-200 group-hover:translate-x-1" />
               </a>
             </motion.div>
           </div>
 
           <motion.div className="md:col-span-5" variants={itemVariants}>
-            <div className="relative mx-auto max-w-md rounded-[var(--radius)] border bg-gradient-to-br from-card via-card to-accent/5 p-8 card-shadow transform transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-xl">
+            <div className="relative mx-auto max-w-md rounded-[var(--radius)] border bg-gradient-to-br from-card via-card to-accent/5 p-8 card-shadow">
               {/* Years experience badge (computed from start year) */}
               {(() => {
                 const startYear = 2018; // career start year (set so it shows 7 years now, will auto-increment in future)
