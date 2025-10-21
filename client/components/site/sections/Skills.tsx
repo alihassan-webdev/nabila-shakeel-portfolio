@@ -33,9 +33,12 @@ export default function Skills() {
           {skills.map((s) => (
             <div
               key={s}
-              className="rounded-2xl border px-4 py-3 text-sm text-foreground/80 bg-card/80 hover:bg-card transition"
+              className="rounded-2xl border px-4 py-3 text-sm text-foreground/80 bg-card/80 hover:bg-card transition flex items-center gap-3"
             >
-              {s}
+              <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <Check className="w-4 h-4 text-primary" />
+              </div>
+              <span className="flex-1">{s}</span>
             </div>
           ))}
         </div>
