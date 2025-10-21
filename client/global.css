@@ -1,7 +1,4 @@
 /** @import must precede all other statements */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,22 +95,42 @@
 }
 
 @layer base {
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
 
-  * { @apply border-border; }
+  html::-webkit-scrollbar {
+    display: none;
+  }
 
-  body { @apply bg-background text-foreground font-sans antialiased; }
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
 
   :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
     overflow-wrap: anywhere;
     word-break: break-word;
   }
 
-  ::selection { background: hsl(var(--accent)); color: hsl(var(--accent-foreground)); }
+  ::selection {
+    background: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+  }
 
   pre,
-  code { overflow-x: auto; white-space: pre; }
+  code {
+    overflow-x: auto;
+    white-space: pre;
+  }
 
   /* small helpers */
-  .card-shadow { box-shadow: var(--card-shadow); }
+  .card-shadow {
+    box-shadow: var(--card-shadow);
+  }
 }

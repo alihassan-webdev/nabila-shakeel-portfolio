@@ -9,38 +9,55 @@ const links = [
 ];
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("#home");
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
-    onScroll();
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  const handleHomeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setActive("#home");
+  };
 
   useEffect(() => {
-    const update = () => setActive(window.location.hash || "#home");
-    update();
-    window.addEventListener("hashchange", update);
-    return () => window.removeEventListener("hashchange", update);
+    const sectionIds = links.map((l) => l.href.slice(1));
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(`#${entry.target.id}`);
+          }
+        });
+      },
+      { threshold: 0.3 },
+    );
+
+    sectionIds.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) observer.observe(element);
+    });
+
+    return () => {
+      sectionIds.forEach((id) => {
+        const element = document.getElementById(id);
+        if (element) observer.unobserve(element);
+      });
+    };
   }, []);
 
   return (
-    <header
-      className={`sticky top-4 z-50 w-full flex justify-center ${scrolled ? "shadow-sm" : ""}`}
-    >
-      <div className="mx-auto w-full max-w-3xl py-3 rounded-full bg-transparent border border-transparent px-3 flex items-center justify-center">
+    <header className="sticky top-4 z-50 w-full flex justify-center px-4">
+      <div className="w-max py-3 rounded-2xl bg-card border border-border px-6 flex items-center justify-center">
         <nav className="flex items-center gap-2">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className={`text-sm px-4 py-2 rounded-full transition-colors ${
+              onClick={l.href === "#home" ? handleHomeClick : undefined}
+              className={`text-sm px-4 py-2 rounded-2xl transition-all duration-200 ${
                 active === l.href
                   ? "text-primary bg-primary/10 shadow-sm"
-                  : "text-foreground/80 hover:text-foreground hover:bg-foreground/5"
+                  : "text-foreground/70 hover:text-primary hover:bg-primary/5"
               }`}
             >
               {l.label}
@@ -65,7 +82,7 @@ export default function Header() {
             ))}
             <a
               href="#contact"
-              className="mt-3 inline-flex w-max items-center rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
+              className="mt-3 inline-flex w-max items-center rounded-2xl bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
             >
               Contact
             </a>
