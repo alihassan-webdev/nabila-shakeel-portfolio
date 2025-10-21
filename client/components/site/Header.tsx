@@ -87,29 +87,41 @@ export default function Header() {
       </div>
 
       {/* Mobile menu panel */}
-      {open && (
-        <div className="md:hidden absolute top-full mt-2 left-4 right-4 rounded-2xl bg-card border border-border">
-          <nav className="flex flex-col p-4">
-            {links.map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
-                onClick={() => {
-                  if (l.href === "#home") handleHomeClick;
-                  setOpen(false);
-                }}
-                className={`py-3 px-3 text-sm rounded-lg transition-all ${
-                  active === l.href
-                    ? "text-primary bg-primary/10 font-medium"
-                    : "text-foreground/70 hover:text-primary hover:bg-primary/5"
-                }`}
-              >
-                {l.label}
-              </a>
-            ))}
-          </nav>
-        </div>
-      )}
+      <div
+        className={`md:hidden absolute top-full mt-2 left-4 right-4 rounded-2xl bg-card border border-border overflow-hidden transition-all duration-300 ease-out origin-top ${
+          open
+            ? "opacity-100 scale-y-100 visible"
+            : "opacity-0 scale-y-95 invisible pointer-events-none"
+        }`}
+      >
+        <nav className="flex flex-col p-4">
+          {links.map((l, index) => (
+            <a
+              key={l.href}
+              href={l.href}
+              onClick={() => {
+                if (l.href === "#home") handleHomeClick;
+                setOpen(false);
+              }}
+              className={`py-3 px-3 text-sm rounded-lg transition-all duration-200 ${
+                open ? `delay-${index * 50}` : ""
+              } ${
+                active === l.href
+                  ? "text-primary bg-primary/10 font-medium"
+                  : "text-foreground/70 hover:text-primary hover:bg-primary/5"
+              }`}
+              style={{
+                transitionDelay: open ? `${index * 50}ms` : "0ms",
+                opacity: open ? 1 : 0,
+                transform: open ? "translateY(0)" : "translateY(-8px)",
+                transition: "opacity 300ms ease-out, transform 300ms ease-out",
+              }}
+            >
+              {l.label}
+            </a>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 }
