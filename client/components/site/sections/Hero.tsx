@@ -6,9 +6,9 @@ export default function Hero() {
       <div className="container py-12 md:py-20 px-4 md:px-12 lg:px-20">
         <div className="grid gap-12 md:grid-cols-12 items-center">
           <div className="md:col-span-7">
-            <p className="text-lg md:text-2xl uppercase tracking-widest text-primary/70 font-semibold">HELLO, I'M</p>
+            <p className="text-lg md:text-2xl uppercase tracking-widest text-primary/70 font-semibold leading-none">HELLO, I'M</p>
 
-            <div className="mt-1">
+            <div className="mt-0 -mb-1">
               <h1 style={{ fontFamily: "Caveat" }} className="text-[3.5rem] md:text-[5rem] lg:text-[90px] leading-tight font-extrabold">Nabila Shakeel</h1>
               <div className="mt-3">
                 <span className="inline-flex items-center rounded-2xl bg-primary/10 text-primary px-3 py-1 text-xs font-medium border border-primary/20">Senior SQA Engineer</span>
