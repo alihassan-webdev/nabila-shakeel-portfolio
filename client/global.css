@@ -14,7 +14,7 @@
   */
   :root {
     /* Premium soft light theme */
-    --background: 38 60% 98%; /* soft ivory */
+    --background: 0 0% 96%; /* #F4F4F4 */
     --foreground: 220 12% 12%; /* charcoal text */
 
     --card: 0 0% 100%;
