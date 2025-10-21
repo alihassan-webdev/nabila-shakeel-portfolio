@@ -1,19 +1,19 @@
-import { Check } from "lucide-react";
+import { FileText, Zap, Cloud, Workflow, Boxes, Database, Check, Wrench } from "lucide-react";
 
 const skills = [
-  "Selenium WebDriver (Java / Python / C#)",
-  "Cypress Automation",
-  "Playwright",
-  "Postman / REST Assured / API Testing",
-  "Jenkins / GitHub Actions / GitLab CI",
-  "Docker / Kubernetes",
-  "JMeter / LoadRunner (Performance Testing)",
-  "TestNG / JUnit / Cucumber (BDD)",
-  "SQL / Database Testing",
-  "Version Control (Git, Bitbucket)",
-  "OWASP ZAP / Security Testing",
-  "AI/ML & Generative AI Testing",
-  "Manual & Exploratory Testing",
+  { label: "Selenium WebDriver (Java / Python / C#)", icon: FileText },
+  { label: "Cypress Automation", icon: Zap },
+  { label: "Playwright", icon: Boxes },
+  { label: "Postman / REST Assured / API Testing", icon: Cloud },
+  { label: "Jenkins / GitHub Actions / GitLab CI", icon: Workflow },
+  { label: "Docker / Kubernetes", icon: Boxes },
+  { label: "JMeter / LoadRunner (Performance Testing)", icon: Cloud },
+  { label: "TestNG / JUnit / Cucumber (BDD)", icon: FileText },
+  { label: "SQL / Database Testing", icon: Database },
+  { label: "Version Control (Git, Bitbucket)", icon: FileText },
+  { label: "OWASP ZAP / Security Testing", icon: Zap },
+  { label: "AI/ML & Generative AI Testing", icon: Cloud },
+  { label: "Manual & Exploratory Testing", icon: Check },
 ];
 
 export default function Skills() {
@@ -32,13 +32,13 @@ export default function Skills() {
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {skills.map((s) => (
             <div
-              key={s}
+              key={s.label}
               className="rounded-2xl border px-4 py-3 text-sm text-foreground/80 bg-card/80 hover:bg-card transition flex items-center gap-3"
             >
               <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <Check className="w-4 h-4 text-primary" />
+                <s.icon className="w-4 h-4 text-primary" />
               </div>
-              <span className="flex-1">{s}</span>
+              <span className="flex-1">{s.label}</span>
             </div>
           ))}
         </div>
