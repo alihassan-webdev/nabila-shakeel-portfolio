@@ -17,11 +17,6 @@ export default function Hero() {
               >
                 Nabila Shakeel
               </h1>
-              <div className="mt-3">
-                <span className="inline-flex items-center rounded-2xl bg-primary/10 text-primary px-3 py-1 text-xs font-medium border border-primary/20">
-                  Senior SQA Engineer
-                </span>
-              </div>
             </div>
 
             <p className="mt-6 max-w-2xl text-foreground/70 leading-relaxed text-lg">
