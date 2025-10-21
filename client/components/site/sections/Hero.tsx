@@ -94,8 +94,13 @@ export default function Hero() {
                 const now = new Date();
                 const years = Math.max(0, now.getFullYear() - startYear);
                 return (
-                  <div className="absolute top-4 right-4 flex items-center gap-3 bg-background/90 border border-border px-4 py-2 rounded-[var(--radius)] shadow-sm" aria-hidden>
-                    <div className="text-3xl md:text-4xl font-extrabold text-primary leading-none">{years}</div>
+                  <div
+                    className="absolute top-4 right-4 flex items-center gap-3 bg-background/90 border border-border px-4 py-2 rounded-[var(--radius)] shadow-sm"
+                    aria-hidden
+                  >
+                    <div className="text-3xl md:text-4xl font-extrabold text-primary leading-none">
+                      {years}
+                    </div>
                     <div className="text-xs text-foreground/70 uppercase tracking-wider leading-tight">
                       <div>Years</div>
                       <div>Experience</div>

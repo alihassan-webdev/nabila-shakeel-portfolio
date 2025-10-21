@@ -55,26 +55,40 @@ export default function Experience() {
               const isLeft = index % 2 === 0;
 
               return (
-                <div key={index} className="relative md:grid md:grid-cols-12 md:items-start">
+                <div
+                  key={index}
+                  className="relative md:grid md:grid-cols-12 md:items-start"
+                >
                   {/* Dot for this item (desktop) */}
                   <div className="absolute left-1/2 top-6 w-3 h-3 md:w-4 md:h-4 rounded-full bg-primary border-4 border-background hidden md:block transform -translate-x-1/2" />
 
                   {/* Card column - placed left or right on md+ screens */}
-                  <div className={` ${isLeft ? "md:col-span-5 md:col-start-1 md:mr-4" : "md:col-span-5 md:col-start-8 md:ml-4"}`}>
+                  <div
+                    className={` ${isLeft ? "md:col-span-5 md:col-start-1 md:mr-4" : "md:col-span-5 md:col-start-8 md:ml-4"}`}
+                  >
                     <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-2">
                       {exp.date}
                     </p>
 
                     <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow">
-                        <h3 className="text-lg font-semibold font-display text-foreground">{exp.title}</h3>
+                      <h3 className="text-lg font-semibold font-display text-foreground">
+                        {exp.title}
+                      </h3>
 
-                      <p className="mt-3 text-foreground/70 leading-relaxed">{exp.description}</p>
+                      <p className="mt-3 text-foreground/70 leading-relaxed">
+                        {exp.description}
+                      </p>
 
                       {exp.highlights && (
                         <ul className="mt-4 space-y-2">
                           {exp.highlights.map((highlight, i) => (
-                            <li key={i} className="flex items-start gap-3 text-sm text-foreground/70">
-                              <span className="text-primary font-bold mt-0.5">✓</span>
+                            <li
+                              key={i}
+                              className="flex items-start gap-3 text-sm text-foreground/70"
+                            >
+                              <span className="text-primary font-bold mt-0.5">
+                                ✓
+                              </span>
                               <span>{highlight}</span>
                             </li>
                           ))}
@@ -83,7 +97,10 @@ export default function Experience() {
 
                       {/* Small-screen link: visible only on small devices */}
                       <div className="mt-4 md:hidden">
-                        <a href="#" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline">
+                        <a
+                          href="#"
+                          className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+                        >
                           View details
                         </a>
                       </div>

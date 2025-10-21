@@ -36,8 +36,12 @@ export default function About() {
                       <FileText className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground mb-2 text-sm">Test Design & Planning</h4>
-                      <p className="text-sm text-foreground/70 leading-relaxed">Requirements analysis, test strategy, UAT coordination</p>
+                      <h4 className="font-semibold text-foreground mb-2 text-sm">
+                        Test Design & Planning
+                      </h4>
+                      <p className="text-sm text-foreground/70 leading-relaxed">
+                        Requirements analysis, test strategy, UAT coordination
+                      </p>
                     </div>
                   </div>
 
@@ -46,8 +50,13 @@ export default function About() {
                       <Zap className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground mb-2 text-sm">Test Automation</h4>
-                      <p className="text-sm text-foreground/70 leading-relaxed">Selenium (Java/Python/C#), Cypress, Playwright, TestNG, JUnit, Cucumber</p>
+                      <h4 className="font-semibold text-foreground mb-2 text-sm">
+                        Test Automation
+                      </h4>
+                      <p className="text-sm text-foreground/70 leading-relaxed">
+                        Selenium (Java/Python/C#), Cypress, Playwright, TestNG,
+                        JUnit, Cucumber
+                      </p>
                     </div>
                   </div>
 
@@ -56,8 +65,12 @@ export default function About() {
                       <Cloud className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground mb-2 text-sm">API & Performance Testing</h4>
-                      <p className="text-sm text-foreground/70 leading-relaxed">Postman, REST Assured, JMeter, LoadRunner</p>
+                      <h4 className="font-semibold text-foreground mb-2 text-sm">
+                        API & Performance Testing
+                      </h4>
+                      <p className="text-sm text-foreground/70 leading-relaxed">
+                        Postman, REST Assured, JMeter, LoadRunner
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -67,8 +80,12 @@ export default function About() {
                       <Workflow className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground mb-2 text-sm">CI/CD & DevOps</h4>
-                      <p className="text-sm text-foreground/70 leading-relaxed">Jenkins, GitHub Actions, GitLab CI, Docker, Kubernetes</p>
+                      <h4 className="font-semibold text-foreground mb-2 text-sm">
+                        CI/CD & DevOps
+                      </h4>
+                      <p className="text-sm text-foreground/70 leading-relaxed">
+                        Jenkins, GitHub Actions, GitLab CI, Docker, Kubernetes
+                      </p>
                     </div>
                   </div>
 
@@ -77,8 +94,12 @@ export default function About() {
                       <Database className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground mb-2 text-sm">Databases & Validation</h4>
-                      <p className="text-sm text-foreground/70 leading-relaxed">SQL, JSON/XML validation</p>
+                      <h4 className="font-semibold text-foreground mb-2 text-sm">
+                        Databases & Validation
+                      </h4>
+                      <p className="text-sm text-foreground/70 leading-relaxed">
+                        SQL, JSON/XML validation
+                      </p>
                     </div>
                   </div>
 
@@ -87,8 +108,12 @@ export default function About() {
                       <Wrench className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground mb-2 text-sm">Tools & Management</h4>
-                      <p className="text-sm text-foreground/70 leading-relaxed">Jira, Qase, HP ALM, Azure DevOps</p>
+                      <h4 className="font-semibold text-foreground mb-2 text-sm">
+                        Tools & Management
+                      </h4>
+                      <p className="text-sm text-foreground/70 leading-relaxed">
+                        Jira, Qase, HP ALM, Azure DevOps
+                      </p>
                     </div>
                   </div>
                 </div>

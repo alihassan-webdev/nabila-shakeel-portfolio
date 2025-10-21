@@ -1,4 +1,13 @@
-import { FileText, Zap, Cloud, Workflow, Boxes, Database, Check, Wrench } from "lucide-react";
+import {
+  FileText,
+  Zap,
+  Cloud,
+  Workflow,
+  Boxes,
+  Database,
+  Check,
+  Wrench,
+} from "lucide-react";
 
 const groups = [
   {
@@ -38,7 +47,11 @@ const groups = [
   {
     title: "Security & Performance",
     icon: Zap,
-    items: ["Security Testing", "Performance Testing / Benchmarking", "Compliance Validation"],
+    items: [
+      "Security Testing",
+      "Performance Testing / Benchmarking",
+      "Compliance Validation",
+    ],
   },
   {
     title: "Manual & Exploratory",
@@ -48,7 +61,13 @@ const groups = [
   {
     title: "Methodologies",
     icon: Boxes,
-    items: ["Shift-left Testing", "BDD with Cucumber", "Exploratory Testing", "Performance Benchmarking", "Security & Compliance Validation"],
+    items: [
+      "Shift-left Testing",
+      "BDD with Cucumber",
+      "Exploratory Testing",
+      "Performance Benchmarking",
+      "Security & Compliance Validation",
+    ],
   },
 ];
 
@@ -64,12 +83,17 @@ export default function Skills() {
 
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {groups.map((g) => (
-            <div key={g.title} className="rounded-[var(--radius)] border bg-card p-6 card-shadow">
+            <div
+              key={g.title}
+              className="rounded-[var(--radius)] border bg-card p-6 card-shadow"
+            >
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <g.icon className="w-5 h-5 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold text-foreground">{g.title}</h3>
+                <h3 className="text-lg font-semibold text-foreground">
+                  {g.title}
+                </h3>
               </div>
 
               <div className="flex flex-wrap gap-3">
