@@ -99,8 +99,10 @@ export default function Header() {
             <a
               key={l.href}
               href={l.href}
-              onClick={() => {
-                if (l.href === "#home") handleHomeClick;
+              onClick={(e) => {
+                if (l.href === "#home") {
+                  handleHomeClick(e);
+                }
                 setOpen(false);
               }}
               className={`py-3 px-3 text-sm rounded-lg transition-all duration-200 ${
