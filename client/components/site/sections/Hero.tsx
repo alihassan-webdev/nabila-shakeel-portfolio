@@ -8,8 +8,8 @@ export default function Hero() {
             <p className="text-sm uppercase tracking-widest text-primary/70">HELLO, I’M</p>
 
             <div className="mt-4 flex items-baseline gap-6">
-              <h1 className="font-display text-[4.2rem] leading-[0.95] md:text-[7rem] md:leading-[0.92] font-extrabold">I AM</h1>
-              <h1 className="font-display text-[3.2rem] md:text-[5rem] leading-tight">Nabila Shakeel</h1>
+              <h1 className="font-display text-[3rem] leading-[0.95] md:text-[4.4rem] md:leading-[0.95] font-extrabold">I AM</h1>
+              <h1 className="font-display text-[2.4rem] md:text-[3.8rem] leading-tight">Nabila Shakeel</h1>
             </div>
 
             <h2 className="mt-4 text-xl font-medium text-foreground/80">Senior QA Engineer</h2>
