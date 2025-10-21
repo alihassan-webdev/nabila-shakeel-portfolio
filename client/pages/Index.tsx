@@ -4,7 +4,7 @@ import Experience from "@/components/site/sections/Experience";
 import Skills from "@/components/site/sections/Skills";
 import Contact from "@/components/site/sections/Contact";
 
-const EMAIL = "qlqfmj9zje@jkotypc.com";
+const EMAIL = "nabilashakeel62@gmail.com";
 
 export default function Index() {
   return (
