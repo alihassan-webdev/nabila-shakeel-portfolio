@@ -27,7 +27,7 @@ export default function Hero() {
                 className="inline-flex items-center gap-2 rounded-2xl bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-lg hover:shadow-xl transition-transform hover:-translate-y-1"
               >
                 Download Resume
-                <ArrowUp className="w-4 h-4 rotate-45" />
+                <ArrowUp className="w-4 h-4 rotate-45 text-black" />
               </a>
             </div>
           </div>
