@@ -12,6 +12,12 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("#home");
 
+  const handleHomeClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setActive("#home");
+  };
+
   useEffect(() => {
     const update = () => setActive(window.location.hash || "#home");
     update();
@@ -27,6 +33,7 @@ export default function Header() {
             <a
               key={l.href}
               href={l.href}
+              onClick={l.href === "#home" ? handleHomeClick : undefined}
               className={`text-sm px-4 py-2 rounded-2xl transition-all duration-200 ${
                 active === l.href
                   ? "text-primary bg-primary/10 shadow-sm"
