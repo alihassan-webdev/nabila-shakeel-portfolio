@@ -1,7 +1,6 @@
 export default function Hero() {
   return (
-    <section id="home" className="relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#fff7ef] via-[#fffefa] to-[#f0f5ff]" />
+    <section id="home" className="relative overflow-hidden bg-background">
       <div className="container py-28 md:py-36">
         <div className="grid gap-12 md:grid-cols-12 items-center">
           <div className="md:col-span-7">
