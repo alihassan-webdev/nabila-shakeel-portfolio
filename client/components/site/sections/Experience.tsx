@@ -1,5 +1,3 @@
-import { FileText, Zap, Cloud, Boxes, Database } from "lucide-react";
-
 export default function Experience() {
   const experiences = [
     {
@@ -42,8 +40,6 @@ export default function Experience() {
     },
   ];
 
-  const icons = [FileText, Zap, Cloud, Boxes, Database];
-
   return (
     <section id="experience" className="scroll-mt-24">
       <div className="container py-20 px-4 md:px-12 lg:px-20">
@@ -70,15 +66,7 @@ export default function Experience() {
                     </p>
 
                     <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow">
-                      <div className="flex items-center gap-4">
-                        <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                          {(() => {
-                            const Icon = icons[index % icons.length];
-                            return <Icon className="w-5 h-5 text-primary" />;
-                          })()}
-                        </div>
                         <h3 className="text-lg font-semibold font-display text-foreground">{exp.title}</h3>
-                      </div>
 
                       <p className="mt-3 text-foreground/70 leading-relaxed">{exp.description}</p>
 
