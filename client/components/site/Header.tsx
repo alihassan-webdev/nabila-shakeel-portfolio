@@ -23,8 +23,8 @@ export default function Header() {
       }`}
     >
       <div className="container flex h-16 items-center justify-between">
-        <a href="#home" className="text-xl font-display font-semibold tracking-tight">
-          Portfolio
+        <a href="#home" className="text-lg font-display font-semibold tracking-tight">
+          Nabila Shakeel
         </a>
         <nav className="hidden gap-6 md:flex">
           {links.map((l) => (
