@@ -1,3 +1,5 @@
+import { Check } from "lucide-react";
+
 const skills = [
   "Selenium WebDriver (Java / Python / C#)",
   "Cypress Automation",
