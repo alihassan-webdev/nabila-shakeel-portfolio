@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="container py-12 md:py-20">
         <div className="grid gap-12 md:grid-cols-12 items-center">
           <div className="md:col-span-7">
-            <p className="text-sm uppercase tracking-widest text-primary/70">HELLO, I’M</p>
+            <p className="text-base md:text-lg uppercase tracking-widest text-primary/70">HELLO, I’M</p>
 
             <div className="mt-4">
               <h1 className="font-display text-[2.4rem] md:text-[3.6rem] leading-tight font-extrabold">Nabila Shakeel</h1>
