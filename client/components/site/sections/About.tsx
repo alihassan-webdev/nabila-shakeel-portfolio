@@ -3,7 +3,7 @@ export default function About() {
     <section id="about" className="scroll-mt-24">
       <div className="container py-20 px-4 md:px-12 lg:px-20">
         <div className="grid gap-10 md:grid-cols-12 items-start">
-          <div className="md:col-span-5 mt-6 md:mt-0">
+          <div className="md:col-span-5 mt-12 md:mt-0">
             <h2 className="font-display text-4xl md:text-5xl">About</h2>
             <p className="mt-4 text-foreground/70 leading-relaxed text-lg">
               Senior QA Engineer with over 7 years of experience in manual and
