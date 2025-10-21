@@ -14,7 +14,7 @@
   */
   :root {
     /* Soft light theme inspired by requested site */
-    --background: 210 25% 98%; /* #F6F8FA */
+    --background: 215 28% 97%; /* softer near-white */
     --foreground: 222 28% 12%; /* deep blue-gray text */
 
     --card: 0 0% 100%;
@@ -23,17 +23,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 28% 12%;
 
-    --primary: 229 74% 58%; /* #5569DC */
+    --primary: 225 65% 56%; /* softened indigo */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 28% 96%; /* soft gray-blue */
+    --secondary: 210 30% 95%; /* soft gray-blue */
     --secondary-foreground: 222 28% 20%;
 
-    --muted: 210 20% 94%;
-    --muted-foreground: 220 10% 40%;
+    --muted: 210 18% 95%;
+    --muted-foreground: 220 12% 44%;
 
-    --accent: 229 60% 92%; /* very light indigo tint */
-    --accent-foreground: 229 60% 30%;
+    --accent: 210 50% 94%; /* subtle blue tint */
+    --accent-foreground: 224 65% 24%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
