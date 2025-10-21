@@ -27,7 +27,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-4 z-50 w-full flex justify-center px-4">
-      <div className="w-max py-3 rounded-2xl bg-card/50 border border-border backdrop-blur-md px-6 flex items-center justify-center shadow-md card-shadow">
+      <div className="w-max py-3 rounded-2xl bg-card/50 border border-border backdrop-blur-md px-6 flex items-center justify-center">
         <nav className="flex items-center gap-2">
           {links.map((l) => (
             <a
