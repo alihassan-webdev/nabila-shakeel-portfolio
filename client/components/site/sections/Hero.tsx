@@ -40,7 +40,7 @@ export default function Hero() {
           </div>
 
           <div className="md:col-span-5">
-            <div className="mx-auto max-w-md rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-8 card-shadow hover:translate-y-[-4px] transition-transform">
+            <div className="mx-auto max-w-md rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-8 card-shadow">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-2 h-2 rounded-full bg-primary"></div>
                 <span className="text-xs font-semibold text-primary uppercase tracking-widest">Quick Overview</span>
