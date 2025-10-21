@@ -87,7 +87,7 @@ export default function Hero() {
           </div>
 
           <motion.div className="md:col-span-5" variants={itemVariants}>
-            <div className="mx-auto max-w-md rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-8 card-shadow">
+            <div className="mx-auto max-w-md rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-8 card-shadow transform transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-xl">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-2 h-2 rounded-full bg-primary"></div>
                 <span className="text-xs font-semibold text-primary uppercase tracking-widest">
