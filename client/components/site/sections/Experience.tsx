@@ -42,6 +42,8 @@ export default function Experience() {
     },
   ];
 
+  const icons = [FileText, Zap, Cloud, Boxes, Database];
+
   return (
     <section id="experience" className="scroll-mt-24">
       <div className="container py-20 px-4 md:px-12 lg:px-20">
