@@ -20,7 +20,7 @@ export default function Projects() {
               <h3 className="mt-4 text-lg font-semibold font-display">{p.title}</h3>
               <p className="mt-2 text-sm text-foreground/70">{p.desc}</p>
               <div className="mt-4">
-                <a href="#contact" className="inline-flex items-center rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground">Get in touch</a>
+                <a href="#contact" className="inline-flex items-center rounded-2xl bg-primary px-4 py-2 text-sm font-medium text-primary-foreground">Get in touch</a>
               </div>
             </article>
           ))}

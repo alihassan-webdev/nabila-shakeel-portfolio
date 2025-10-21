@@ -12,7 +12,7 @@ export default function Contact({ email }: Props) {
             <div className="mt-6 flex items-center gap-3">
               <a
                 href={`mailto:${email}`}
-                className="inline-flex items-center rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-lg hover:opacity-95 transition"
+                className="inline-flex items-center rounded-2xl bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-lg hover:opacity-95 transition"
               >
                 Email: {email}
               </a>
@@ -21,12 +21,12 @@ export default function Contact({ email }: Props) {
                 href="https://www.linkedin.com/in/nabila-shakeel-727476a6/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition"
+                className="inline-flex items-center rounded-2xl border px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition"
               >
                 LinkedIn Profile
               </a>
 
-              <a href="#" className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition">
+              <a href="#" className="inline-flex items-center rounded-2xl border px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition">
                 Download CV
               </a>
             </div>
@@ -43,7 +43,7 @@ export default function Contact({ email }: Props) {
             </div>
 
             <div className="mt-6 flex items-center gap-3">
-              <a href="#" className="text-sm inline-flex items-center rounded-full border px-3 py-1 text-foreground/80 hover:bg-foreground/5">Download CV</a>
+              <a href="#" className="text-sm inline-flex items-center rounded-2xl border px-3 py-1 text-foreground/80 hover:bg-foreground/5">Download CV</a>
             </div>
           </aside>
         </div>

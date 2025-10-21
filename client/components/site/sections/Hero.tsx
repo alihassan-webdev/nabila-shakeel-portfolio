@@ -9,7 +9,7 @@ export default function Hero() {
             <div className="mt-4">
               <h1 className="font-display text-[2.4rem] md:text-[3.6rem] leading-tight font-extrabold">Nabila Shakeel</h1>
               <div className="mt-3">
-                <span className="inline-flex items-center rounded-full bg-primary/10 text-primary px-3 py-1 text-xs font-medium border border-primary/20">Senior SQA Engineer</span>
+                <span className="inline-flex items-center rounded-2xl bg-primary/10 text-primary px-3 py-1 text-xs font-medium border border-primary/20">Senior SQA Engineer</span>
               </div>
             </div>
 
@@ -21,13 +21,13 @@ export default function Hero() {
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="#experience"
-                className="inline-flex items-center rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-lg hover:shadow-xl transition-transform hover:-translate-y-1"
+                className="inline-flex items-center rounded-2xl bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-lg hover:shadow-xl transition-transform hover:-translate-y-1"
               >
                 View Experience
               </a>
               <a
                 href="mailto:nabilashakeel62@gmail.com"
-                className="inline-flex items-center rounded-full border px-6 py-3 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition"
+                className="inline-flex items-center rounded-2xl border px-6 py-3 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition"
               >
                 Email Me
               </a>
@@ -35,7 +35,7 @@ export default function Hero() {
                 href="https://www.linkedin.com/in/nabila-shakeel-727476a6/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition"
+                className="inline-flex items-center rounded-2xl border px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition"
               >
                 LinkedIn
               </a>

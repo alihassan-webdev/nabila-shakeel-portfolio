@@ -27,7 +27,7 @@ export default function Header() {
             <a
               key={l.href}
               href={l.href}
-              className={`text-sm px-4 py-2 rounded-full transition-all duration-200 ${
+              className={`text-sm px-4 py-2 rounded-2xl transition-all duration-200 ${
                 active === l.href
                   ? "text-primary bg-primary/10 shadow-sm"
                   : "text-foreground/70 hover:text-primary hover:bg-primary/5"
@@ -55,7 +55,7 @@ export default function Header() {
             ))}
             <a
               href="#contact"
-              className="mt-3 inline-flex w-max items-center rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
+              className="mt-3 inline-flex w-max items-center rounded-2xl bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
             >
               Contact
             </a>
