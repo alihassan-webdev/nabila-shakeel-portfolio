@@ -28,17 +28,9 @@ export default function Header() {
   }, []);
 
   return (
-    <header
-      className={`sticky top-4 z-50 w-full flex justify-center transition-shadow ${
-        scrolled ? "shadow-sm" : ""
-      }`}
-    >
-      <div className="mx-auto w-full max-w-3xl flex items-center justify-between py-3 rounded-full bg-background/60 backdrop-blur-md px-4">
-        <a href="#home" className="text-lg font-display font-semibold tracking-tight">
-          Nabila Shakeel
-        </a>
-
-        <nav className="hidden md:flex items-center gap-3 bg-background/30 rounded-full px-2 py-1">
+    <header className={`sticky top-4 z-50 w-full flex justify-center ${scrolled ? "shadow-sm" : ""}`}>
+      <div className="mx-auto w-full max-w-3xl py-3 rounded-full bg-background/60 backdrop-blur-md px-3 flex items-center justify-center">
+        <nav className="flex items-center gap-2">
           {links.map((l) => (
             <a
               key={l.href}
@@ -53,29 +45,6 @@ export default function Header() {
             </a>
           ))}
         </nav>
-
-        <div className="hidden md:flex items-center gap-3">
-          <a
-            href="#contact"
-            className="inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium text-primary border-primary/40 bg-transparent backdrop-blur-sm hover:bg-primary hover:text-primary-foreground transition-colors"
-          >
-            Let’s talk
-          </a>
-        </div>
-
-        {/* Mobile menu button */}
-        <div className="md:hidden">
-          <button
-            onClick={() => setOpen((v) => !v)}
-            aria-expanded={open}
-            aria-label="Toggle menu"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-card border"
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d={open ? "M6 18L18 6M6 6l12 12" : "M3 6h18M3 12h18M3 18h18"} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </button>
-        </div>
       </div>
 
       {/* Mobile menu panel */}
