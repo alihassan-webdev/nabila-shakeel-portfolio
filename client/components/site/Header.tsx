@@ -29,9 +29,9 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-4 z-50 w-full flex justify-center ${scrolled ? "shadow-sm" : ""}`}
+      className={`sticky top-4 z-50 w-full flex justify-center px-4 ${scrolled ? "shadow-sm" : ""}`}
     >
-      <div className="mx-auto w-full max-w-3xl py-3 rounded-full bg-transparent border border-transparent px-3 flex items-center justify-center">
+      <div className={`w-full py-3 rounded-2xl bg-card border border-border px-6 flex items-center justify-center ${scrolled ? "shadow-md card-shadow" : ""}`}>
         <nav className="flex items-center gap-2">
           {links.map((l) => (
             <a
