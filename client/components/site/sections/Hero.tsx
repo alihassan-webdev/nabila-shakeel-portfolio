@@ -1,28 +1,33 @@
 export default function Hero() {
   return (
-    <section id="home" className="relative">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-accent/60 via-background to-secondary" />
-      <div className="container py-24 md:py-32">
-        <div className="grid items-center gap-10 md:grid-cols-2">
-          <div>
-            <p className="text-sm uppercase tracking-[0.2em] text-primary/80">HELLO, I’M</p>
-            <h1 className="mt-3 font-display text-5xl leading-tight md:text-7xl">
-              Nabila Shakeel
-            </h1>
-            <h2 className="mt-2 text-xl font-medium text-foreground/80">Senior QA Engineer</h2>
-            <p className="mt-5 max-w-xl text-foreground/70 leading-relaxed">
+    <section id="home" className="relative overflow-hidden">
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#fff7ef] via-[#fffefa] to-[#f0f5ff]" />
+      <div className="container py-28 md:py-36">
+        <div className="grid gap-12 md:grid-cols-12 items-center">
+          <div className="md:col-span-7">
+            <p className="text-sm uppercase tracking-widest text-primary/70">HELLO, I’M</p>
+
+            <div className="mt-4 flex items-baseline gap-6">
+              <h1 className="font-display text-[4.2rem] leading-[0.95] md:text-[7rem] md:leading-[0.92] font-extrabold">I AM</h1>
+              <h1 className="font-display text-[3.2rem] md:text-[5rem] leading-tight">Nabila Shakeel</h1>
+            </div>
+
+            <h2 className="mt-4 text-xl font-medium text-foreground/80">Senior QA Engineer</h2>
+
+            <p className="mt-6 max-w-2xl text-foreground/70 leading-relaxed text-lg">
               Senior QA Engineer with 7+ years of experience in manual and automation testing across web, mobile, and API platforms. Proven expertise in designing and executing functional, regression, and integration tests for transaction-based and data-intensive systems.
             </p>
+
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="#experience"
-                className="inline-flex items-center rounded-full bg-gradient-to-r from-primary to-primary/80 px-6 py-3 text-sm font-medium text-primary-foreground shadow-lg transform-gpu hover:-translate-y-0.5 transition"
+                className="inline-flex items-center rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-lg hover:shadow-xl transition-transform hover:-translate-y-1"
               >
                 View Experience
               </a>
               <a
                 href="mailto:nabilashakeel62@gmail.com"
-                className="inline-flex items-center rounded-full border border-primary/30 px-6 py-3 text-sm font-medium text-primary hover:bg-primary hover:text-primary-foreground transition"
+                className="inline-flex items-center rounded-full border border-foreground/12 px-6 py-3 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition"
               >
                 Email Me
               </a>
@@ -36,8 +41,9 @@ export default function Hero() {
               </a>
             </div>
           </div>
-          <div className="relative">
-            <div className="mx-auto max-w-sm rounded-[14px] border bg-card p-6 card-shadow">
+
+          <div className="md:col-span-5">
+            <div className="mx-auto max-w-md rounded-2xl border bg-card p-6 card-shadow">
               <h3 className="font-semibold">Snapshot</h3>
               <ul className="mt-4 space-y-2 text-sm text-foreground/80">
                 <li>• Manual & Automation Testing (Selenium, Cypress, Playwright)</li>
