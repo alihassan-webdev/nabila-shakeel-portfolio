@@ -18,26 +18,14 @@ export default function Hero() {
               Senior QA Engineer with 7+ years of experience in manual and automation testing across web, mobile, and API platforms. Proven expertise in designing and executing functional, regression, and integration tests for transaction-based and data-intensive systems.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8">
               <a
-                href="#experience"
-                className="inline-flex items-center rounded-2xl bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-lg hover:shadow-xl transition-transform hover:-translate-y-1"
+                href="/resume.pdf"
+                download
+                className="inline-flex items-center gap-2 rounded-2xl bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-lg hover:shadow-xl transition-transform hover:-translate-y-1"
               >
-                View Experience
-              </a>
-              <a
-                href="mailto:nabilashakeel62@gmail.com"
-                className="inline-flex items-center rounded-2xl border px-6 py-3 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition"
-              >
-                Email Me
-              </a>
-              <a
-                href="https://www.linkedin.com/in/nabila-shakeel-727476a6/"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center rounded-2xl border px-4 py-2 text-sm font-medium text-foreground/80 hover:bg-foreground/5 transition"
-              >
-                LinkedIn
+                Download Resume
+                <ArrowUp className="w-4 h-4 rotate-45" />
               </a>
             </div>
           </div>
