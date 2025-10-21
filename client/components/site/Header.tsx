@@ -49,7 +49,7 @@ export default function Header() {
 
       {/* Mobile menu panel */}
       {open && (
-        <div className="md:hidden border-t bg-card">
+        <div className="md:hidden border-t border-transparent bg-transparent">
           <div className="container py-4 flex flex-col">
             {links.map((l) => (
               <a
