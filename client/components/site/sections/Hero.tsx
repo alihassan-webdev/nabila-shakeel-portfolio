@@ -7,9 +7,8 @@ export default function Hero() {
           <div className="md:col-span-7">
             <p className="text-sm uppercase tracking-widest text-primary/70">HELLO, I’M</p>
 
-            <div className="mt-4 flex items-baseline gap-6">
-              <h1 className="font-display text-[2.4rem] leading-[0.95] md:text-[3.2rem] md:leading-[0.95] font-extrabold">I AM</h1>
-              <h1 className="font-display text-[2rem] md:text-[2.8rem] leading-tight">Nabila Shakeel</h1>
+            <div className="mt-4">
+              <h1 className="font-display text-[2.4rem] md:text-[3.6rem] leading-tight font-extrabold">Nabila Shakeel</h1>
             </div>
 
             <h2 className="mt-4 text-xl font-medium text-foreground/80">Senior QA Engineer</h2>
