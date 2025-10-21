@@ -1,4 +1,4 @@
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, Zap, Cloud, Boxes, Workflow } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -40,15 +40,25 @@ export default function Hero() {
           </div>
 
           <div className="md:col-span-5">
-            <div className="mx-auto max-w-md rounded-2xl border bg-card p-6 card-shadow">
-              <h3 className="font-semibold">Snapshot</h3>
-              <ul className="mt-4 space-y-2 text-sm text-foreground/80">
-                <li>
-                  • Manual & Automation Testing (Selenium, Cypress, Playwright)
+            <div className="mx-auto max-w-md rounded-3xl border bg-card p-8 card-shadow hover:translate-y-[-4px] transition-transform">
+              <h3 className="font-semibold text-lg">Snapshot</h3>
+              <ul className="mt-6 space-y-4">
+                <li className="flex items-start gap-3">
+                  <Zap className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-foreground/80">Manual & Automation Testing (Selenium, Cypress, Playwright)</span>
                 </li>
-                <li>• API Testing: Postman, REST Assured, GraphQL</li>
-                <li>• CI/CD: Jenkins, GitHub Actions, GitLab CI</li>
-                <li>• Containerization: Docker, Kubernetes</li>
+                <li className="flex items-start gap-3">
+                  <Workflow className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-foreground/80">API Testing: Postman, REST Assured, GraphQL</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Cloud className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-foreground/80">CI/CD: Jenkins, GitHub Actions, GitLab CI</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Boxes className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                  <span className="text-sm text-foreground/80">Containerization: Docker, Kubernetes</span>
+                </li>
               </ul>
             </div>
           </div>
