@@ -65,7 +65,7 @@ export default function Experience() {
                       {exp.date}
                     </p>
 
-                    <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow transform transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-xl">
+                    <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow">
                       <h3 className="text-lg font-semibold font-display text-foreground">{exp.title}</h3>
 
                       <p className="mt-3 text-foreground/70 leading-relaxed">{exp.description}</p>
