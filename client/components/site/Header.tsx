@@ -27,10 +27,10 @@ export default function Header() {
             <a
               key={l.href}
               href={l.href}
-              className={`text-sm px-4 py-2 rounded-full transition-colors ${
+              className={`text-sm px-4 py-2 rounded-full transition-all duration-200 ${
                 active === l.href
                   ? "text-primary bg-primary/10 shadow-sm"
-                  : "text-foreground/80 hover:text-foreground hover:bg-foreground/5"
+                  : "text-foreground/70 hover:text-primary hover:bg-primary/5"
               }`}
             >
               {l.label}
