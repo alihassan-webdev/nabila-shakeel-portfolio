@@ -36,8 +36,8 @@ export default function Tools() {
                   <div
                     className="flex items-center justify-center w-24 h-24 z-10 border-2 border-black rounded-lg"
                     style={{
-                      maskImage: "linear-gradient(to bottom, black 0%, black 50%, transparent 100%)",
-                      WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 50%, transparent 100%)",
+                      maskImage: "linear-gradient(to bottom, black 0%, black 15%, transparent 100%)",
+                      WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 15%, transparent 100%)",
                     }}
                   >
                     <Icon className="w-14 h-14 text-primary" />
