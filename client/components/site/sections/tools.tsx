@@ -21,22 +21,12 @@ export default function Tools() {
             const Icon = c.icon;
             return (
               <div key={c.title} className="flex flex-col items-center">
-                <div className="aspect-square w-full max-w-[220px] mx-auto rounded-lg border bg-card p-4 card-shadow flex items-center justify-center relative">
-                  {/* inner outline box (thin line) */}
-                  <div
-                  className="absolute inset-6 rounded-lg pointer-events-none border-primary/90"
-                  style={{
-                    borderWidth: 14,
-                    borderStyle: 'solid',
-                    WebkitMaskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 55%)',
-                    maskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 55%)',
-                  }}
-                />
-                  <div className="flex items-center justify-center w-32 h-32 z-10">
-                    <Icon className="w-24 h-24 text-primary" />
+                <div className="aspect-square w-full max-w-[160px] mx-auto rounded-lg border bg-card p-3 card-shadow flex items-center justify-center relative">
+                  <div className="flex items-center justify-center w-20 h-20 z-10">
+                    <Icon className="w-16 h-16 text-primary" />
                   </div>
                 </div>
-                <span className="mt-3 text-center text-sm font-medium text-foreground max-w-[220px]">{c.title}</span>
+                <span className="mt-2 text-center text-sm font-medium text-foreground max-w-[160px]">{c.title}</span>
               </div>
             );
           })}
