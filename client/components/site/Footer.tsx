@@ -7,7 +7,7 @@ export default function Footer({ email }: Props) {
         <p className="text-sm text-foreground/60">
           © {new Date().getFullYear()} • <a href="https://alihassan-online.netlify.app/" target="_blank" rel="noreferrer" className="no-underline text-black">Nabila Shakeel</a>. All Rights Reserved
         </p>
-        <p className="text-sm text-foreground/60">Developed by <a href="https://alihassan-online.netlify.app/" target="_blank" rel="noreferrer" className="no-underline text-black transition">Ali Hassan</a></p>
+        <p className="text-sm text-foreground/60">Developed by <a href="https://alihassan-online.netlify.app/" target="_blank" rel="noreferrer" className="no-underline text-black hover:text-foreground/80 transition">Ali Hassan</a></p>
       </div>
     </footer>
   );
