@@ -38,7 +38,7 @@ export default function Contact({ email }: Props) {
                 title="Email"
               >
                 <Mail className="w-5 h-5 text-primary-foreground" />
-                <span>Email Kro</span>
+                <span>Email</span>
               </a>
 
               <a
