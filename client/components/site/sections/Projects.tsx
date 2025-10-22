@@ -1,55 +1,116 @@
-const projects = [
-  {
-    title: "Enterprise QA Automation",
-    desc: "Built automated regression suites for ERP finance modules using Selenium and TestNG.",
-  },
-  {
-    title: "API Validation Framework",
-    desc: "Designed API test harness with Postman and REST Assured for critical backend services.",
-  },
-  {
-    title: "CI/CD Integration",
-    desc: "Integrated tests into Jenkins and GitLab CI pipelines for continuous validation.",
-  },
-];
+import { Server, ShieldCheck, Cpu, Phone, Layers, BarChart, Lock } from "lucide-react";
 
 export default function Projects() {
+  const projects = [
+    {
+      title: "Cloud-Based Identity & Access Management Platform",
+      description:
+        "Contributed to a modular PIAM solution used by Fortune 500 companies, ensuring seamless identity lifecycle management, visitor access, and compliance with enterprise-grade security standards.",
+      icon: Server,
+    },
+    {
+      title: "Enterprise Recognition & Security Solutions",
+      description:
+        "Tested and validated real-time recognition platforms with advanced security features, focusing on system stability, performance, and user data protection.",
+      icon: ShieldCheck,
+    },
+    {
+      title: "Generative AI & LLM Testing",
+      description:
+        "Designed test strategies for LLM-based workflows, validated conversational AI outputs, and implemented bias/safety checks for AI-driven platforms.",
+      icon: Cpu,
+    },
+    {
+      title: "Business Intelligence & Reporting Tools",
+      description:
+        "Validated BI dashboards, analytics tools, and data pipelines to ensure reporting accuracy, system performance, and usability across enterprise environments.",
+      icon: BarChart,
+    },
+    {
+      title: "Cybersecurity & Access Control",
+      description:
+        "Engaged in penetration and compliance testing for privileged access management solutions, validating secure authentication, authorization, and activity monitoring.",
+      icon: Lock,
+    },
+    {
+      title: "Mobile Applications (Android & iOS)",
+      description:
+        "Led QA cycles for consumer-facing apps such as meal planners and productivity apps, covering API validation, performance benchmarking, and device compatibility.",
+      icon: Phone,
+    },
+    {
+      title: "ERP & Back-Office Applications",
+      description:
+        "Conducted regression automation and IT troubleshooting for ERP modules including finance, procurement, and inventory systems. Validated transaction modules and data consistency.",
+      icon: Layers,
+    },
+    {
+      title: "RPA & Automation Tools",
+      description:
+        "Validated process automation frameworks and ensured workflow accuracy for robotic process automation solutions.",
+      icon: Server,
+    },
+  ];
+
+  const domains = [
+    "Banking & Financial Systems",
+    "Healthcare & Hospital Systems",
+    "Educational & Campus Management",
+    "Hospitality & Club Management",
+    "Human Resource & Payroll Systems",
+    "Cybersecurity & Compliance",
+    "SaaS / Cloud Applications",
+  ];
+
   return (
-    <section id="projects" className="scroll-mt-24 bg-secondary/30">
+    <section id="projects" className="scroll-mt-24">
       <div className="container py-20 px-4 md:px-12 lg:px-20">
-        <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-4">
-          <h2 className="font-display text-3xl md:text-4xl">Recent Projects</h2>
-          <p className="text-foreground/70 max-w-lg">
-            Selected highlights showcasing testing frameworks, automation, and
-            CI/CD integrations across finance, healthcare and Web3.
-          </p>
+        <h2 className="font-display text-4xl md:text-5xl mb-6">Key Projects</h2>
+
+        <div className="grid gap-8 lg:grid-cols-3">
+          {projects.map((p, i) => {
+            const Icon = p.icon;
+            return (
+              <div
+                key={i}
+                className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow hover:translate-y-[-4px] transition-transform duration-300"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold font-display text-foreground">
+                      {p.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-foreground/70 leading-relaxed">
+                      {p.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
 
-        <div className="mt-8 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((p) => (
-            <article
-              key={p.title}
-              className="rounded-3xl border bg-card p-6 card-shadow hover:translate-y-[-4px] transition-transform"
-            >
-              <div className="h-32 sm:h-36 w-full rounded-xl bg-gradient-to-tr from-primary/10 to-accent/10 flex items-center justify-center text-primary/60 text-xs sm:text-sm font-medium">
-                Project preview
-              </div>
-              <h3 className="mt-4 text-base sm:text-lg font-semibold font-display">
-                {p.title}
-              </h3>
-              <p className="mt-2 text-xs sm:text-sm text-foreground/70">
-                {p.desc}
-              </p>
-              <div className="mt-4">
-                <a
-                  href="#contact"
-                  className="inline-flex items-center rounded-2xl bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
-                >
-                  Get in touch
-                </a>
-              </div>
-            </article>
-          ))}
+        <div className="mt-10 rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow">
+          <div className="flex items-center gap-2 mb-4">
+            <div className="w-2 h-2 rounded-full bg-primary"></div>
+            <span className="text-xs font-semibold text-primary uppercase tracking-widest">
+              Domains
+            </span>
+          </div>
+
+          <div className="flex flex-wrap gap-3">
+            {domains.map((d) => (
+              <span
+                key={d}
+                className="inline-flex items-center gap-2 rounded-full px-4 py-2 bg-foreground/5 text-sm text-foreground/80"
+              >
+                {d}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
