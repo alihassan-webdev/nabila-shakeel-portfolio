@@ -13,18 +13,20 @@ export default function Contact({ email }: Props) {
               I’m open to freelance, contract, or full-time opportunities. Reach
               out via email or LinkedIn and I’ll respond promptly.
             </p>
-
           </div>
 
           <aside className="rounded-[var(--radius)] border bg-card p-6 card-shadow">
             <div className="flex items-center gap-2 mb-3">
               <div className="w-2 h-2 rounded-full bg-primary"></div>
-              <span className="text-xs font-semibold text-primary uppercase tracking-widest">Availability</span>
+              <span className="text-xs font-semibold text-primary uppercase tracking-widest">
+                Availability
+              </span>
             </div>
 
             <h3 className="text-lg font-semibold mb-2">Open to work</h3>
             <p className="text-sm text-foreground/70 mb-4">
-              I am available for contract, freelance, and full-time roles. Open to remote and on-site opportunities.
+              I am available for contract, freelance, and full-time roles. Open
+              to remote and on-site opportunities.
             </p>
 
             <div className="mb-4">
@@ -37,28 +39,28 @@ export default function Contact({ email }: Props) {
             </div>
 
             <div className="flex items-center gap-3">
-            <a
-              href={`mailto:${email}`}
-              className="inline-flex items-center gap-2 rounded-2xl bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-lg hover:opacity-95 transition"
-              aria-label={`Email ${email}`}
-              title="Email"
-            >
-              <Mail className="w-5 h-5 text-primary-foreground" />
-              <span>Email Kro</span>
-            </a>
+              <a
+                href={`mailto:${email}`}
+                className="inline-flex items-center gap-2 rounded-2xl bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-lg hover:opacity-95 transition"
+                aria-label={`Email ${email}`}
+                title="Email"
+              >
+                <Mail className="w-5 h-5 text-primary-foreground" />
+                <span>Email Kro</span>
+              </a>
 
-            <a
-              href="https://www.linkedin.com/in/nabila-shakeel-727476a6/"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm text-foreground/80 hover:bg-foreground/5 transition"
-              aria-label="LinkedIn profile"
-              title="LinkedIn"
-            >
-              <Linkedin className="w-5 h-5" />
-              <span>LinkedIn</span>
-            </a>
-          </div>
+              <a
+                href="https://www.linkedin.com/in/nabila-shakeel-727476a6/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm text-foreground/80 hover:bg-foreground/5 transition"
+                aria-label="LinkedIn profile"
+                title="LinkedIn"
+              >
+                <Linkedin className="w-5 h-5" />
+                <span>LinkedIn</span>
+              </a>
+            </div>
           </aside>
         </div>
       </div>
