@@ -37,8 +37,8 @@ export default function Contact({ email }: Props) {
                 aria-label={`Email ${email}`}
                 title="Email"
               >
-                <Mail className="w-5 h-5 text-primary-foreground" />
                 <span>Email</span>
+                <Mail className="w-5 h-5 text-primary-foreground" />
               </a>
 
               <a
