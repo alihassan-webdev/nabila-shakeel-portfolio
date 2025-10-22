@@ -49,8 +49,8 @@ export default function Contact({ email }: Props) {
                 aria-label="LinkedIn profile"
                 title="LinkedIn"
               >
-                <Linkedin className="w-5 h-5" />
                 <span>LinkedIn</span>
+                <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </aside>
