@@ -1,47 +1,13 @@
-import {
-  Check,
-  Zap,
-  FileText,
-  Database,
-  Cloud,
-  Boxes,
-  Workflow,
-  Wrench,
-  GitBranch,
-  Code,
-  Server,
-  ShieldCheck,
-  DownloadCloud,
-  Mail,
-} from "lucide-react";
+import { Zap, ShieldCheck, Workflow, GitBranch, Database, FileText, DownloadCloud } from "lucide-react";
 
-const tools: { name: string; icon: any }[] = [
-  { name: "Postman", icon: Zap },
-  { name: "Swagger", icon: FileText },
-  { name: "JMeter", icon: Zap },
-  { name: "OWASP ZAP", icon: ShieldCheck },
-  { name: "Git", icon: GitBranch },
-  { name: "GitHub", icon: GitBranch },
-  { name: "Bitbucket", icon: GitBranch },
-  { name: "Jenkins", icon: Server },
-  { name: "Azure DevOps", icon: Workflow },
-  { name: "Docker", icon: Boxes },
-  { name: "MySQL Workbench", icon: Database },
-  { name: "MS SQL Server", icon: Database },
-  { name: "MongoDB", icon: Database },
-  { name: "Fiddler", icon: Wrench },
-  { name: "Lighthouse", icon: DownloadCloud },
-  { name: "Browser DevTools", icon: Code },
-  { name: "MS Excel", icon: FileText },
-  { name: "Confluence", icon: FileText },
-  { name: "Notion", icon: FileText },
-  { name: "JIRA", icon: Mail },
-  { name: "TestRail", icon: FileText },
-  { name: "ClickUp", icon: FileText },
-  { name: "Trello", icon: FileText },
-  { name: "Selenium", icon: Check },
-  { name: "Cypress", icon: Check },
-  { name: "Playwright", icon: Check },
+const categories: { title: string; icon: any }[] = [
+  { title: "Automation & Testing Tools", icon: Zap },
+  { title: "API & Security Tools", icon: ShieldCheck },
+  { title: "CI/CD & DevOps Tools", icon: Workflow },
+  { title: "Version Control Systems", icon: GitBranch },
+  { title: "Database Management Tools", icon: Database },
+  { title: "Bug Tracking & Project Management Tools", icon: FileText },
+  { title: "Monitoring & Analysis Tools", icon: DownloadCloud },
 ];
 
 export default function Skills() {
@@ -50,17 +16,21 @@ export default function Skills() {
       <div className="container py-20 px-4 md:px-12 lg:px-20">
         <h2 className="font-display text-4xl md:text-5xl">Tools</h2>
 
-        <div className="mt-8 flex flex-wrap gap-3">
-          {tools.map((t) => {
-            const Icon = t.icon;
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {categories.map((c) => {
+            const Icon = c.icon;
             return (
-              <span
-                key={t.name}
-                className="inline-flex items-center gap-2 rounded-2xl border px-3 py-1 text-sm text-foreground/80 bg-card/80"
+              <div
+                key={c.title}
+                className="rounded-[var(--radius)] border bg-card p-6 card-shadow"
               >
-                <Icon className="w-4 h-4 text-primary" />
-                <span>{t.name}</span>
-              </span>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Icon className="w-5 h-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">{c.title}</h3>
+                </div>
+              </div>
             );
           })}
         </div>
