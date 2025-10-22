@@ -24,7 +24,7 @@ export default function Tools() {
                 <div className="aspect-square w-full max-w-[220px] mx-auto rounded-lg border bg-card p-4 card-shadow flex items-center justify-center relative">
                   {/* inner outline box (thin line) */}
                   <div
-                  className="absolute inset-6 rounded-md pointer-events-none border-primary/90"
+                  className="absolute inset-6 rounded-2xl pointer-events-none border-primary/90"
                   style={{
                     borderWidth: 14,
                     borderStyle: 'solid',
