@@ -2,7 +2,7 @@ import { FileText, Zap, Cloud, Workflow, Database, Wrench } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="scroll-mt-24">
+    <section id="about" className="scroll-mt-16 lg:scroll-mt-12">
       <div className="container py-20 px-4 md:px-12 lg:px-20">
         <div className="grid gap-10 md:grid-cols-12 items-center">
           <div className="md:col-span-5 mt-12 md:mt-0">
