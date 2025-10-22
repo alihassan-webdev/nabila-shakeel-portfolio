@@ -20,7 +20,7 @@ export default function Tools() {
           {categories.map((c) => {
             const Icon = c.icon;
             return (
-              <div key={c.title} className="flex flex-col items-center">
+              <div key={c.title} className="flex flex-col items-center last:col-span-2 last:flex last:items-center last:justify-center md:last:col-span-1">
                 <div className="aspect-square w-full max-w-[180px] mx-auto rounded-lg border bg-card p-3 card-shadow flex items-center justify-center relative">
                   <div className="flex items-center justify-center w-24 h-24 z-10">
                     <Icon className="w-20 h-20 text-primary" />
