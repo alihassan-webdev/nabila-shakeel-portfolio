@@ -26,7 +26,7 @@ export default function Tools() {
                     <Icon className="w-20 h-20 text-primary" />
                   </div>
                 </div>
-                <span className="mt-2 text-center text-sm font-medium text-foreground max-w-[180px]">{c.title}</span>
+                <span className="mt-2 text-center text-sm font-medium text-foreground/60 max-w-[180px]">{c.title}</span>
               </div>
             );
           })}
