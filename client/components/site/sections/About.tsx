@@ -32,7 +32,7 @@ export default function About() {
               <div className="grid gap-6 sm:grid-cols-2">
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <div className="p-2.5 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <FileText className="w-5 h-5 text-primary" />
                     </div>
                     <div>
@@ -46,7 +46,7 @@ export default function About() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="p-2.5 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <Zap className="w-5 h-5 text-primary" />
                     </div>
                     <div>
@@ -61,7 +61,7 @@ export default function About() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="p-2.5 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <Cloud className="w-5 h-5 text-primary" />
                     </div>
                     <div>
@@ -76,7 +76,7 @@ export default function About() {
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <div className="p-2.5 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <Workflow className="w-5 h-5 text-primary" />
                     </div>
                     <div>
@@ -90,7 +90,7 @@ export default function About() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="p-2.5 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <Database className="w-5 h-5 text-primary" />
                     </div>
                     <div>
@@ -104,7 +104,7 @@ export default function About() {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="p-2.5 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <Wrench className="w-5 h-5 text-primary" />
                     </div>
                     <div>
