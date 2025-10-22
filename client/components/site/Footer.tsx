@@ -7,7 +7,7 @@ export default function Footer({ email }: Props) {
         <p className="text-sm text-foreground/60">
           © {new Date().getFullYear()} • Nabila Shakeel
         </p>
-        <p className="text-xs text-foreground/60">Developed by ali hassan</p>
+        <p className="text-sm text-foreground/60">Developed by Ali Hassan</p>
       </div>
     </footer>
   );
