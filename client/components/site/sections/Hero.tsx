@@ -1,4 +1,4 @@
-import { ArrowUp, Zap, Cloud, Boxes, Workflow } from "lucide-react";
+import { Download, Zap, Cloud, Boxes, Workflow } from "lucide-react";
 import { motion } from "framer-motion";
 
 const containerVariants = {
@@ -81,7 +81,7 @@ export default function Hero() {
                 className="inline-flex items-center gap-2 rounded-2xl bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-lg group"
               >
                 Download Resume
-                <ArrowUp className="w-4 h-4 rotate-45 text-primary-foreground transform transition-transform duration-200 group-hover:translate-x-1" />
+                <Download className="w-4 h-4 text-primary-foreground transform transition-transform duration-200 group-hover:scale-110" />
               </a>
             </motion.div>
           </div>
