@@ -14,29 +14,6 @@ export default function Contact({ email }: Props) {
               out via email or LinkedIn and I’ll respond promptly.
             </p>
 
-            <div className="mt-6 flex items-center gap-3">
-              <a
-                href={`mailto:${email}`}
-                className="inline-flex items-center gap-2 rounded-2xl bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-lg hover:opacity-95 transition group"
-                aria-label={`Email ${email}`}
-                title="Email"
-              >
-                <Mail className="w-5 h-5 text-primary-foreground" />
-                <span>Email</span>
-              </a>
-
-              <a
-                href="https://www.linkedin.com/in/nabila-shakeel-727476a6/"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm text-foreground/80 hover:bg-foreground/5 transition"
-                aria-label="LinkedIn profile"
-                title="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5" />
-                <span>LinkedIn</span>
-              </a>
-            </div>
           </div>
 
           <aside className="rounded-[var(--radius)] border bg-card p-6 card-shadow">
