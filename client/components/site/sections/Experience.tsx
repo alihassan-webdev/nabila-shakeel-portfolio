@@ -60,15 +60,24 @@ export default function Experience() {
                   className="relative md:grid md:grid-cols-12 md:items-start"
                 >
                   {/* Center column with dot aligned to the top (aligns with date) */}
+                  {/* Center column: show date and dot aligned on md+ screens */}
                   <div className="hidden md:flex md:col-span-2 md:col-start-6 items-start justify-center">
-                    <div className="mt-2 w-4 h-4 rounded-full bg-primary border-4 border-background" />
+                    <div className="relative flex flex-col items-center w-full">
+                      <p className={`text-xs font-semibold text-primary uppercase tracking-widest mb-0 ${isLeft ? 'text-right pr-3' : 'text-left pl-3'}`}>
+                        {exp.date}
+                      </p>
+                      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                        <div className="w-4 h-4 rounded-full bg-primary border-4 border-background" />
+                      </div>
+                    </div>
                   </div>
 
                   {/* Card column - placed left or right on md+ screens */}
                   <div
                     className={` ${isLeft ? "md:col-span-5 md:col-start-1 md:mr-4" : "md:col-span-5 md:col-start-8 md:ml-4"}`}
                   >
-                    <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-2">
+                    {/* date for small screens (keep inside card) */}
+                    <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-2 md:hidden">
                       {exp.date}
                     </p>
 
