@@ -68,18 +68,6 @@ export default function Contact({ email }: Props) {
               </p>
             </div>
 
-            <div className="mt-6 flex items-center gap-3">
-              <a
-                href="/resume.pdf"
-                download
-                className="inline-flex items-center rounded-full border p-2 text-foreground/80 hover:bg-foreground/5 transition"
-                aria-label="Download CV"
-                title="Download CV"
-              >
-                <DownloadCloud className="w-5 h-5" />
-                <span className="sr-only">Download CV</span>
-              </a>
-            </div>
           </aside>
         </div>
       </div>
