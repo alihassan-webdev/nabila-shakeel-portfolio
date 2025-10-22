@@ -93,7 +93,7 @@ export default function Experience() {
                       {exp.date}
                     </p>
 
-                    <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow hover:shadow-lg transition-all duration-300">
+                    <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow">
                       <h3 className="text-lg font-semibold font-display text-foreground">
                         {exp.title}
                       </h3>
