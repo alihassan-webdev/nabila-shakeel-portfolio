@@ -1,7 +1,7 @@
 import Hero from "@/components/site/sections/Hero";
 import About from "@/components/site/sections/About";
 import Experience from "@/components/site/sections/Experience";
-import Skills from "@/components/site/sections/Skills";
+import Tools from "@/components/site/sections/tools";
 import Projects from "@/components/site/sections/Projects";
 import Contact from "@/components/site/sections/Contact";
 
@@ -14,7 +14,7 @@ export default function Index() {
       <About />
       <Experience />
       <Projects />
-      <Skills />
+      <Tools />
       <Contact email={EMAIL} />
     </main>
   );
