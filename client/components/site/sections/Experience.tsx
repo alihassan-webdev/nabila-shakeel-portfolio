@@ -66,15 +66,19 @@ export default function Experience() {
 
                   {/* Card Section */}
                   <div
-                    className={`${isLeft
+                    className={`${
+                      isLeft
                         ? "md:col-span-5 md:col-start-1 md:mr-8"
                         : "md:col-span-5 md:col-start-8 md:ml-8"
-                      }`}
+                    }`}
                   >
-                    {/* Date above card — left side cards aligned right */}
+                    {/* Date above card — perfectly aligned with dot */}
                     <p
-                      className={`text-xs font-semibold text-primary uppercase tracking-widest mb-3 ${isLeft ? "text-right" : "text-left"
-                        }`}
+                      className={`text-xs font-semibold text-primary uppercase tracking-widest mb-3 w-[160px] ${
+                        isLeft
+                          ? "ml-auto text-right md:translate-x-[40px]"
+                          : "text-left md:-translate-x-[40px]"
+                      }`}
                     >
                       {exp.date}
                     </p>
