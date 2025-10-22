@@ -57,23 +57,23 @@ export default function Experience() {
               return (
                 <div
                   key={index}
-                  className="relative md:grid md:grid-cols-12 md:items-start"
+                  className="relative md:grid md:grid-cols-12 md:items-center"
                 >
                   {/* Dot and Date Row */}
-                  <div className="hidden md:flex md:col-span-12 items-center justify-center relative mb-2">
+                  <div className="hidden md:flex md:col-span-12 items-center justify-center relative mb-6">
                     {isLeft ? (
                       <>
-                        <p className="text-xs font-semibold text-primary uppercase tracking-widest w-[180px] text-right pr-6">
+                        <p className="text-xs font-semibold text-primary uppercase tracking-widest w-[200px] text-right pr-6">
                           {exp.date}
                         </p>
                         <div className="w-4 h-4 rounded-full bg-primary border-4 border-background z-10" />
-                        <div className="w-[180px]" />
+                        <div className="w-[200px]" />
                       </>
                     ) : (
                       <>
-                        <div className="w-[180px]" />
+                        <div className="w-[200px]" />
                         <div className="w-4 h-4 rounded-full bg-primary border-4 border-background z-10" />
-                        <p className="text-xs font-semibold text-primary uppercase tracking-widest w-[180px] text-left pl-6">
+                        <p className="text-xs font-semibold text-primary uppercase tracking-widest w-[200px] text-left pl-6">
                           {exp.date}
                         </p>
                       </>
@@ -82,10 +82,11 @@ export default function Experience() {
 
                   {/* Card Section */}
                   <div
-                    className={`${isLeft
-                        ? "md:col-span-5 md:col-start-1 md:mr-8"
-                        : "md:col-span-5 md:col-start-8 md:ml-8"
-                      }`}
+                    className={`${
+                      isLeft
+                        ? "md:col-span-5 md:col-start-2 md:mr-12"
+                        : "md:col-span-5 md:col-start-7 md:ml-12"
+                    }`}
                   >
                     {/* Date for small screens */}
                     <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-3 md:hidden">
