@@ -84,8 +84,8 @@ export default function Experience() {
                   <div
                     className={`${
                       isLeft
-                        ? "md:col-span-5 md:col-start-2 md:mr-12"
-                        : "md:col-span-5 md:col-start-7 md:ml-12"
+                        ? "md:col-span-6 md:col-start-1 md:mr-12"
+                        : "md:col-span-6 md:col-start-7 md:ml-12"
                     }`}
                   >
                     {/* Date for small screens */}
