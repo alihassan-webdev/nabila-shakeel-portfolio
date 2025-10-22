@@ -26,8 +26,8 @@ export default function Tools() {
                   <div
                   className="absolute inset-6 rounded-md pointer-events-none border-8 border-primary/90"
                   style={{
-                    WebkitMaskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)',
-                    maskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)',
+                    WebkitMaskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%)',
+                    maskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%)',
                   }}
                 />
                   <div className="flex items-center justify-center w-32 h-32 z-10">
