@@ -21,12 +21,12 @@ export default function Tools() {
             const Icon = c.icon;
             return (
               <div key={c.title} className="flex flex-col items-center">
-                <div className="aspect-square w-full max-w-[120px] mx-auto rounded-lg border bg-card p-3 card-shadow flex items-center justify-center relative">
-                  <div className="flex items-center justify-center w-20 h-20 z-10">
-                    <Icon className="w-16 h-16 text-primary" />
+                <div className="aspect-square w-full max-w-[260px] mx-auto rounded-lg border bg-card p-5 card-shadow flex items-center justify-center relative">
+                  <div className="flex items-center justify-center w-32 h-32 z-10">
+                    <Icon className="w-24 h-24 text-primary" />
                   </div>
                 </div>
-                <span className="mt-2 text-center text-sm font-medium text-foreground max-w-[120px]">{c.title}</span>
+                <span className="mt-3 text-center text-sm font-medium text-foreground max-w-[260px]">{c.title}</span>
               </div>
             );
           })}
