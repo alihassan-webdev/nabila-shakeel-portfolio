@@ -33,7 +33,13 @@ export default function Tools() {
                 className="flex flex-col items-center last:col-span-2 last:flex last:items-center last:justify-center md:last:col-span-1"
               >
                 <div className="aspect-square w-full max-w-[100px] sm:max-w-[160px] md:max-w-[180px] mx-auto rounded-lg border bg-card p-3 card-shadow flex items-center justify-center relative">
-                  <div className="flex items-center justify-center w-24 h-24 z-10 border-2 border-black rounded-lg">
+                  <div
+                    className="flex items-center justify-center w-24 h-24 z-10 border-2 border-black rounded-lg"
+                    style={{
+                      maskImage: "linear-gradient(to bottom, black 0%, black 50%, transparent 100%)",
+                      WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 50%, transparent 100%)",
+                    }}
+                  >
                     <Icon className="w-14 h-14 text-primary" />
                   </div>
                 </div>
