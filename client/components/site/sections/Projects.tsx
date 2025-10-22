@@ -1,55 +1,15 @@
-import { Server, ShieldCheck, Cpu, Phone, Layers, BarChart, Lock } from "lucide-react";
+import { Key, Camera, Cpu, BarChart, ShieldCheck, Smartphone, Layers, Zap } from "lucide-react";
 
 export default function Projects() {
   const projects = [
-    {
-      title: "Cloud-Based Identity & Access Management Platform",
-      description:
-        "Contributed to a modular PIAM solution used by Fortune 500 companies, ensuring seamless identity lifecycle management, visitor access, and compliance with enterprise-grade security standards.",
-      icon: Server,
-    },
-    {
-      title: "Enterprise Recognition & Security Solutions",
-      description:
-        "Tested and validated real-time recognition platforms with advanced security features, focusing on system stability, performance, and user data protection.",
-      icon: ShieldCheck,
-    },
-    {
-      title: "Generative AI & LLM Testing",
-      description:
-        "Designed test strategies for LLM-based workflows, validated conversational AI outputs, and implemented bias/safety checks for AI-driven platforms.",
-      icon: Cpu,
-    },
-    {
-      title: "Business Intelligence & Reporting Tools",
-      description:
-        "Validated BI dashboards, analytics tools, and data pipelines to ensure reporting accuracy, system performance, and usability across enterprise environments.",
-      icon: BarChart,
-    },
-    {
-      title: "Cybersecurity & Access Control",
-      description:
-        "Engaged in penetration and compliance testing for privileged access management solutions, validating secure authentication, authorization, and activity monitoring.",
-      icon: Lock,
-    },
-    {
-      title: "Mobile Applications (Android & iOS)",
-      description:
-        "Led QA cycles for consumer-facing apps such as meal planners and productivity apps, covering API validation, performance benchmarking, and device compatibility.",
-      icon: Phone,
-    },
-    {
-      title: "ERP & Back-Office Applications",
-      description:
-        "Conducted regression automation and IT troubleshooting for ERP modules including finance, procurement, and inventory systems. Validated transaction modules and data consistency.",
-      icon: Layers,
-    },
-    {
-      title: "RPA & Automation Tools",
-      description:
-        "Validated process automation frameworks and ensured workflow accuracy for robotic process automation solutions.",
-      icon: Server,
-    },
+    { title: "Cloud-Based Identity & Access Management", icon: Key },
+    { title: "Enterprise Recognition & Security", icon: Camera },
+    { title: "Generative AI & LLM Testing", icon: Cpu },
+    { title: "Business Intelligence & Reporting", icon: BarChart },
+    { title: "Cybersecurity & Access Control", icon: ShieldCheck },
+    { title: "Mobile Applications (Android & iOS)", icon: Smartphone },
+    { title: "ERP & Back-Office Applications", icon: Layers },
+    { title: "RPA & Automation Tools", icon: Zap },
   ];
 
   const domains = [
