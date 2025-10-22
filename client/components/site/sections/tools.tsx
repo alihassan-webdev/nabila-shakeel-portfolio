@@ -30,14 +30,14 @@ export default function Tools() {
             return (
               <div
                 key={c.title}
-                className="flex flex-col items-center last:col-span-2 last:flex last:items-center last:justify-center md:last:col-span-1"
+                className="flex flex-col items-center last:col-span-2 last:flex last:items-center last:justify-center md:last:col-span-1 w-full"
               >
-                <div className="aspect-square w-full max-w-[180px] mx-auto rounded-lg border bg-card p-3 card-shadow flex items-center justify-center relative">
-                  <div className="flex items-center justify-center w-24 h-24 z-10">
-                    <Icon className="w-20 h-20 text-primary" />
+                <div className="aspect-square w-full max-w-xs mx-auto rounded-lg border bg-card p-3 card-shadow flex items-center justify-center relative">
+                  <div className="flex items-center justify-center z-10">
+                    <Icon className="w-14 h-14 text-primary" />
                   </div>
                 </div>
-                <span className="mt-2 text-center text-sm font-medium text-foreground/60 max-w-[180px]">
+                <span className="mt-2 text-center text-sm font-medium text-foreground/60 max-w-xs">
                   {c.title}
                 </span>
               </div>
