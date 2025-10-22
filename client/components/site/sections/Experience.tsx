@@ -59,8 +59,10 @@ export default function Experience() {
                   key={index}
                   className="relative md:grid md:grid-cols-12 md:items-start"
                 >
-                  {/* Dot for this item (desktop) */}
-                  <div className="absolute left-1/2 top-6 w-3 h-3 md:w-4 md:h-4 rounded-full bg-primary border-4 border-background hidden md:block transform -translate-x-1/2" />
+                  {/* Center column with dot aligned to the top (aligns with date) */}
+                  <div className="hidden md:flex md:col-span-2 md:col-start-6 items-start justify-center">
+                    <div className="mt-2 w-4 h-4 rounded-full bg-primary border-4 border-background" />
+                  </div>
 
                   {/* Card column - placed left or right on md+ screens */}
                   <div
