@@ -1,13 +1,13 @@
 import { Zap, ShieldCheck, Workflow, GitBranch, Database, FileText, DownloadCloud } from "lucide-react";
 
 const categories: { title: string; icon: any; color?: string }[] = [
-  { title: "Automation & Testing Tools", icon: Zap },
-  { title: "API & Security Tools", icon: ShieldCheck },
-  { title: "CI/CD & DevOps Tools", icon: Workflow },
-  { title: "Version Control Systems", icon: GitBranch },
-  { title: "Database Management Tools", icon: Database },
-  { title: "Bug Tracking & Project Management Tools", icon: FileText },
-  { title: "Monitoring & Analysis Tools", icon: DownloadCloud },
+  { title: "Automation", icon: Zap },
+  { title: "API", icon: ShieldCheck },
+  { title: "DevOps", icon: Workflow },
+  { title: "Versioning", icon: GitBranch },
+  { title: "Database", icon: Database },
+  { title: "Management", icon: FileText },
+  { title: "Monitoring", icon: DownloadCloud },
 ];
 
 export default function Tools() {
