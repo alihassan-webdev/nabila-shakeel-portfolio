@@ -6,7 +6,7 @@ export default function Contact({ email }: Props) {
   return (
     <section id="contact" className="scroll-mt-16 lg:scroll-mt-12">
       <div className="container py-20 px-4 md:px-12 lg:px-20">
-        <div className="grid gap-8 md:grid-cols-2 items-start">
+        <div className="grid gap-8 md:grid-cols-2 items-center">
           <div>
             <h2 className="font-display text-4xl md:text-5xl">Contact</h2>
             <p className="mt-4 text-foreground/70 text-lg max-w-xl">
