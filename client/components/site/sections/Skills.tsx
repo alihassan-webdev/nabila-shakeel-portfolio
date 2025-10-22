@@ -24,8 +24,8 @@ export default function Skills() {
                 key={c.title}
                 className="aspect-square w-full max-w-[220px] mx-auto rounded-lg border bg-card p-4 card-shadow flex flex-col items-center justify-center gap-2"
               >
-                <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10">
-                  <Icon className="w-6 h-6 text-primary" />
+                <div className="flex items-center justify-center w-16 h-16 rounded-lg bg-primary/10">
+                  <Icon className="w-10 h-10 text-primary" />
                 </div>
                 <div className="text-center">
                   <span className="block text-sm font-medium text-foreground">{c.title}</span>
