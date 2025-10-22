@@ -29,14 +29,6 @@ export default function Contact({ email }: Props) {
               to remote and on-site opportunities.
             </p>
 
-            <div className="mb-4">
-              <h4 className="font-medium text-sm mb-2">Preferred roles</h4>
-              <ul className="flex flex-col gap-2 text-sm text-foreground/80">
-                <li>• Senior QA Engineer</li>
-                <li>• Test Automation Engineer</li>
-                <li>• API / Backend Test Engineer</li>
-              </ul>
-            </div>
 
             <div className="flex items-center gap-3">
               <a
