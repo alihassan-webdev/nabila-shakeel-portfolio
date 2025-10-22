@@ -45,7 +45,7 @@ export default function Projects() {
                 className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow min-h-[120px]"
               >
                 <div className="flex items-center gap-4 h-full">
-                  <div className="p-3 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <div className="p-3 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Icon className="w-6 h-6 text-primary" />
                   </div>
                   <div>
