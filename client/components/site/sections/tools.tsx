@@ -26,10 +26,10 @@ export default function Tools() {
                   <div
                   className="absolute inset-6 rounded-md pointer-events-none border-primary/90"
                   style={{
-                    borderWidth: 10,
+                    borderWidth: 14,
                     borderStyle: 'solid',
-                    WebkitMaskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
-                    maskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
+                    WebkitMaskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 55%)',
+                    maskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 55%)',
                   }}
                 />
                   <div className="flex items-center justify-center w-32 h-32 z-10">
