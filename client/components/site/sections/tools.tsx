@@ -23,7 +23,7 @@ export default function Tools() {
               <div key={c.title} className="flex flex-col items-center">
                 <div className="aspect-square w-full max-w-[220px] mx-auto rounded-lg border bg-card p-4 card-shadow flex items-center justify-center relative">
                   {/* inner outline box (thin line) */}
-                  <div className="absolute inset-6 rounded-md border border-border/30 pointer-events-none" />
+                  <div className="absolute inset-6 rounded-md border-[1.5px] border-border/60 pointer-events-none" />
                   <div className="flex items-center justify-center w-32 h-32 z-10">
                     <Icon className="w-24 h-24 text-primary" />
                   </div>
