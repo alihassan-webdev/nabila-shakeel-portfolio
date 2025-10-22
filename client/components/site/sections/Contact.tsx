@@ -59,6 +59,7 @@ export default function Contact({ email }: Props) {
               </ul>
             </div>
 
+            <div className="flex items-center gap-3">
             <a
               href={`mailto:${email}`}
               className="inline-flex items-center gap-2 rounded-2xl bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-lg hover:opacity-95 transition"
@@ -66,8 +67,21 @@ export default function Contact({ email }: Props) {
               title="Email"
             >
               <Mail className="w-5 h-5 text-primary-foreground" />
-              <span>Email Me</span>
+              <span>Email Kro</span>
             </a>
+
+            <a
+              href="https://www.linkedin.com/in/nabila-shakeel-727476a6/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm text-foreground/80 hover:bg-foreground/5 transition"
+              aria-label="LinkedIn profile"
+              title="LinkedIn"
+            >
+              <Linkedin className="w-5 h-5" />
+              <span>LinkedIn</span>
+            </a>
+          </div>
           </aside>
         </div>
       </div>
