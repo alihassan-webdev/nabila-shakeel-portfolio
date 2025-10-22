@@ -49,7 +49,7 @@ export default function Experience() {
 
         <div className="mt-16 relative">
           {/* Vertical timeline line */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block transform -translate-x-1/2" />
+          <div className="absolute left-1/2 top-12 bottom-12 w-[2px] bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block transform -translate-x-1/2" />
 
           <div className="space-y-20">
             {experiences.map((exp, index) => {

@@ -117,7 +117,7 @@ export default function Hero() {
               <h3 className="font-display font-semibold text-2xl mb-7">
                 Snapshot
               </h3>
-              <ul className="space-y-5">
+              <ul className="space-y-4">
                 <motion.li
                   className="flex items-start gap-4 group"
                   variants={snapshotItemVariants}
@@ -126,7 +126,7 @@ export default function Hero() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 }}
                 >
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Zap className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex-1">
@@ -146,7 +146,7 @@ export default function Hero() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.4 }}
                 >
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Workflow className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex-1">
@@ -166,7 +166,7 @@ export default function Hero() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.5 }}
                 >
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Cloud className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex-1">
@@ -186,7 +186,7 @@ export default function Hero() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.6 }}
                 >
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Boxes className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex-1">
