@@ -1,4 +1,4 @@
-import { ArrowUp, Zap, Cloud, Boxes, Workflow } from "lucide-react";
+import { Download, Zap, Cloud, Boxes, Workflow } from "lucide-react";
 import { motion } from "framer-motion";
 
 const containerVariants = {
