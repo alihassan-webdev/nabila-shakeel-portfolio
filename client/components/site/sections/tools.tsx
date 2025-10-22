@@ -37,9 +37,9 @@ export default function Tools() {
                     className="flex items-center justify-center w-24 h-24 z-10 border-2 border-black rounded-lg"
                     style={{
                       maskImage:
-                        "linear-gradient(90deg, transparent 0%, black 50%, black 100%), linear-gradient(to top, transparent 0%, black 50%, black 100%)",
+                        "linear-gradient(90deg, transparent 0%, black 50%, black 100%), linear-gradient(to top, transparent 20%, black 80%, black 100%)",
                       WebkitMaskImage:
-                        "linear-gradient(90deg, transparent 0%, black 50%, black 100%), linear-gradient(to top, transparent 0%, black 50%, black 100%)",
+                        "linear-gradient(90deg, transparent 0%, black 50%, black 100%), linear-gradient(to top, transparent 20%, black 80%, black 100%)",
                       maskComposite: "intersect",
                       WebkitMaskComposite: "source-in",
                     }}
