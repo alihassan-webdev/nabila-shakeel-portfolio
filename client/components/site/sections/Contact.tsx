@@ -1,7 +1,5 @@
 import { Mail, Linkedin } from "lucide-react";
 
-import { Mail, Linkedin } from "lucide-react";
-
 type Props = { email: string };
 
 export default function Contact({ email }: Props) {
@@ -38,7 +36,6 @@ export default function Contact({ email }: Props) {
                 <Linkedin className="w-5 h-5" />
                 <span>LinkedIn</span>
               </a>
-
             </div>
           </div>
 
