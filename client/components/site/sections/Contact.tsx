@@ -1,5 +1,7 @@
 import { Mail, Linkedin, DownloadCloud } from "lucide-react";
 
+import { Mail, Linkedin } from "lucide-react";
+
 type Props = { email: string };
 
 export default function Contact({ email }: Props) {
@@ -41,23 +43,34 @@ export default function Contact({ email }: Props) {
           </div>
 
           <aside className="rounded-[var(--radius)] border bg-card p-6 card-shadow">
-            <h3 className="font-semibold">Quick Contact</h3>
-            <p className="mt-2 text-sm text-foreground/80">Email</p>
-            <a
-              href={`mailto:${email}`}
-              className="text-sm text-primary hover:underline"
-            >
-              {email}
-            </a>
-
-            <div className="mt-6">
-              <h4 className="font-medium">Availability</h4>
-              <p className="mt-2 text-sm text-foreground/80">
-                Available for new opportunities — open to contract and remote
-                roles.
-              </p>
+            <div className="flex items-center gap-2 mb-3">
+              <div className="w-2 h-2 rounded-full bg-primary"></div>
+              <span className="text-xs font-semibold text-primary uppercase tracking-widest">Availability</span>
             </div>
 
+            <h3 className="text-lg font-semibold mb-2">Open to work</h3>
+            <p className="text-sm text-foreground/70 mb-4">
+              I am available for contract, freelance, and full-time roles. Open to remote and on-site opportunities.
+            </p>
+
+            <div className="mb-4">
+              <h4 className="font-medium text-sm mb-2">Preferred roles</h4>
+              <ul className="flex flex-col gap-2 text-sm text-foreground/80">
+                <li>• Senior QA Engineer</li>
+                <li>• Test Automation Engineer</li>
+                <li>• API / Backend Test Engineer</li>
+              </ul>
+            </div>
+
+            <a
+              href={`mailto:${email}`}
+              className="inline-flex items-center gap-2 rounded-2xl bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-lg hover:opacity-95 transition"
+              aria-label={`Email ${email}`}
+              title="Email"
+            >
+              <Mail className="w-5 h-5 text-primary-foreground" />
+              <span>Email Me</span>
+            </a>
           </aside>
         </div>
       </div>
