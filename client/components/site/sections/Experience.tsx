@@ -43,45 +43,64 @@ export default function Experience() {
   return (
     <section id="experience" className="scroll-mt-24">
       <div className="container py-20 px-4 md:px-12 lg:px-20">
-        <h2 className="font-display text-4xl md:text-5xl">Experience</h2>
+        <h2 className="font-display text-4xl md:text-5xl text-center">
+          Experience
+        </h2>
 
-        {/* Outer wrapper with centered timeline */}
-        <div className="mt-12 relative">
-          {/* Vertical timeline center line for desktop */}
+        {/* Timeline container */}
+        <div className="mt-16 relative">
+          {/* Center vertical line */}
           <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block transform -translate-x-1/2" />
 
-          <div className="space-y-8">
+          <div className="space-y-12">
             {experiences.map((exp, index) => {
               const isLeft = index % 2 === 0;
-
               return (
                 <div
                   key={index}
-                  className="relative md:grid md:grid-cols-12 md:items-start"
+                  className={`relative md:grid md:grid-cols-12 md:items-start ${isLeft ? "md:pr-8" : "md:pl-8"
+                    }`}
                 >
-                  {/* Center column with dot aligned to the top (aligns with date) */}
-                  {/* Center column: show date and dot aligned on md+ screens */}
-                  <div className="hidden md:flex md:col-span-2 md:col-start-6 items-start justify-center">
-                    <div className="relative flex flex-col items-center w-full">
-                      <p className={`text-xs font-semibold text-primary uppercase tracking-widest mb-0 ${isLeft ? 'text-right pr-3' : 'text-left pl-3'}`}>
-                        {exp.date}
-                      </p>
-                      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                        <div className="w-4 h-4 rounded-full bg-primary border-4 border-background" />
+                  {/* Date and dot container */}
+                  <div
+                    className={`hidden md:flex md:col-span-2 items-center ${isLeft
+                        ? "md:col-start-5 md:justify-end pr-4 text-right"
+                        : "md:col-start-7 md:justify-start pl-4 text-left"
+                      }`}
+                  >
+                    <div className="relative flex items-center gap-3">
+                      {isLeft && (
+                        <p className="text-xs font-semibold text-primary uppercase tracking-widest">
+                          {exp.date}
+                        </p>
+                      )}
+
+                      {/* Dot */}
+                      <div className="relative flex items-center justify-center">
+                        <div className="w-5 h-5 rounded-full bg-primary border-4 border-background shadow-md" />
                       </div>
+
+                      {!isLeft && (
+                        <p className="text-xs font-semibold text-primary uppercase tracking-widest">
+                          {exp.date}
+                        </p>
+                      )}
                     </div>
                   </div>
 
-                  {/* Card column - placed left or right on md+ screens */}
+                  {/* Card Section */}
                   <div
-                    className={` ${isLeft ? "md:col-span-5 md:col-start-1 md:mr-4" : "md:col-span-5 md:col-start-8 md:ml-4"}`}
+                    className={`${isLeft
+                        ? "md:col-span-5 md:col-start-1"
+                        : "md:col-span-5 md:col-start-8"
+                      }`}
                   >
-                    {/* date for small screens (keep inside card) */}
+                    {/* date for small screens */}
                     <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-2 md:hidden">
                       {exp.date}
                     </p>
 
-                    <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow">
+                    <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow hover:shadow-lg transition-all duration-300">
                       <h3 className="text-lg font-semibold font-display text-foreground">
                         {exp.title}
                       </h3>
@@ -105,16 +124,6 @@ export default function Experience() {
                           ))}
                         </ul>
                       )}
-
-                      {/* Small-screen link: visible only on small devices */}
-                      <div className="mt-4 md:hidden">
-                        <a
-                          href="#"
-                          className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
-                        >
-                          View details
-                        </a>
-                      </div>
                     </div>
                   </div>
                 </div>
