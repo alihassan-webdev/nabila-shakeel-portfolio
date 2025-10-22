@@ -73,9 +73,9 @@ export default function Projects() {
             return (
               <div
                 key={i}
-                className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow hover:translate-y-[-4px] transition-transform duration-300"
+                className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow hover:translate-y-[-4px] transition-transform duration-300 min-h-[120px]"
               >
-                <div className="flex items-start gap-4">
+                <div className="flex items-center gap-4 h-full">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Icon className="w-6 h-6 text-primary" />
                   </div>
@@ -83,9 +83,6 @@ export default function Projects() {
                     <h3 className="text-lg font-semibold font-display text-foreground">
                       {p.title}
                     </h3>
-                    <p className="mt-2 text-sm text-foreground/70 leading-relaxed">
-                      {p.description}
-                    </p>
                   </div>
                 </div>
               </div>
