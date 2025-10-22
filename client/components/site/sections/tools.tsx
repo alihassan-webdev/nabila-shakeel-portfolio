@@ -20,16 +20,13 @@ export default function Tools() {
           {categories.map((c) => {
             const Icon = c.icon;
             return (
-              <div
-                key={c.title}
-                className="aspect-square w-full max-w-[220px] mx-auto rounded-lg border bg-card p-4 card-shadow flex flex-col items-center justify-center gap-2"
-              >
-                <div className="flex items-center justify-center w-16 h-16 rounded-lg bg-primary/10">
-                  <Icon className="w-10 h-10 text-primary" />
+              <div key={c.title} className="flex flex-col items-center">
+                <div className="aspect-square w-full max-w-[220px] mx-auto rounded-lg border bg-card p-4 card-shadow flex items-center justify-center">
+                  <div className="flex items-center justify-center w-24 h-24 rounded-lg bg-primary/10">
+                    <Icon className="w-14 h-14 text-primary" />
+                  </div>
                 </div>
-                <div className="text-center">
-                  <span className="block text-sm font-medium text-foreground">{c.title}</span>
-                </div>
+                <span className="mt-3 text-center text-sm font-medium text-foreground max-w-[220px]">{c.title}</span>
               </div>
             );
           })}
