@@ -5,6 +5,7 @@ const links = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#experience", label: "Experience" },
+  { href: "#projects", label: "Projects" },
   { href: "#skills", label: "Skills" },
   { href: "#contact", label: "Contact" },
 ];
@@ -49,7 +50,7 @@ export default function Header() {
   return (
     <header className="sticky top-4 z-50 w-full flex justify-center px-4">
       {/* Desktop Navigation */}
-      <div className="hidden md:flex w-max py-3 rounded-2xl bg-card border border-border px-6 items-center justify-center gap-6">
+      <div className="hidden md:flex w-max py-3 rounded-2xl bg-card/60 backdrop-blur-md border border-border/60 px-6 items-center justify-center gap-6 shadow-sm">
         <span className="font-display font-semibold text-xl text-primary">
           Portfolio
         </span>
@@ -73,7 +74,7 @@ export default function Header() {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="md:hidden flex items-center justify-between w-full py-3 px-4 rounded-2xl bg-card border border-border">
+      <div className="md:hidden flex items-center justify-between w-full py-3 px-4 rounded-2xl bg-card/60 backdrop-blur-md border border-border/60">
         <span className="font-display font-semibold text-lg text-primary">
           Portfolio
         </span>
@@ -88,7 +89,7 @@ export default function Header() {
 
       {/* Mobile menu panel */}
       <div
-        className={`md:hidden absolute top-full mt-2 left-4 right-4 rounded-2xl bg-card border border-border overflow-hidden transition-all duration-300 ease-out origin-top ${
+        className={`md:hidden absolute top-full mt-2 left-4 right-4 rounded-2xl bg-card/60 backdrop-blur-md border border-border/60 overflow-hidden transition-all duration-300 ease-out origin-top ${
           open
             ? "opacity-100 scale-y-100 visible"
             : "opacity-0 scale-y-95 invisible pointer-events-none"

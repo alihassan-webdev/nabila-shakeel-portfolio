@@ -43,34 +43,57 @@ export default function Experience() {
   return (
     <section id="experience" className="scroll-mt-24">
       <div className="container py-20 px-4 md:px-12 lg:px-20">
-        <h2 className="font-display text-4xl md:text-5xl">Experience</h2>
+        <h2 className="font-display text-4xl md:text-5xl text-center">
+          Experience
+        </h2>
 
-        {/* Outer wrapper with centered timeline */}
-        <div className="mt-12 relative">
-          {/* Vertical timeline center line for desktop */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block transform -translate-x-1/2" />
+        <div className="mt-16 relative">
+          {/* Vertical timeline line */}
+          <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block transform -translate-x-1/2" />
 
-          <div className="space-y-8">
+          <div className="space-y-20">
             {experiences.map((exp, index) => {
               const isLeft = index % 2 === 0;
-
               return (
                 <div
                   key={index}
-                  className="relative md:grid md:grid-cols-12 md:items-start"
+                  className="relative md:grid md:grid-cols-12 md:items-center"
                 >
-                  {/* Dot for this item (desktop) */}
-                  <div className="absolute left-1/2 top-6 w-3 h-3 md:w-4 md:h-4 rounded-full bg-primary border-4 border-background hidden md:block transform -translate-x-1/2" />
+                  {/* Dot and Date Row */}
+                  <div className="hidden md:flex md:col-span-12 items-center justify-center relative mb-6">
+                    {isLeft ? (
+                      <>
+                        <p className="text-xs font-semibold text-primary uppercase tracking-widest w-[200px] text-right pr-6">
+                          {exp.date}
+                        </p>
+                        <div className="w-4 h-4 rounded-full bg-primary border-4 border-background z-10" />
+                        <div className="w-[200px]" />
+                      </>
+                    ) : (
+                      <>
+                        <div className="w-[200px]" />
+                        <div className="w-4 h-4 rounded-full bg-primary border-4 border-background z-10" />
+                        <p className="text-xs font-semibold text-primary uppercase tracking-widest w-[200px] text-left pl-6">
+                          {exp.date}
+                        </p>
+                      </>
+                    )}
+                  </div>
 
-                  {/* Card column - placed left or right on md+ screens */}
+                  {/* Card Section */}
                   <div
-                    className={` ${isLeft ? "md:col-span-5 md:col-start-1 md:mr-4" : "md:col-span-5 md:col-start-8 md:ml-4"}`}
+                    className={`${
+                      isLeft
+                        ? "md:col-span-6 md:col-start-1 md:mr-12"
+                        : "md:col-span-6 md:col-start-7 md:ml-12"
+                    }`}
                   >
-                    <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-2">
+                    {/* Date for small screens */}
+                    <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-3 md:hidden">
                       {exp.date}
                     </p>
 
-                    <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow">
+                    <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow hover:shadow-lg transition-all duration-300">
                       <h3 className="text-lg font-semibold font-display text-foreground">
                         {exp.title}
                       </h3>
@@ -94,16 +117,6 @@ export default function Experience() {
                           ))}
                         </ul>
                       )}
-
-                      {/* Small-screen link: visible only on small devices */}
-                      <div className="mt-4 md:hidden">
-                        <a
-                          href="#"
-                          className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
-                        >
-                          View details
-                        </a>
-                      </div>
                     </div>
                   </div>
                 </div>
