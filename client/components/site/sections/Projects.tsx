@@ -1,4 +1,13 @@
-import { Key, Camera, Cpu, BarChart, ShieldCheck, Smartphone, Layers, Zap } from "lucide-react";
+import {
+  Key,
+  Camera,
+  Cpu,
+  BarChart,
+  ShieldCheck,
+  Smartphone,
+  Layers,
+  Zap,
+} from "lucide-react";
 
 export default function Projects() {
   const projects = [

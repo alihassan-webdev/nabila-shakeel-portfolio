@@ -50,12 +50,20 @@ const groups = [
   {
     title: "Test Management",
     icon: Workflow,
-    items: ["Test Planning", "Test Case Writing", "Execution & Defect Tracking"],
+    items: [
+      "Test Planning",
+      "Test Case Writing",
+      "Execution & Defect Tracking",
+    ],
   },
   {
     title: "SDLC / STLC & Agile",
     icon: Check,
-    items: ["SDLC / STLC Understanding", "Agile / Scrum Experience", "Sprint-based QA"],
+    items: [
+      "SDLC / STLC Understanding",
+      "Agile / Scrum Experience",
+      "Sprint-based QA",
+    ],
   },
   {
     title: "Bug Reporting & Tools",
