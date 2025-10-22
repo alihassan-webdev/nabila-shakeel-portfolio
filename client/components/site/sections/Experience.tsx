@@ -43,57 +43,40 @@ export default function Experience() {
   return (
     <section id="experience" className="scroll-mt-24">
       <div className="container py-20 px-4 md:px-12 lg:px-20">
-        <h2 className="font-display text-4xl md:text-5xl text-center">
-          Experience
-        </h2>
+        <h2 className="font-display text-4xl md:text-5xl">Experience</h2>
 
-        {/* Timeline container */}
-        <div className="mt-16 relative">
-          {/* Center vertical line */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block transform -translate-x-1/2" />
+        {/* Outer wrapper with centered timeline */}
+        <div className="mt-12 relative">
+          {/* Vertical timeline center line */}
+          <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block transform -translate-x-1/2" />
 
-          <div className="space-y-12">
+          <div className="space-y-8">
             {experiences.map((exp, index) => {
               const isLeft = index % 2 === 0;
+
               return (
                 <div
                   key={index}
-                  className={`relative md:grid md:grid-cols-12 md:items-start ${isLeft ? "md:pr-8" : "md:pl-8"
-                    }`}
+                  className="relative md:grid md:grid-cols-12 md:items-start"
                 >
-                  {/* Date and dot container */}
-                  <div
-                    className={`hidden md:flex md:col-span-2 items-center ${isLeft
-                        ? "md:col-start-5 md:justify-end pr-4 text-right"
-                        : "md:col-start-7 md:justify-start pl-4 text-left"
-                      }`}
-                  >
-                    <div className="relative flex items-center gap-3">
-                      {isLeft && (
-                        <p className="text-xs font-semibold text-primary uppercase tracking-widest">
-                          {exp.date}
-                        </p>
-                      )}
-
-                      {/* Dot */}
-                      <div className="relative flex items-center justify-center">
-                        <div className="w-5 h-5 rounded-full bg-primary border-4 border-background shadow-md" />
-                      </div>
-
-                      {!isLeft && (
-                        <p className="text-xs font-semibold text-primary uppercase tracking-widest">
-                          {exp.date}
-                        </p>
-                      )}
-                    </div>
+                  {/* Center date and dot (for desktop) */}
+                  <div className="hidden md:flex md:col-span-2 md:col-start-6 flex-col items-center justify-start relative">
+                    <p
+                      className={`text-xs font-semibold text-primary uppercase tracking-widest mb-2 w-32 text-center`}
+                    >
+                      {exp.date}
+                    </p>
+                    {/* Dot perfectly on the timeline */}
+                    <div className="relative w-5 h-5 rounded-full bg-primary border-4 border-background shadow-md z-10" />
                   </div>
 
-                  {/* Card Section */}
+                  {/* Card column - placed left or right on md+ screens */}
                   <div
-                    className={`${isLeft
-                        ? "md:col-span-5 md:col-start-1"
-                        : "md:col-span-5 md:col-start-8"
-                      }`}
+                    className={` ${
+                      isLeft
+                        ? "md:col-span-5 md:col-start-1 md:mr-4"
+                        : "md:col-span-5 md:col-start-8 md:ml-4"
+                    }`}
                   >
                     {/* date for small screens */}
                     <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-2 md:hidden">
