@@ -45,7 +45,7 @@ export default function Contact({ email }: Props) {
                 href="https://www.linkedin.com/in/nabila-shakeel-727476a6/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm text-foreground/80 hover:bg-foreground/5 transition"
+                className="inline-flex items-center gap-2 rounded-2xl border bg-background px-4 py-2 text-sm text-foreground/80"
                 aria-label="LinkedIn profile"
                 title="LinkedIn"
               >
