@@ -43,43 +43,37 @@ export default function Experience() {
   return (
     <section id="experience" className="scroll-mt-24">
       <div className="container py-20 px-4 md:px-12 lg:px-20">
-        <h2 className="font-display text-4xl md:text-5xl">Experience</h2>
+        <h2 className="font-display text-4xl md:text-5xl text-center">
+          Experience
+        </h2>
 
-        {/* Outer wrapper with centered timeline */}
-        <div className="mt-12 relative">
-          {/* Vertical timeline center line */}
+        <div className="mt-16 relative">
+          {/* Vertical timeline line */}
           <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block transform -translate-x-1/2" />
 
-          <div className="space-y-8">
+          <div className="space-y-16">
             {experiences.map((exp, index) => {
               const isLeft = index % 2 === 0;
-
               return (
                 <div
                   key={index}
                   className="relative md:grid md:grid-cols-12 md:items-start"
                 >
-                  {/* Center date and dot (for desktop) */}
-                  <div className="hidden md:flex md:col-span-2 md:col-start-6 flex-col items-center justify-start relative">
-                    <p
-                      className={`text-xs font-semibold text-primary uppercase tracking-widest mb-2 w-32 text-center`}
-                    >
-                      {exp.date}
-                    </p>
-                    {/* Dot perfectly on the timeline */}
-                    <div className="relative w-5 h-5 rounded-full bg-primary border-4 border-background shadow-md z-10" />
+                  {/* Center dot */}
+                  <div className="hidden md:flex md:col-span-2 md:col-start-6 items-center justify-center relative">
+                    <div className="absolute w-5 h-5 rounded-full bg-primary border-4 border-background z-10" />
                   </div>
 
-                  {/* Card column - placed left or right on md+ screens */}
+                  {/* Card Section */}
                   <div
-                    className={` ${
+                    className={`${
                       isLeft
-                        ? "md:col-span-5 md:col-start-1 md:mr-4"
-                        : "md:col-span-5 md:col-start-8 md:ml-4"
+                        ? "md:col-span-5 md:col-start-1 md:mr-8"
+                        : "md:col-span-5 md:col-start-8 md:ml-8"
                     }`}
                   >
-                    {/* date for small screens */}
-                    <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-2 md:hidden">
+                    {/* Date above card */}
+                    <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-3 text-left">
                       {exp.date}
                     </p>
 
