@@ -146,7 +146,7 @@ export default function Hero() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.4 }}
                 >
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <div className="p-2.5 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Workflow className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex-1">
@@ -166,7 +166,7 @@ export default function Hero() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.5 }}
                 >
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <div className="p-2.5 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Cloud className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex-1">
@@ -186,7 +186,7 @@ export default function Hero() {
                   viewport={{ once: true }}
                   transition={{ delay: 0.6 }}
                 >
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <div className="p-2.5 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Boxes className="w-5 h-5 text-primary" />
                   </div>
                   <div className="flex-1">
