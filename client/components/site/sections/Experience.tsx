@@ -41,7 +41,7 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="scroll-mt-24">
+    <section id="experience" className="scroll-mt-16 lg:scroll-mt-12">
       <div className="container py-20 px-4 md:px-12 lg:px-20">
         <h2 className="font-display text-4xl md:text-5xl text-center">
           Experience
