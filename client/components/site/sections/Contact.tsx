@@ -10,8 +10,9 @@ export default function Contact({ email }: Props) {
           <div>
             <h2 className="font-display text-4xl md:text-5xl">Contact</h2>
             <p className="mt-4 text-foreground/70 text-lg max-w-xl">
-              Have a question or exciting opportunity? I'd love to hear from you.
-              Get in touch via email or LinkedIn and let's discuss how we can collaborate.
+              Have a question or exciting opportunity? I'd love to hear from
+              you. Get in touch via email or LinkedIn and let's discuss how we
+              can collaborate.
             </p>
           </div>
 
@@ -28,7 +29,6 @@ export default function Contact({ email }: Props) {
               I am available for contract, freelance, and full-time roles. Open
               to remote and on-site opportunities.
             </p>
-
 
             <div className="flex items-center gap-3">
               <a
