@@ -22,8 +22,8 @@ export default function Tools() {
             return (
               <div key={c.title} className="flex flex-col items-center">
                 <div className="aspect-square w-full max-w-[220px] mx-auto rounded-lg border bg-card p-4 card-shadow flex items-center justify-center">
-                  <div className="flex items-center justify-center w-24 h-24 rounded-lg bg-primary/10">
-                    <Icon className="w-14 h-14 text-primary" />
+                  <div className="flex items-center justify-center w-28 h-28">
+                    <Icon className="w-20 h-20 text-primary" />
                   </div>
                 </div>
                 <span className="mt-3 text-center text-sm font-medium text-foreground max-w-[220px]">{c.title}</span>
