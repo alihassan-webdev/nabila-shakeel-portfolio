@@ -117,7 +117,7 @@ export default function Hero() {
               <h3 className="font-display font-semibold text-2xl mb-7">
                 Snapshot
               </h3>
-              <ul className="space-y-5">
+              <ul className="space-y-4">
                 <motion.li
                   className="flex items-start gap-4 group"
                   variants={snapshotItemVariants}
