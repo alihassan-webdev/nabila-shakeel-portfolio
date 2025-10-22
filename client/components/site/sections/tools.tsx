@@ -1,13 +1,13 @@
 import { Zap, ShieldCheck, Workflow, GitBranch, Database, FileText, DownloadCloud } from "lucide-react";
 
-const categories: { title: string; icon: any; color: string }[] = [
-  { title: "Automation & Testing Tools", icon: Zap, color: "#FB923C" },
-  { title: "API & Security Tools", icon: ShieldCheck, color: "#EF4444" },
-  { title: "CI/CD & DevOps Tools", icon: Workflow, color: "#06B6D4" },
-  { title: "Version Control Systems", icon: GitBranch, color: "#0EA5A4" },
-  { title: "Database Management Tools", icon: Database, color: "#16A34A" },
-  { title: "Bug Tracking & Project Management Tools", icon: FileText, color: "#8B5CF6" },
-  { title: "Monitoring & Analysis Tools", icon: DownloadCloud, color: "#3B82F6" },
+const categories: { title: string; icon: any; color?: string }[] = [
+  { title: "Automation & Testing Tools", icon: Zap },
+  { title: "API & Security Tools", icon: ShieldCheck },
+  { title: "CI/CD & DevOps Tools", icon: Workflow },
+  { title: "Version Control Systems", icon: GitBranch },
+  { title: "Database Management Tools", icon: Database },
+  { title: "Bug Tracking & Project Management Tools", icon: FileText },
+  { title: "Monitoring & Analysis Tools", icon: DownloadCloud },
 ];
 
 export default function Tools() {
