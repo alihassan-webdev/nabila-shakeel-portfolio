@@ -25,13 +25,17 @@ export default function Header() {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActive(`#${entry.target.id}`);
-          }
-        });
+        const visibleEntries = entries.filter((entry) => entry.isIntersecting);
+        if (visibleEntries.length > 0) {
+          const topMost = visibleEntries.reduce((top, entry) => {
+            return entry.boundingClientRect.top < top.boundingClientRect.top
+              ? entry
+              : top;
+          });
+          setActive(`#${topMost.target.id}`);
+        }
       },
-      { threshold: 0.3 },
+      { threshold: 0.1 },
     );
 
     sectionIds.forEach((id) => {

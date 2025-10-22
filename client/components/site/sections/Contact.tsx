@@ -5,13 +5,14 @@ type Props = { email: string };
 export default function Contact({ email }: Props) {
   return (
     <section id="contact" className="scroll-mt-16 lg:scroll-mt-12">
-      <div className="container py-20 px-4 md:px-12 lg:px-20">
-        <div className="grid gap-8 md:grid-cols-2 items-start">
+      <div className="container pt-32 pb-20 px-4 md:px-12 lg:px-20">
+        <div className="grid gap-8 md:grid-cols-2 items-center">
           <div>
             <h2 className="font-display text-4xl md:text-5xl">Contact</h2>
             <p className="mt-4 text-foreground/70 text-lg max-w-xl">
-              I’m open to freelance, contract, or full-time opportunities. Reach
-              out via email or LinkedIn and I’ll respond promptly.
+              Have a question or exciting opportunity? I'd love to hear from
+              you. Get in touch via email or LinkedIn and let's discuss how we
+              can collaborate.
             </p>
           </div>
 
@@ -29,15 +30,6 @@ export default function Contact({ email }: Props) {
               to remote and on-site opportunities.
             </p>
 
-            <div className="mb-4">
-              <h4 className="font-medium text-sm mb-2">Preferred roles</h4>
-              <ul className="flex flex-col gap-2 text-sm text-foreground/80">
-                <li>• Senior QA Engineer</li>
-                <li>• Test Automation Engineer</li>
-                <li>• API / Backend Test Engineer</li>
-              </ul>
-            </div>
-
             <div className="flex items-center gap-3">
               <a
                 href={`mailto:${email}`}
@@ -45,20 +37,20 @@ export default function Contact({ email }: Props) {
                 aria-label={`Email ${email}`}
                 title="Email"
               >
+                <span>Email</span>
                 <Mail className="w-5 h-5 text-primary-foreground" />
-                <span>Email Kro</span>
               </a>
 
               <a
                 href="https://www.linkedin.com/in/nabila-shakeel-727476a6/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-2xl border px-4 py-2 text-sm text-foreground/80 hover:bg-foreground/5 transition"
+                className="inline-flex items-center gap-2 rounded-2xl border bg-background px-4 py-2 text-sm text-foreground/80"
                 aria-label="LinkedIn profile"
                 title="LinkedIn"
               >
-                <Linkedin className="w-5 h-5" />
                 <span>LinkedIn</span>
+                <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </aside>

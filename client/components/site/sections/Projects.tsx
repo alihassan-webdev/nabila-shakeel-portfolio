@@ -42,7 +42,7 @@ export default function Projects() {
             return (
               <div
                 key={i}
-                className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow hover:translate-y-[-4px] transition-transform duration-300 min-h-[120px]"
+                className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow min-h-[120px]"
               >
                 <div className="flex items-center gap-4 h-full">
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
