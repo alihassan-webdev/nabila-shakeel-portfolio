@@ -24,10 +24,12 @@ export default function Tools() {
                 <div className="aspect-square w-full max-w-[220px] mx-auto rounded-lg border bg-card p-4 card-shadow flex items-center justify-center relative">
                   {/* inner outline box (thin line) */}
                   <div
-                  className="absolute inset-6 rounded-md pointer-events-none border-8 border-primary/90"
+                  className="absolute inset-6 rounded-md pointer-events-none border-primary/90"
                   style={{
-                    WebkitMaskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%)',
-                    maskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%)',
+                    borderWidth: 10,
+                    borderStyle: 'solid',
+                    WebkitMaskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
+                    maskImage: 'linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
                   }}
                 />
                   <div className="flex items-center justify-center w-32 h-32 z-10">
