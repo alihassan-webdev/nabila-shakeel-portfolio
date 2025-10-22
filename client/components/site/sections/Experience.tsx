@@ -57,7 +57,7 @@ export default function Experience() {
               return (
                 <div
                   key={index}
-                  className="relative md:grid md:grid-cols-12 md:items-start"
+                  className="relative md:grid md:grid-cols-12 md:items-center"
                 >
                   {/* Center dot */}
                   <div className="hidden md:flex md:col-span-2 md:col-start-6 items-center justify-center relative">
@@ -72,12 +72,12 @@ export default function Experience() {
                         : "md:col-span-5 md:col-start-8 md:ml-8"
                     }`}
                   >
-                    {/* Date above card — perfectly aligned with dot */}
+                    {/* Date aligned perfectly with dot */}
                     <p
-                      className={`text-xs font-semibold text-primary uppercase tracking-widest mb-3 w-[160px] ${
+                      className={`text-xs font-semibold text-primary uppercase tracking-widest mb-3 w-[160px] flex items-center ${
                         isLeft
-                          ? "ml-auto text-right md:translate-x-[40px]"
-                          : "text-left md:-translate-x-[40px]"
+                          ? "ml-auto justify-end md:translate-x-[40px] md:-translate-y-[10px]"
+                          : "justify-start md:-translate-x-[40px] md:-translate-y-[10px]"
                       }`}
                     >
                       {exp.date}
