@@ -67,11 +67,11 @@ export default function Skills() {
               <h3 className="text-sm font-semibold text-primary uppercase tracking-widest mb-4">
                 {category}
               </h3>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-2 md:gap-3">
                 {items.map((skill) => (
                   <span
                     key={skill}
-                    className="inline-flex items-center px-4 py-2 rounded-full bg-foreground/5 text-sm text-foreground/80 border border-foreground/10 hover:bg-primary/10 hover:border-primary/30 hover:text-primary transition-colors"
+                    className="inline-flex items-center px-3 md:px-4 py-1 md:py-2 rounded-full bg-foreground/5 text-xs md:text-sm text-foreground/80 border border-foreground/10 hover:bg-primary/10 hover:border-primary/30 hover:text-primary transition-colors"
                   >
                     {skill}
                   </span>
