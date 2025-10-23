@@ -27,17 +27,26 @@ export default function Header() {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        const visibleEntries = entries.filter((entry) => entry.isIntersecting);
-        if (visibleEntries.length > 0) {
-          const most = visibleEntries.reduce((best, entry) => {
-            return entry.intersectionRatio > best.intersectionRatio
-              ? entry
-              : best;
-          });
-          setActive(`#${most.target.id}`);
+        // Find the section with the largest intersection area in viewport
+        let bestEntry = null;
+        let largestArea = 0;
+
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const area =
+              entry.intersectionRect.height * entry.intersectionRect.width;
+            if (area > largestArea) {
+              largestArea = area;
+              bestEntry = entry;
+            }
+          }
+        });
+
+        if (bestEntry) {
+          setActive(`#${bestEntry.target.id}`);
         }
       },
-      { threshold: [0.1, 0.5] },
+      { threshold: 0.1 },
     );
 
     sectionIds.forEach((id) => {
