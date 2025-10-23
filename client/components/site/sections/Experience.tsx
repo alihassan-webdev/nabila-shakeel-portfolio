@@ -30,6 +30,7 @@ export default function Experience() {
       highlights: [
         "Conducted comprehensive EMR system testing with attention to patient data security and compliance.",
         "Developed test automation scripts for financial module validations reducing manual effort by 40%.",
+        "Managed defect lifecycle and provided detailed test reports for senior management and stakeholders.",
       ],
     },
     {
