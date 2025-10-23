@@ -31,7 +31,7 @@ const snapshotItemVariants = {
     x: 0,
     transition: {
       duration: 0.6,
-      ease: "easeOut",
+      ease: "easeOut" as const,
     },
   },
 };
@@ -88,18 +88,21 @@ export default function Hero() {
 
           <motion.div className="md:col-span-5" variants={itemVariants}>
             <div className="relative mx-auto max-w-md rounded-[var(--radius)] border bg-gradient-to-br from-card via-card to-accent/5 p-8 card-shadow">
-              {/* Years experience badge (computed from start year) */}
+              {/* Years experience badge - automatically calculated from career start year */}
               {(() => {
-                const startYear = 2018; // career start year (set so it shows 7 years now, will auto-increment in future)
-                const now = new Date();
-                const years = Math.max(0, now.getFullYear() - startYear);
+                const CAREER_START_YEAR = 2018;
+                const currentYear = new Date().getFullYear();
+                const yearsOfExperience = Math.max(
+                  0,
+                  currentYear - CAREER_START_YEAR,
+                );
                 return (
                   <div
                     className="absolute top-4 right-4 flex items-center gap-3 bg-background/90 border border-border px-4 py-2 rounded-[var(--radius)] shadow-sm"
-                    aria-hidden
+                    aria-hidden="true"
                   >
                     <div className="text-3xl md:text-4xl font-extrabold text-primary leading-none">
-                      {years}
+                      {yearsOfExperience}
                     </div>
                     <div className="text-xs text-foreground/70 uppercase tracking-wider leading-tight">
                       <div>Years</div>
@@ -118,86 +121,57 @@ export default function Hero() {
                 Snapshot
               </h3>
               <ul className="space-y-4">
-                <motion.li
-                  className="flex items-start gap-4 group"
-                  variants={snapshotItemVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.3 }}
-                >
-                  <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Zap className="w-5 h-5 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-sm font-medium text-foreground leading-relaxed">
-                      Manual & Automation Testing
-                    </p>
-                    <p className="text-xs text-foreground/60 mt-1">
-                      Selenium, Cypress, Playwright
-                    </p>
-                  </div>
-                </motion.li>
-                <motion.li
-                  className="flex items-start gap-4 group"
-                  variants={snapshotItemVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.4 }}
-                >
-                  <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Workflow className="w-5 h-5 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-sm font-medium text-foreground leading-relaxed">
-                      API Testing
-                    </p>
-                    <p className="text-xs text-foreground/60 mt-1">
-                      Postman, REST Assured, GraphQL
-                    </p>
-                  </div>
-                </motion.li>
-                <motion.li
-                  className="flex items-start gap-4 group"
-                  variants={snapshotItemVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.5 }}
-                >
-                  <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Cloud className="w-5 h-5 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-sm font-medium text-foreground leading-relaxed">
-                      CI/CD Pipeline
-                    </p>
-                    <p className="text-xs text-foreground/60 mt-1">
-                      Jenkins, GitHub Actions, GitLab CI
-                    </p>
-                  </div>
-                </motion.li>
-                <motion.li
-                  className="flex items-start gap-4 group"
-                  variants={snapshotItemVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.6 }}
-                >
-                  <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Boxes className="w-5 h-5 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-sm font-medium text-foreground leading-relaxed">
-                      Containerization
-                    </p>
-                    <p className="text-xs text-foreground/60 mt-1">
-                      Docker, Kubernetes
-                    </p>
-                  </div>
-                </motion.li>
+                {[
+                  {
+                    icon: Zap,
+                    title: "Manual & Automation Testing",
+                    tools: "Selenium, Cypress, Playwright",
+                    delay: 0.3,
+                  },
+                  {
+                    icon: Workflow,
+                    title: "API Testing",
+                    tools: "Postman, REST Assured, GraphQL",
+                    delay: 0.4,
+                  },
+                  {
+                    icon: Cloud,
+                    title: "CI/CD Pipeline",
+                    tools: "Jenkins, GitHub Actions, GitLab CI",
+                    delay: 0.5,
+                  },
+                  {
+                    icon: Boxes,
+                    title: "Containerization",
+                    tools: "Docker, Kubernetes",
+                    delay: 0.6,
+                  },
+                ].map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <motion.li
+                      key={item.title}
+                      className="flex items-start gap-4 group"
+                      variants={snapshotItemVariants}
+                      initial="hidden"
+                      whileInView="visible"
+                      viewport={{ once: true }}
+                      transition={{ delay: item.delay }}
+                    >
+                      <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <Icon className="w-5 h-5 text-primary" />
+                      </div>
+                      <div className="flex-1">
+                        <p className="text-sm font-medium text-foreground leading-relaxed">
+                          {item.title}
+                        </p>
+                        <p className="text-xs text-foreground/60 mt-1">
+                          {item.tools}
+                        </p>
+                      </div>
+                    </motion.li>
+                  );
+                })}
               </ul>
             </div>
           </motion.div>
