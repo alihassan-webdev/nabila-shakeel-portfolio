@@ -3,11 +3,11 @@ import About from "@/components/site/sections/About";
 import Experience from "@/components/site/sections/Experience";
 import Education from "@/components/site/sections/Education";
 import Skills from "@/components/site/sections/Skills";
-import Tools from "@/components/site/sections/tools";
+import Tools from "@/components/site/sections/Tools";
 import Projects from "@/components/site/sections/Projects";
 import Contact from "@/components/site/sections/Contact";
 
-const EMAIL = "nabilashakeel62@gmail.com";
+const CONTACT_EMAIL = "nabilashakeel62@gmail.com";
 
 export default function Index() {
   return (
@@ -19,7 +19,7 @@ export default function Index() {
       <Skills />
       <Projects />
       <Tools />
-      <Contact email={EMAIL} />
+      <Contact email={CONTACT_EMAIL} />
     </main>
   );
 }

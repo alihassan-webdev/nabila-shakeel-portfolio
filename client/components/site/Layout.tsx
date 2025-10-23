@@ -2,14 +2,14 @@ import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 
-const EMAIL = "qlqfmj9zje@jkotypc.com";
+const CONTACT_EMAIL = "nabilashakeel62@gmail.com";
 
 export default function Layout() {
   return (
     <div className="min-h-screen">
       <Header />
       <Outlet />
-      <Footer email={EMAIL} />
+      <Footer email={CONTACT_EMAIL} />
     </div>
   );
 }
