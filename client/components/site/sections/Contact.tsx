@@ -1,5 +1,4 @@
-import { Mail, Linkedin } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa";
+import { Mail, Linkedin, MessageCircle } from "lucide-react";
 
 type Props = { email: string };
 
