@@ -18,6 +18,8 @@ export default function Experience() {
       highlights: [
         "Validation testing in compliance with healthcare standards (HIPAA).",
         "Maintained automation frameworks for web and API testing.",
+        "Mentored junior QA engineers on test automation best practices and frameworks.",
+        "Led test strategy for critical SaaS platform deployments ensuring zero-downtime releases.",
       ],
     },
     {
@@ -25,18 +27,31 @@ export default function Experience() {
       title: "Senior QA Engineer – 1 Machine Pvt. Ltd.",
       description:
         "Specialized in US Healthcare IT, ensuring HIPAA and EMR compliance; developed QA documentation and validated ERP finance modules.",
+      highlights: [
+        "Conducted comprehensive EMR system testing with attention to patient data security and compliance.",
+        "Developed test automation scripts for financial module validations reducing manual effort by 40%.",
+        "Managed defect lifecycle and provided detailed test reports for senior management and stakeholders.",
+      ],
     },
     {
       date: "Oct 2016 – Oct 2018",
       title: "Software QA & System Engineer – Imperial Soft Pvt. Ltd.",
       description:
         "Tested HMIS, ERP, and back-office systems; automated regression tests with Selenium and validated UX/UI for stakeholders.",
+      highlights: [
+        "Built robust Selenium-based regression test suites achieving 95% test automation coverage.",
+        "Collaborated with UX/UI teams to validate user workflows and accessibility compliance standards.",
+      ],
     },
     {
       date: "Oct 2014 – Aug 2016",
       title: "IT & QA Engineer – Ashtex Solutions Pvt. Ltd.",
       description:
         "Developed and executed test plans, defect reports, and end-user documentation; performed system and UAT testing.",
+      highlights: [
+        "Executed comprehensive test plans for multiple projects achieving 98% defect detection rate.",
+        "Coordinated UAT testing with end-users and stakeholders ensuring smooth product releases.",
+      ],
     },
   ];
 
