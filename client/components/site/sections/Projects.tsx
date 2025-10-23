@@ -12,8 +12,14 @@ import {
   Briefcase,
 } from "lucide-react";
 
+interface ProjectItem {
+  title: string;
+  icon: React.ComponentType<{ className?: string }>;
+  description: string;
+}
+
 export default function Projects() {
-  const projects = [
+  const projects: ProjectItem[] = [
     {
       title: "Cloud-Based Identity & Access Management",
       icon: Key,
@@ -142,11 +148,11 @@ export default function Projects() {
         </h2>
 
         <div className="grid gap-6 lg:grid-cols-2">
-          {projects.map((p, i) => {
-            const Icon = p.icon;
+          {projects.map((project) => {
+            const Icon = project.icon;
             return (
               <div
-                key={i}
+                key={project.title}
                 className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow hover:shadow-lg transition-shadow"
               >
                 <div className="flex items-center gap-3 mb-3">
@@ -154,11 +160,11 @@ export default function Projects() {
                     <Icon className="w-5 h-5 text-primary" />
                   </div>
                   <h3 className="text-lg font-semibold font-display text-foreground">
-                    {p.title}
+                    {project.title}
                   </h3>
                 </div>
                 <p className="text-sm text-foreground/70 leading-relaxed">
-                  {p.description}
+                  {project.description}
                 </p>
               </div>
             );
@@ -174,12 +180,12 @@ export default function Projects() {
           </div>
 
           <div className="flex flex-wrap gap-3">
-            {domains.map((d) => (
+            {domains.map((domain) => (
               <span
-                key={d}
+                key={domain}
                 className="inline-flex items-center gap-2 rounded-full px-4 py-2 bg-foreground/5 text-sm text-foreground/80 hover:bg-primary/10 hover:text-primary transition-colors"
               >
-                {d}
+                {domain}
               </span>
             ))}
           </div>
