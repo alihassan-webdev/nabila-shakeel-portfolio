@@ -47,6 +47,10 @@ export default function Experience() {
       title: "IT & QA Engineer – Ashtex Solutions Pvt. Ltd.",
       description:
         "Developed and executed test plans, defect reports, and end-user documentation; performed system and UAT testing.",
+      highlights: [
+        "Executed comprehensive test plans for multiple projects achieving 98% defect detection rate.",
+        "Coordinated UAT testing with end-users and stakeholders ensuring smooth product releases.",
+      ],
     },
   ];
 
