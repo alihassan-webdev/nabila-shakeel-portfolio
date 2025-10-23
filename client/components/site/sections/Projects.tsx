@@ -86,6 +86,30 @@ export default function Projects() {
       description:
         "Validated ERP Finance and transaction modules. Tested workflows for teller systems, digital banking, consumer lending, and account opening.",
     },
+    {
+      title: "Cybersecurity Testing & Vulnerability Assessment",
+      icon: ShieldCheck,
+      description:
+        "Conducted penetration testing, vulnerability assessment, and load & performance testing using OWASP ZAP, JMeter, and Fiddler. Ensured compliance, threat mitigation, and enterprise-grade security validation.",
+    },
+    {
+      title: "RPA Testing & Automation Workflows",
+      icon: Zap,
+      description:
+        "Focused on automation workflows and regression cycles for RPA tools like Mesmer HQ. Validated robotic process execution, task accuracy, and performance.",
+    },
+    {
+      title: "RevBits Privileged Access Management (PAM)",
+      icon: Key,
+      description:
+        "Contributed to access control validation, activity monitoring, and compliance testing within RevBits PAM platform.",
+    },
+    {
+      title: "QA Trail Tool (Jira Clone)",
+      icon: Briefcase,
+      description:
+        "Supported internal QA management tool development and testing. Focused on workflow optimization, issue tracking, and usability validation.",
+    },
   ];
 
   const domains = [
