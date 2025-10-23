@@ -61,80 +61,49 @@ export default function Experience() {
         <h2 className="font-display text-4xl md:text-5xl">Experience</h2>
 
         <div className="mt-16 relative">
-          {/* Vertical timeline line */}
-          <div className="absolute left-1/2 top-12 bottom-12 w-[2px] bg-gradient-to-b from-primary via-primary/50 to-transparent hidden md:block transform -translate-x-1/2" />
+          {/* Left vertical line */}
+          <div className="absolute left-[10px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary via-primary/50 to-transparent" />
 
-          <div className="space-y-20">
-            {experiences.map((exp, index) => {
-              const isLeft = index % 2 === 0;
-              return (
-                <div
-                  key={index}
-                  className="relative md:grid md:grid-cols-12 md:items-center"
-                >
-                  {/* Dot and Date Row */}
-                  <div className="hidden md:flex md:col-span-12 items-center justify-center relative mb-6">
-                    {isLeft ? (
-                      <>
-                        <p className="text-xs font-semibold text-primary uppercase tracking-widest w-[200px] text-right pr-6">
-                          {exp.date}
-                        </p>
-                        <div className="w-4 h-4 rounded-full bg-primary border-4 border-background z-10" />
-                        <div className="w-[200px]" />
-                      </>
-                    ) : (
-                      <>
-                        <div className="w-[200px]" />
-                        <div className="w-4 h-4 rounded-full bg-primary border-4 border-background z-10" />
-                        <p className="text-xs font-semibold text-primary uppercase tracking-widest w-[200px] text-left pl-6">
-                          {exp.date}
-                        </p>
-                      </>
-                    )}
-                  </div>
+          <div className="space-y-12 relative z-10">
+            {experiences.map((exp, index) => (
+              <div key={index} className="relative flex items-start gap-6">
+                {/* Dot perfectly aligned with line */}
+                <div className="relative">
+                  <div className="absolute left-[2px] top-2 w-4 h-4 rounded-full bg-primary border-4 border-background z-10" />
+                </div>
 
-                  {/* Card Section */}
-                  <div
-                    className={`${
-                      isLeft
-                        ? "md:col-span-6 md:col-start-1 md:mr-12"
-                        : "md:col-span-6 md:col-start-7 md:ml-12"
-                    }`}
-                  >
-                    {/* Date for small screens */}
-                    <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-3 md:hidden">
-                      {exp.date}
+                {/* Card */}
+                <div className="pl-8 flex-1">
+                  <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-3">
+                    {exp.date}
+                  </p>
+
+                  <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow">
+                    <h3 className="text-lg font-semibold font-display text-foreground">
+                      {exp.title}
+                    </h3>
+
+                    <p className="mt-3 text-foreground/70 leading-relaxed">
+                      {exp.description}
                     </p>
 
-                    <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow">
-                      <h3 className="text-lg font-semibold font-display text-foreground">
-                        {exp.title}
-                      </h3>
-
-                      <p className="mt-3 text-foreground/70 leading-relaxed">
-                        {exp.description}
-                      </p>
-
-                      {exp.highlights && (
-                        <ul className="mt-4 space-y-2">
-                          {exp.highlights.map((highlight, i) => (
-                            <li
-                              key={i}
-                              className="flex items-start gap-3 text-sm text-foreground/70"
-                            >
-                              <span className="text-primary font-bold mt-0.5">
-                                ✓
-                              </span>
-                              <span>{highlight}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
+                    {exp.highlights && (
+                      <ul className="mt-4 space-y-2">
+                        {exp.highlights.map((highlight, i) => (
+                          <li
+                            key={i}
+                            className="flex items-start gap-3 text-sm text-foreground/70"
+                          >
+                            <span className="text-primary font-bold mt-0.5">✓</span>
+                            <span>{highlight}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -25,48 +25,34 @@ export default function Header() {
   useEffect(() => {
     const sectionIds = links.map((l) => l.href.slice(1));
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        // Find the section with the largest intersection area in viewport
-        let bestEntry = null;
-        let largestArea = 0;
+    const handleScroll = () => {
+      let current = "#home";
 
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const area =
-              entry.intersectionRect.height * entry.intersectionRect.width;
-            if (area > largestArea) {
-              largestArea = area;
-              bestEntry = entry;
-            }
-          }
-        });
-
-        if (bestEntry) {
-          setActive(`#${bestEntry.target.id}`);
-        }
-      },
-      { threshold: 0.1 },
-    );
-
-    sectionIds.forEach((id) => {
-      const element = document.getElementById(id);
-      if (element) observer.observe(element);
-    });
-
-    return () => {
-      sectionIds.forEach((id) => {
+      for (const id of sectionIds) {
         const element = document.getElementById(id);
-        if (element) observer.unobserve(element);
-      });
+        if (!element) continue;
+
+        const rect = element.getBoundingClientRect();
+        // Check if section is in the upper half of viewport
+        if (rect.top <= window.innerHeight / 2) {
+          current = `#${id}`;
+        } else {
+          break;
+        }
+      }
+
+      setActive(current);
     };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header className="sticky top-4 z-50 w-full flex justify-center px-4">
       {/* Desktop Navigation */}
       <div className="hidden md:flex w-max py-3 rounded-2xl bg-card/60 backdrop-blur-md border border-border/60 px-6 items-center justify-center gap-6 shadow-sm">
-        <span className="font-display font-semibold text-xl text-primary">
+        <span className="font-display font-semibold text-xl text-black">
           Portfolio
         </span>
         <div className="h-6 w-px bg-border/30"></div>
@@ -90,7 +76,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       <div className="md:hidden flex items-center justify-between w-full py-3 px-4 rounded-2xl bg-card/60 backdrop-blur-md border border-border/60">
-        <span className="font-display font-semibold text-lg text-primary">
+        <span className="font-display font-semibold text-lg text-black">
           Portfolio
         </span>
         <button
