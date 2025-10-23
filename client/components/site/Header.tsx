@@ -25,52 +25,27 @@ export default function Header() {
   useEffect(() => {
     const sectionIds = links.map((l) => l.href.slice(1));
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        // Find the section closest to the top of the viewport
-        let closestEntry = null;
-        let closestDistance = Infinity;
+    const handleScroll = () => {
+      let current = "#home";
 
-        entries.forEach((entry) => {
-          const rect = entry.boundingClientRect;
-          const distance = Math.abs(rect.top);
-
-          // Prefer sections that are visible and closest to top
-          if (entry.isIntersecting && distance < closestDistance) {
-            closestDistance = distance;
-            closestEntry = entry;
-          }
-        });
-
-        // If no visible section, use the one that passed most recently
-        if (!closestEntry) {
-          entries.forEach((entry) => {
-            const rect = entry.boundingClientRect;
-            // Prefer section above viewport
-            if (rect.top < 0 && rect.bottom > 0) {
-              closestEntry = entry;
-            }
-          });
-        }
-
-        if (closestEntry) {
-          setActive(`#${closestEntry.target.id}`);
-        }
-      },
-      { threshold: [0, 0.25, 0.5, 0.75, 1] },
-    );
-
-    sectionIds.forEach((id) => {
-      const element = document.getElementById(id);
-      if (element) observer.observe(element);
-    });
-
-    return () => {
-      sectionIds.forEach((id) => {
+      for (const id of sectionIds) {
         const element = document.getElementById(id);
-        if (element) observer.unobserve(element);
-      });
+        if (!element) continue;
+
+        const rect = element.getBoundingClientRect();
+        // Check if section is in the upper half of viewport
+        if (rect.top <= window.innerHeight / 2) {
+          current = `#${id}`;
+        } else {
+          break;
+        }
+      }
+
+      setActive(current);
     };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
