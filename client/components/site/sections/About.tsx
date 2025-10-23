@@ -32,7 +32,7 @@ export default function About() {
               <div className="grid gap-6 sm:grid-cols-2">
                 <div className="space-y-3 md:space-y-4">
                   <div className="flex items-start gap-3">
-                    <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0 flex-shrink-0">
+                    <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <FileText className="w-5 h-5 text-primary" />
                     </div>
                     <div className="flex-1 min-w-0">
@@ -49,11 +49,11 @@ export default function About() {
                     <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <Zap className="w-5 h-5 text-primary" />
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2 text-sm">
+                    <div className="flex-1 min-w-0">
+                      <h4 className="font-semibold text-foreground mb-1 text-sm">
                         Test Automation
                       </h4>
-                      <p className="text-sm text-foreground/70 leading-relaxed">
+                      <p className="text-xs md:text-sm text-foreground/70 leading-relaxed">
                         Selenium (Java/Python/C#), Cypress, Playwright, TestNG,
                         JUnit, Cucumber
                       </p>
@@ -64,26 +64,26 @@ export default function About() {
                     <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <Cloud className="w-5 h-5 text-primary" />
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2 text-sm">
+                    <div className="flex-1 min-w-0">
+                      <h4 className="font-semibold text-foreground mb-1 text-sm">
                         API & Performance Testing
                       </h4>
-                      <p className="text-sm text-foreground/70 leading-relaxed">
+                      <p className="text-xs md:text-sm text-foreground/70 leading-relaxed">
                         Postman, REST Assured, JMeter, LoadRunner
                       </p>
                     </div>
                   </div>
                 </div>
-                <div className="space-y-4">
+                <div className="space-y-3 md:space-y-4">
                   <div className="flex items-start gap-3">
                     <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <Workflow className="w-5 h-5 text-primary" />
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2 text-sm">
+                    <div className="flex-1 min-w-0">
+                      <h4 className="font-semibold text-foreground mb-1 text-sm">
                         CI/CD & DevOps
                       </h4>
-                      <p className="text-sm text-foreground/70 leading-relaxed">
+                      <p className="text-xs md:text-sm text-foreground/70 leading-relaxed">
                         Jenkins, GitHub Actions, GitLab CI, Docker, Kubernetes
                       </p>
                     </div>
@@ -93,11 +93,11 @@ export default function About() {
                     <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <Database className="w-5 h-5 text-primary" />
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2 text-sm">
+                    <div className="flex-1 min-w-0">
+                      <h4 className="font-semibold text-foreground mb-1 text-sm">
                         Databases & Validation
                       </h4>
-                      <p className="text-sm text-foreground/70 leading-relaxed">
+                      <p className="text-xs md:text-sm text-foreground/70 leading-relaxed">
                         SQL, JSON/XML validation
                       </p>
                     </div>
@@ -107,11 +107,11 @@ export default function About() {
                     <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                       <Wrench className="w-5 h-5 text-primary" />
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2 text-sm">
+                    <div className="flex-1 min-w-0">
+                      <h4 className="font-semibold text-foreground mb-1 text-sm">
                         Tools & Management
                       </h4>
-                      <p className="text-sm text-foreground/70 leading-relaxed">
+                      <p className="text-xs md:text-sm text-foreground/70 leading-relaxed">
                         Jira, Qase, HP ALM, Azure DevOps
                       </p>
                     </div>
