@@ -52,7 +52,7 @@ export default function Header() {
     <header className="sticky top-4 z-50 w-full flex justify-center px-4">
       {/* Desktop Navigation */}
       <div className="hidden md:flex w-max py-3 rounded-2xl bg-card/60 backdrop-blur-md border border-border/60 px-6 items-center justify-center gap-6 shadow-sm">
-        <span className="font-display font-semibold text-xl text-primary">
+        <span className="font-display font-semibold text-xl text-black">
           Portfolio
         </span>
         <div className="h-6 w-px bg-border/30"></div>
