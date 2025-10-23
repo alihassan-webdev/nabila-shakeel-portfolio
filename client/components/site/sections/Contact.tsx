@@ -62,7 +62,7 @@ export default function Contact({ email }: Props) {
                 title="WhatsApp"
               >
                 <span className="hidden md:inline">WhatsApp</span>
-                <FaWhatsapp size={20} />
+                <MessageCircle className="w-5 h-5" />
               </a>
             </div>
           </aside>
