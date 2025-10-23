@@ -60,7 +60,7 @@ export default function Education() {
                 <h3 className="text-lg font-semibold font-display text-foreground mb-3">
                   Languages
                 </h3>
-                <div className="space-y-2">
+                <div className="flex gap-8">
                   <div>
                     <p className="text-sm font-medium text-foreground">English</p>
                     <p className="text-sm text-foreground/70">Fluent</p>
