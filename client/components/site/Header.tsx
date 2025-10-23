@@ -76,7 +76,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       <div className="md:hidden flex items-center justify-between w-full py-3 px-4 rounded-2xl bg-card/60 backdrop-blur-md border border-border/60">
-        <span className="font-display font-semibold text-lg text-primary">
+        <span className="font-display font-semibold text-lg text-black">
           Portfolio
         </span>
         <button
