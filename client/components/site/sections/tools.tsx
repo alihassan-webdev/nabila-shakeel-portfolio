@@ -20,7 +20,7 @@ const categories: { title: string; icon: any; color?: string }[] = [
 
 export default function Tools() {
   return (
-    <section id="skills" className="scroll-mt-16 lg:scroll-mt-12">
+    <section id="tools" className="scroll-mt-16 lg:scroll-mt-12">
       <div className="container py-20 px-4 md:px-12 lg:px-20">
         <h2 className="font-display text-4xl md:text-5xl">Tools</h2>
 
