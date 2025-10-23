@@ -27,6 +27,10 @@ export default function Experience() {
       title: "Senior QA Engineer – 1 Machine Pvt. Ltd.",
       description:
         "Specialized in US Healthcare IT, ensuring HIPAA and EMR compliance; developed QA documentation and validated ERP finance modules.",
+      highlights: [
+        "Conducted comprehensive EMR system testing with attention to patient data security and compliance.",
+        "Developed test automation scripts for financial module validations reducing manual effort by 40%.",
+      ],
     },
     {
       date: "Oct 2016 – Oct 2018",
