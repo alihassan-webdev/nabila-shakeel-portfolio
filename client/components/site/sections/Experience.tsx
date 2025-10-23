@@ -62,18 +62,18 @@ export default function Experience() {
 
         <div className="mt-16 relative">
           {/* Left vertical line */}
-          <div className="absolute left-4 top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary via-primary/50 to-transparent" />
+          <div className="absolute left-[10px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary via-primary/50 to-transparent" />
 
           <div className="space-y-12 relative z-10">
             {experiences.map((exp, index) => (
               <div key={index} className="relative flex items-start gap-6">
-                {/* Dot */}
+                {/* Dot perfectly aligned with line */}
                 <div className="relative">
-                  <div className="w-4 h-4 rounded-full bg-primary border-4 border-background mt-2" />
+                  <div className="absolute left-[2px] top-2 w-4 h-4 rounded-full bg-primary border-4 border-background z-10" />
                 </div>
 
                 {/* Card */}
-                <div className="flex-1">
+                <div className="pl-8 flex-1">
                   <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-3">
                     {exp.date}
                   </p>
