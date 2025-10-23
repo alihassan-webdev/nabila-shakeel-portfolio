@@ -29,15 +29,15 @@ export default function Header() {
       (entries) => {
         const visibleEntries = entries.filter((entry) => entry.isIntersecting);
         if (visibleEntries.length > 0) {
-          const topMost = visibleEntries.reduce((top, entry) => {
-            return entry.boundingClientRect.top < top.boundingClientRect.top
+          const most = visibleEntries.reduce((best, entry) => {
+            return entry.intersectionRatio > best.intersectionRatio
               ? entry
-              : top;
+              : best;
           });
-          setActive(`#${topMost.target.id}`);
+          setActive(`#${most.target.id}`);
         }
       },
-      { threshold: 0.1 },
+      { threshold: [0.1, 0.5] },
     );
 
     sectionIds.forEach((id) => {
