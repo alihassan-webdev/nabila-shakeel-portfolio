@@ -179,11 +179,11 @@ export default function Projects() {
             </span>
           </div>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-2 md:gap-3">
             {domains.map((domain) => (
               <span
                 key={domain}
-                className="inline-flex items-center gap-2 rounded-full px-4 py-2 bg-foreground/5 text-sm text-foreground/80 hover:bg-primary/10 hover:text-primary transition-colors"
+                className="inline-flex items-center gap-2 rounded-full px-3 md:px-4 py-1 md:py-2 bg-foreground/5 text-xs md:text-sm text-foreground/80 hover:bg-primary/10 hover:text-primary transition-colors"
               >
                 {domain}
               </span>
