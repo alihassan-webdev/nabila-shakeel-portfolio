@@ -61,40 +61,40 @@ export default function Experience() {
         <h2 className="font-display text-4xl md:text-5xl">Experience</h2>
 
         <div className="mt-16 relative">
-          {/* Left vertical line */}
-          <div className="absolute left-[10px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary via-primary/50 to-transparent" />
+          {/* Left vertical line - adjusted for mobile */}
+          <div className="absolute left-[6px] md:left-[10px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary via-primary/50 to-transparent" />
 
           <div className="space-y-12 relative z-10">
-            {experiences.map((exp, index) => (
-              <div key={index} className="relative flex items-start gap-6">
+            {experiences.map((exp) => (
+              <div key={exp.title} className="relative flex items-start gap-4 md:gap-6">
                 {/* Dot perfectly aligned with line */}
-                <div className="relative">
-                  <div className="absolute left-[2px] top-2 w-4 h-4 rounded-full bg-primary border-4 border-background z-10" />
+                <div className="relative flex-shrink-0">
+                  <div className="absolute left-[2px] md:left-[2px] top-2 w-3 md:w-4 h-3 md:h-4 rounded-full bg-primary border-4 border-background z-10" />
                 </div>
 
                 {/* Card */}
-                <div className="pl-8 flex-1">
+                <div className="pl-4 md:pl-8 flex-1">
                   <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-3">
                     {exp.date}
                   </p>
 
-                  <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow">
-                    <h3 className="text-lg font-semibold font-display text-foreground">
+                  <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-4 md:p-6 card-shadow">
+                    <h3 className="text-base md:text-lg font-semibold font-display text-foreground">
                       {exp.title}
                     </h3>
 
-                    <p className="mt-3 text-foreground/70 leading-relaxed">
+                    <p className="mt-3 text-sm md:text-base text-foreground/70 leading-relaxed">
                       {exp.description}
                     </p>
 
                     {exp.highlights && (
                       <ul className="mt-4 space-y-2">
-                        {exp.highlights.map((highlight, i) => (
+                        {exp.highlights.map((highlight) => (
                           <li
-                            key={i}
-                            className="flex items-start gap-3 text-sm text-foreground/70"
+                            key={highlight}
+                            className="flex items-start gap-2 text-xs md:text-sm text-foreground/70"
                           >
-                            <span className="text-primary font-bold mt-0.5">✓</span>
+                            <span className="text-primary font-bold mt-0.5 flex-shrink-0">✓</span>
                             <span>{highlight}</span>
                           </li>
                         ))}
