@@ -129,7 +129,7 @@ export default function Projects() {
           <div className="flex items-center gap-2 mb-6">
             <div className="w-2 h-2 rounded-full bg-primary"></div>
             <span className="text-xs font-semibold text-primary uppercase tracking-widest">
-              Specialized Expertise
+              Domains
             </span>
           </div>
 
