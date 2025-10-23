@@ -1,4 +1,4 @@
-import { Mail, Linkedin } from "lucide-react";
+import { Mail, Linkedin, MessageCircle } from "lucide-react";
 
 type Props = { email: string };
 
@@ -45,12 +45,24 @@ export default function Contact({ email }: Props) {
                 href="https://www.linkedin.com/in/nabila-shakeel-727476a6/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-2xl border bg-background px-4 py-2 text-sm text-foreground/80"
+                className="inline-flex items-center gap-2 rounded-2xl border bg-background px-4 py-2 text-sm text-foreground/80 hover:bg-blue-50 hover:border-blue-300 hover:text-blue-600 transition"
                 aria-label="LinkedIn profile"
                 title="LinkedIn"
               >
                 <span>LinkedIn</span>
                 <Linkedin className="w-5 h-5" />
+              </a>
+
+              <a
+                href="https://wa.me/923244747948"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-2xl border bg-background px-4 py-2 text-sm text-foreground/80 hover:bg-green-50 hover:border-green-300 hover:text-green-600 transition"
+                aria-label="WhatsApp"
+                title="WhatsApp"
+              >
+                <span>WhatsApp</span>
+                <MessageCircle className="w-5 h-5" />
               </a>
             </div>
           </aside>

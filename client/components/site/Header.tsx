@@ -5,8 +5,10 @@ const links = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
   { href: "#experience", label: "Experience" },
+  { href: "#education", label: "Education" },
+  { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
-  { href: "#skills", label: "Tools" },
+  { href: "#tools", label: "Tools" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -25,14 +27,23 @@ export default function Header() {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        const visibleEntries = entries.filter((entry) => entry.isIntersecting);
-        if (visibleEntries.length > 0) {
-          const topMost = visibleEntries.reduce((top, entry) => {
-            return entry.boundingClientRect.top < top.boundingClientRect.top
-              ? entry
-              : top;
-          });
-          setActive(`#${topMost.target.id}`);
+        // Find the section with the largest intersection area in viewport
+        let bestEntry = null;
+        let largestArea = 0;
+
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const area =
+              entry.intersectionRect.height * entry.intersectionRect.width;
+            if (area > largestArea) {
+              largestArea = area;
+              bestEntry = entry;
+            }
+          }
+        });
+
+        if (bestEntry) {
+          setActive(`#${bestEntry.target.id}`);
         }
       },
       { threshold: 0.1 },
