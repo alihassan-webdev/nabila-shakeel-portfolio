@@ -49,30 +49,6 @@ export default function Education() {
               </div>
             </div>
           </div>
-
-          {/* Languages Section */}
-          <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow lg:col-span-2">
-            <div className="flex items-start gap-4">
-              <div className="p-3 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <Globe className="w-6 h-6 text-primary" />
-              </div>
-              <div className="flex-1">
-                <h3 className="text-lg font-semibold font-display text-foreground mb-3">
-                  Languages
-                </h3>
-                <div className="flex gap-8">
-                  <div>
-                    <p className="text-sm font-medium text-foreground">English</p>
-                    <p className="text-sm text-foreground/70">Fluent</p>
-                  </div>
-                  <div>
-                    <p className="text-sm font-medium text-foreground">Urdu</p>
-                    <p className="text-sm text-foreground/70">Native</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
