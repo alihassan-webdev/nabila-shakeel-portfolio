@@ -99,24 +99,27 @@ export default function Projects() {
   return (
     <section id="projects" className="scroll-mt-16 lg:scroll-mt-12">
       <div className="container py-20 px-4 md:px-12 lg:px-20">
-        <h2 className="font-display text-4xl md:text-5xl mb-6">Key Projects</h2>
+        <h2 className="font-display text-4xl md:text-5xl mb-12">Key Projects & Domains</h2>
 
-        <div className="grid gap-8 lg:grid-cols-3">
+        <div className="grid gap-6 lg:grid-cols-2">
           {projects.map((p, i) => {
             const Icon = p.icon;
             return (
               <div
                 key={i}
-                className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow min-h-[120px]"
+                className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow hover:shadow-lg transition-shadow"
               >
-                <div className="flex items-center gap-4 h-full">
+                <div className="flex gap-4">
                   <div className="p-3 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Icon className="w-6 h-6 text-primary" />
                   </div>
-                  <div>
-                    <h3 className="text-lg font-semibold font-display text-foreground">
+                  <div className="flex-1">
+                    <h3 className="text-lg font-semibold font-display text-foreground mb-2">
                       {p.title}
                     </h3>
+                    <p className="text-sm text-foreground/70 leading-relaxed">
+                      {p.description}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -124,11 +127,11 @@ export default function Projects() {
           })}
         </div>
 
-        <div className="mt-10 rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow">
-          <div className="flex items-center gap-2 mb-4">
+        <div className="mt-16 rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-8 card-shadow">
+          <div className="flex items-center gap-2 mb-6">
             <div className="w-2 h-2 rounded-full bg-primary"></div>
             <span className="text-xs font-semibold text-primary uppercase tracking-widest">
-              Domains
+              Specialized Expertise
             </span>
           </div>
 
@@ -136,7 +139,7 @@ export default function Projects() {
             {domains.map((d) => (
               <span
                 key={d}
-                className="inline-flex items-center gap-2 rounded-full px-4 py-2 bg-foreground/5 text-sm text-foreground/80"
+                className="inline-flex items-center gap-2 rounded-full px-4 py-2 bg-foreground/5 text-sm text-foreground/80 hover:bg-primary/10 hover:text-primary transition-colors"
               >
                 {d}
               </span>
