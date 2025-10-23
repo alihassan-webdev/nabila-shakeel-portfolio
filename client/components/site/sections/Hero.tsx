@@ -57,12 +57,12 @@ export default function Hero() {
 
             <div className="mt-0 -mb-1">
               <motion.h1
-              style={{ fontFamily: "Caveat" }}
-              className="text-[3.5rem] md:text-[5rem] lg:text-[90px] leading-tight font-extrabold"
-              variants={itemVariants}
-            >
-              Nabila Shakeel
-            </motion.h1>
+                style={{ fontFamily: "Caveat" }}
+                className="text-[3.5rem] md:text-[5rem] lg:text-[90px] leading-tight font-extrabold"
+                variants={itemVariants}
+              >
+                Nabila Shakeel
+              </motion.h1>
             </div>
 
             <motion.p

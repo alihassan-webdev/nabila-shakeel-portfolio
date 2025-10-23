@@ -66,7 +66,10 @@ export default function Experience() {
 
           <div className="space-y-12 relative z-10">
             {experiences.map((exp) => (
-              <div key={exp.title} className="relative flex items-start gap-4 md:gap-6">
+              <div
+                key={exp.title}
+                className="relative flex items-start gap-4 md:gap-6"
+              >
                 {/* Dot perfectly aligned with line */}
                 <div className="relative flex-shrink-0">
                   <div className="absolute left-[2px] md:left-[2px] top-2 w-3 md:w-4 h-3 md:h-4 rounded-full bg-primary border-4 border-background z-10" />
@@ -94,7 +97,9 @@ export default function Experience() {
                             key={highlight}
                             className="flex items-start gap-2 text-xs md:text-sm text-foreground/70"
                           >
-                            <span className="text-primary font-bold mt-0.5 flex-shrink-0">✓</span>
+                            <span className="text-primary font-bold mt-0.5 flex-shrink-0">
+                              ✓
+                            </span>
                             <span>{highlight}</span>
                           </li>
                         ))}
