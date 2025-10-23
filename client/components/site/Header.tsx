@@ -27,26 +27,37 @@ export default function Header() {
 
     const observer = new IntersectionObserver(
       (entries) => {
-        // Find the section with the largest intersection area in viewport
-        let bestEntry = null;
-        let largestArea = 0;
+        // Find the section closest to the top of the viewport
+        let closestEntry = null;
+        let closestDistance = Infinity;
 
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const area =
-              entry.intersectionRect.height * entry.intersectionRect.width;
-            if (area > largestArea) {
-              largestArea = area;
-              bestEntry = entry;
-            }
+          const rect = entry.boundingClientRect;
+          const distance = Math.abs(rect.top);
+
+          // Prefer sections that are visible and closest to top
+          if (entry.isIntersecting && distance < closestDistance) {
+            closestDistance = distance;
+            closestEntry = entry;
           }
         });
 
-        if (bestEntry) {
-          setActive(`#${bestEntry.target.id}`);
+        // If no visible section, use the one that passed most recently
+        if (!closestEntry) {
+          entries.forEach((entry) => {
+            const rect = entry.boundingClientRect;
+            // Prefer section above viewport
+            if (rect.top < 0 && rect.bottom > 0) {
+              closestEntry = entry;
+            }
+          });
+        }
+
+        if (closestEntry) {
+          setActive(`#${closestEntry.target.id}`);
         }
       },
-      { threshold: 0.1 },
+      { threshold: [0, 0.25, 0.5, 0.75, 1] },
     );
 
     sectionIds.forEach((id) => {
