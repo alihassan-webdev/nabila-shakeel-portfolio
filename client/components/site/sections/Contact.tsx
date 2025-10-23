@@ -1,4 +1,4 @@
-import { Mail, Linkedin } from "lucide-react";
+import { Mail, Linkedin, MessageCircle } from "lucide-react";
 
 type Props = { email: string };
 
@@ -51,6 +51,18 @@ export default function Contact({ email }: Props) {
               >
                 <span>LinkedIn</span>
                 <Linkedin className="w-5 h-5" />
+              </a>
+
+              <a
+                href="https://wa.me/923244747948"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-2xl border bg-background px-4 py-2 text-sm text-foreground/80"
+                aria-label="WhatsApp"
+                title="WhatsApp"
+              >
+                <span>WhatsApp</span>
+                <MessageCircle className="w-5 h-5" />
               </a>
             </div>
           </aside>
