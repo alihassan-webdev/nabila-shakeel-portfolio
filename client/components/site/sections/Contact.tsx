@@ -33,11 +33,11 @@ export default function Contact({ email }: Props) {
             <div className="flex items-center gap-3">
               <a
                 href={`mailto:${email}`}
-                className="inline-flex items-center gap-2 rounded-2xl bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-lg hover:opacity-95 transition"
+                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-2 md:px-4 md:py-2 text-sm font-medium text-primary-foreground shadow-lg hover:opacity-95 transition"
                 aria-label={`Email ${email}`}
                 title="Email"
               >
-                <span>Email</span>
+                <span className="hidden md:inline">Email</span>
                 <Mail className="w-5 h-5 text-primary-foreground" />
               </a>
 
@@ -45,11 +45,11 @@ export default function Contact({ email }: Props) {
                 href="https://www.linkedin.com/in/nabila-shakeel-727476a6/"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-2xl border bg-background px-4 py-2 text-sm text-foreground/80 hover:bg-blue-50 hover:border-blue-300 hover:text-blue-600 transition"
+                className="inline-flex items-center justify-center gap-2 rounded-2xl border bg-background px-6 py-2 md:px-4 md:py-2 text-sm text-foreground/80 hover:bg-blue-50 hover:border-blue-300 hover:text-blue-600 transition"
                 aria-label="LinkedIn profile"
                 title="LinkedIn"
               >
-                <span>LinkedIn</span>
+                <span className="hidden md:inline">LinkedIn</span>
                 <Linkedin className="w-5 h-5" />
               </a>
 
@@ -57,11 +57,11 @@ export default function Contact({ email }: Props) {
                 href="https://wa.me/923244747948"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-2xl border bg-background px-4 py-2 text-sm text-foreground/80 hover:bg-green-50 hover:border-green-300 hover:text-green-600 transition"
+                className="inline-flex items-center justify-center gap-2 rounded-2xl border bg-background px-6 py-2 md:px-4 md:py-2 text-sm text-foreground/80 hover:bg-green-50 hover:border-green-300 hover:text-green-600 transition"
                 aria-label="WhatsApp"
                 title="WhatsApp"
               >
-                <span>WhatsApp</span>
+                <span className="hidden md:inline">WhatsApp</span>
                 <MessageCircle className="w-5 h-5" />
               </a>
             </div>
