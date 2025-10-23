@@ -120,16 +120,18 @@ export default function Projects() {
     "Hospitality & Club Management Systems",
     "Generative AI & LLM Testing",
     "Business Intelligence & Reporting Tools",
-    "Cybersecurity Testing",
+    "Cybersecurity Testing (OWASP ZAP, JMeter, Fiddler)",
     "Human Resource & Payroll Systems",
     "Mobile Applications (Android & iOS)",
     "ERP & Back-Office Applications",
     "Banking & Financial Systems",
-    "Cybersecurity (RevBits Privileged Access Management)",
-    "US/Canadian Healthcare (HIPAA)",
+    "Vulnerability Assessment & Penetration Testing",
+    "Load & Performance Testing",
     "RPA Testing (Mesmer HQ)",
+    "SaaS ERP & HCM Platforms",
+    "US/Canadian Healthcare Systems (HIPAA/EMR/HL7)",
+    "RevBits Privileged Access Management (PAM)",
     "QA Trail Tool (Jira Clone)",
-    "SaaS ERP & HCM",
   ];
 
   return (
