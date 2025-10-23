@@ -6,7 +6,7 @@ export default function Education() {
       <div className="container py-20 px-4 md:px-12 lg:px-20">
         <h2 className="font-display text-4xl md:text-5xl mb-12">Education</h2>
 
-        <div className="grid gap-6">
+        <div className="grid gap-6 lg:grid-cols-2">
           {/* Education Cards */}
           <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow">
             <div className="flex items-start gap-4">
@@ -51,7 +51,7 @@ export default function Education() {
           </div>
 
           {/* Languages Section */}
-          <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow">
+          <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow lg:col-span-2">
             <div className="flex items-start gap-4">
               <div className="p-3 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                 <Globe className="w-6 h-6 text-primary" />
