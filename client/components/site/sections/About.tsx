@@ -19,27 +19,27 @@ export default function About() {
           </div>
 
           <div className="md:col-span-7">
-            <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-8 card-shadow">
+            <div className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 md:p-8 card-shadow">
               <div className="flex items-center gap-2 mb-3">
-                <div className="w-2 h-2 rounded-full bg-primary"></div>
+                <div className="w-2 h-2 rounded-full bg-primary" />
                 <span className="text-xs font-semibold text-primary uppercase tracking-widest">
                   Core Competencies
                 </span>
               </div>
-              <h3 className="text-2xl font-semibold font-display mb-8">
+              <h3 className="text-xl md:text-2xl font-semibold font-display mb-6 md:mb-8">
                 Skills & Expertise
               </h3>
               <div className="grid gap-6 sm:grid-cols-2">
-                <div className="space-y-4">
+                <div className="space-y-3 md:space-y-4">
                   <div className="flex items-start gap-3">
-                    <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <div className="p-2.5 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0 flex-shrink-0">
                       <FileText className="w-5 h-5 text-primary" />
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2 text-sm">
+                    <div className="flex-1 min-w-0">
+                      <h4 className="font-semibold text-foreground mb-1 text-sm">
                         Test Design & Planning
                       </h4>
-                      <p className="text-sm text-foreground/70 leading-relaxed">
+                      <p className="text-xs md:text-sm text-foreground/70 leading-relaxed">
                         Requirements analysis, test strategy, UAT coordination
                       </p>
                     </div>
