@@ -30,23 +30,23 @@ export default function Contact({ email }: Props) {
               to remote and on-site opportunities.
             </p>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 md:gap-3 flex-wrap">
               <a
                 href={`mailto:${email}`}
-                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-2 md:px-4 md:py-2 text-sm font-medium text-primary-foreground shadow-lg hover:opacity-95 transition"
-                aria-label={`Email ${email}`}
+                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-primary px-4 md:px-6 py-2 text-sm font-medium text-primary-foreground shadow-lg hover:opacity-90 transition-opacity"
+                aria-label={`Send email to ${email}`}
                 title="Email"
               >
                 <span className="hidden md:inline">Email</span>
-                <Mail className="w-5 h-5 text-primary-foreground" />
+                <Mail className="w-5 h-5" />
               </a>
 
               <a
                 href="https://www.linkedin.com/in/nabila-shakeel-727476a6/"
                 target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-2xl border bg-background px-6 py-2 md:px-4 md:py-2 text-sm text-foreground/80 hover:bg-blue-50 hover:border-blue-300 hover:text-blue-600 transition"
-                aria-label="LinkedIn profile"
+                rel="noreferrer noopener"
+                className="inline-flex items-center justify-center gap-2 rounded-2xl border bg-background px-4 md:px-6 py-2 text-sm text-foreground/80 hover:bg-primary/5 hover:text-primary hover:border-primary/50 transition-colors"
+                aria-label="Visit LinkedIn profile (opens in new tab)"
                 title="LinkedIn"
               >
                 <span className="hidden md:inline">LinkedIn</span>
@@ -56,9 +56,9 @@ export default function Contact({ email }: Props) {
               <a
                 href="https://wa.me/923244747948"
                 target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-2xl border bg-background px-6 py-2 md:px-4 md:py-2 text-sm text-foreground/80 hover:bg-green-50 hover:border-green-300 hover:text-green-600 transition"
-                aria-label="WhatsApp"
+                rel="noreferrer noopener"
+                className="inline-flex items-center justify-center gap-2 rounded-2xl border bg-background px-4 md:px-6 py-2 text-sm text-foreground/80 hover:bg-primary/5 hover:text-primary hover:border-primary/50 transition-colors"
+                aria-label="Contact on WhatsApp (opens in new tab)"
                 title="WhatsApp"
               >
                 <span className="hidden md:inline">WhatsApp</span>
