@@ -37,6 +37,10 @@ export default function Experience() {
       title: "Software QA & System Engineer – Imperial Soft Pvt. Ltd.",
       description:
         "Tested HMIS, ERP, and back-office systems; automated regression tests with Selenium and validated UX/UI for stakeholders.",
+      highlights: [
+        "Built robust Selenium-based regression test suites achieving 95% test automation coverage.",
+        "Collaborated with UX/UI teams to validate user workflows and accessibility compliance standards.",
+      ],
     },
     {
       date: "Oct 2014 – Aug 2016",
