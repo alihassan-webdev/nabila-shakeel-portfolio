@@ -1,4 +1,4 @@
-import { BookOpen, Globe } from "lucide-react";
+import { BookOpen } from "lucide-react";
 
 export default function Education() {
   return (
