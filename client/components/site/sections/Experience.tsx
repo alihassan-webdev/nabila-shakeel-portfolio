@@ -18,6 +18,8 @@ export default function Experience() {
       highlights: [
         "Validation testing in compliance with healthcare standards (HIPAA).",
         "Maintained automation frameworks for web and API testing.",
+        "Mentored junior QA engineers on test automation best practices and frameworks.",
+        "Led test strategy for critical SaaS platform deployments ensuring zero-downtime releases.",
       ],
     },
     {
