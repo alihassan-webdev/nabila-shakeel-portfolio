@@ -109,19 +109,17 @@ export default function Projects() {
                 key={i}
                 className="rounded-3xl border bg-gradient-to-br from-card via-card to-accent/5 p-6 card-shadow hover:shadow-lg transition-shadow"
               >
-                <div className="flex gap-4">
-                  <div className="p-3 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Icon className="w-6 h-6 text-primary" />
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="p-2 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Icon className="w-5 h-5 text-primary" />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-lg font-semibold font-display text-foreground mb-2">
-                      {p.title}
-                    </h3>
-                    <p className="text-sm text-foreground/70 leading-relaxed">
-                      {p.description}
-                    </p>
-                  </div>
+                  <h3 className="text-lg font-semibold font-display text-foreground">
+                    {p.title}
+                  </h3>
                 </div>
+                <p className="text-sm text-foreground/70 leading-relaxed">
+                  {p.description}
+                </p>
               </div>
             );
           })}
