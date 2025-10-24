@@ -13,17 +13,6 @@ export default function Footer({ email }: FooterProps) {
           <span className="text-foreground font-semibold">Nabila Shakeel</span>.
           All Rights Reserved
         </p>
-        <p className="text-sm text-foreground/60">
-          Developed by{" "}
-          <a
-            href="https://alihassan-online.netlify.app/"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="text-foreground hover:text-primary font-medium transition-colors"
-          >
-            Ali Hassan
-          </a>
-        </p>
       </div>
     </footer>
   );

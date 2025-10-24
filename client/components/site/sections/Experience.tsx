@@ -12,7 +12,7 @@ export default function Experience() {
     },
     {
       date: "Dec 2019 – Jul 2024",
-      title: "Software QA & IT Engineer – SoloInsight Pvt. Ltd.",
+      title: "Software Quality Assurance Engineer – SoloInsight Pvt. Ltd.",
       description:
         "Automated APIs using Cucumber and Python; reduced regression workload by 30% and configured CI/CD pipelines for continuous testing.",
       highlights: [
@@ -24,7 +24,7 @@ export default function Experience() {
     },
     {
       date: "Dec 2018 – Nov 2019",
-      title: "Senior QA Engineer – 1 Machine Pvt. Ltd.",
+      title: "Sr. Senior QA Engineer – 1 Machine Pvt. Ltd.",
       description:
         "Specialized in US Healthcare IT, ensuring HIPAA and EMR compliance; developed QA documentation and validated ERP finance modules.",
       highlights: [
@@ -35,7 +35,7 @@ export default function Experience() {
     },
     {
       date: "Oct 2016 – Oct 2018",
-      title: "Software QA & System Engineer – Imperial Soft Pvt. Ltd.",
+      title: "Software Quality Assurance Engineer – Imperial Soft Pvt. Ltd.",
       description:
         "Tested HMIS, ERP, and back-office systems; automated regression tests with Selenium and validated UX/UI for stakeholders.",
       highlights: [

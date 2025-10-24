@@ -1,4 +1,5 @@
 import { Mail, Linkedin, MessageCircle } from "lucide-react";
+import { useState } from "react";
 
 type Props = { email: string };
 
@@ -32,12 +33,14 @@ export default function Contact({ email }: Props) {
 
             <div className="flex items-center gap-2 md:gap-3 flex-wrap">
               <a
-                href={`mailto:${email}`}
+                href="mailto:nabilashakeel62@gmail.com?subject=Let's%20Work%20Together"
                 className="inline-flex items-center justify-center gap-2 rounded-2xl bg-primary px-4 md:px-6 py-2 text-sm font-medium text-primary-foreground shadow-lg hover:opacity-90 transition-opacity"
-                aria-label={`Send email to ${email}`}
-                title="Email"
+                aria-label="Send email to nabilashakeel62@gmail.com"
+                title="Send email to nabilashakeel62@gmail.com"
               >
-                <span className="hidden md:inline">Email</span>
+                <span className="hidden md:inline">
+                  {email ? "Email" : "Email Unavailable"}
+                </span>
                 <Mail className="w-5 h-5" />
               </a>
 
