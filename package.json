@@ -1,7 +1,11 @@
 {
-  "name": "fusion-starter",
+  "name": "nabila-shakeel-portfolio",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
   "pkg": {
     "assets": [
       "dist/spa/*"
@@ -12,11 +16,9 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "npm run build:client && npm run build:server",
-    "build:client": "vite build",
-    "build:server": "vite build --config vite.config.server.ts",
-    "start": "node dist/server/main.js",
+    "build": "vite build",
     "preview": "vite preview",
+    "start": "vite preview --port 8080",
     "test": "vitest --run",
     "format.fix": "prettier --write .",
     "typecheck": "tsc"
