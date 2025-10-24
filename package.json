@@ -3,8 +3,20 @@
   "private": true,
   "type": "module",
   "engines": {
-    "node": ">=20.0.0",
-    "npm": ">=10.0.0"
+    "node": "20.0.0",
+    "npm": "10.2.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "pkg": {
     "assets": [
@@ -16,12 +28,13 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "start": "vite preview --port 8080",
+    "build": "tsc && vite build --mode production",
+    "prebuild": "rm -rf dist",
+    "preview": "vite preview --port 8080",
+    "start": "vite preview --port 3000 --host",
     "test": "vitest --run",
     "format.fix": "prettier --write .",
-    "typecheck": "tsc"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "dotenv": "^17.2.1",
